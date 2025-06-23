@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<PropertyList include="Models/Light-House.xml">
-
-  <model>
-    <path>AI/Aircraft/Light-House/Models/Light-House.xml</path>
-  </model>
-
-</PropertyList>
