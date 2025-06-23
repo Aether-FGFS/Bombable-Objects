@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Fuel-Truck model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Fuel-Truck-bombableinclude.xml">
+
+        <description>Fuel-Truck</description>
+
+	<path>AI/Aircraft/Fuel-Truck/Models/fuel-truck-medpoly.ac</path>
+
+        <texture-path>AI/Aircraft/Fuel-Truck/Models</texture-path>
+	
+</PropertyList>

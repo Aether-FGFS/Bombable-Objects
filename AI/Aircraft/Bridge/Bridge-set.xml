@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Bridge.xml">
+
+  <model>
+    <path>AI/Aircraft/Bridge/Models/Bridge.xml</path>
+  </model>
+
+</PropertyList>

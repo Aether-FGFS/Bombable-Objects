@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Fuel-Truck.xml">
+
+  <model>
+    <path>AI/Aircraft/Fuel-Truck/Models/Fuel-Truck.xml</path>
+  </model>
+
+</PropertyList>

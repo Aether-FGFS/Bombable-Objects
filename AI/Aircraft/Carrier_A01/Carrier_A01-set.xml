@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Carrier_A01.xml">
+
+  <model>
+    <path>AI/Aircraft/Carrier_A01/Models/Carrier_A01.xml</path>
+  </model>
+
+</PropertyList>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Bloodhound-SAM.xml">
+
+  <model>
+    <path>AI/Aircraft/Bloodhound-SAM/Models/Bloodhound-SAM.xml</path>
+  </model>
+
+</PropertyList>

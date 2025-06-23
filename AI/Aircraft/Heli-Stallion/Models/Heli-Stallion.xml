@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Heli-Stallion model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Heli-Stallion-bombableinclude.xml">
+
+        <description>Heli-Stallion</description>
+
+	<path>AI/Aircraft/Heli-Stallion/Models/stallion.ac</path>
+
+        <texture-path>AI/Aircraft/Heli-Stallion/Models</texture-path>
+	
+</PropertyList>

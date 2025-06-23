@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Bridge model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Bridge-bombableinclude.xml">
+
+        <description>Bridge</description>
+
+	<path>AI/Aircraft/Bridge/Models/ViaToupin.ac</path>
+
+        <texture-path>AI/Aircraft/Bridge/Models</texture-path>
+	
+</PropertyList>

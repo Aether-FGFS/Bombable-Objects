@@ -1,0 +1,10 @@
+<PropertyList include="Carrier_A01-bombableinclude.xml">
+
+        <description>Carrier_A01</description>
+
+	<path>AI/Aircraft/Carrier_A01/Models/Carrier_A01.ac</path>
+
+        <texture-path>AI/Aircraft/Carrier_A01/Models</texture-path>
+       
+
+</PropertyList>

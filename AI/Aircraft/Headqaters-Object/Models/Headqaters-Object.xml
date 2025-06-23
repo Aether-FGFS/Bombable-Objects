@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Headqaters-Objectmodel config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Headqaters-Object-bombableinclude.xml">
+
+        <description>Headqaters-Object</description>
+
+	<path>AI/Aircraft/Headqaters-Object/Models/LEGA_HQ.ac</path>
+
+        <texture-path>AI/Aircraft/Headqaters-Object/Models</texture-path>
+	
+</PropertyList>
