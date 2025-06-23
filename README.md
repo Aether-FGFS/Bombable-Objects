@@ -1,5 +1,5 @@
-This are Bombable Objects for Flightgear Flight Simulator. 
-==========================================================
+ This are Bombable Objects for Flightgear Flight Simulator. 
+ ==========================================================
 
 
  To use Bombable-Objects, install Bombable v.5.0, updated by
@@ -24,9 +24,9 @@ This are Bombable Objects for Flightgear Flight Simulator.
   above sea level.
   
 
- In the case of AI objects, some of them may shoot AA guns at you . 
+ In the case of AI objects, some of them may shoot AA guns at you. 
 
- Have a good luck and lot of fun. :)
+ Have a good luck and lot of fun using them. :)
 
 
 
