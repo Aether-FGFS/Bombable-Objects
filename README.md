@@ -24,7 +24,7 @@ This are Bombable Objects for Flightgear Flight Simulator.
   above sea level.
   
 
- In the case of AI objects, some of them may shoot at you AA guns. 
+ In the case of AI objects, some of them may shoot AA guns at you . 
 
  Have a good luck and lot of fun. :)
 
