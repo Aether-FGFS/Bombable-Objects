@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<PropertyList include="Models/l3000-radio-grey.xml">
-
-  <model>
-    <path>AI/Aircraft/Military-Truck/Models/l3000-radio-grey</path>
-  </model>
-
-</PropertyList>
