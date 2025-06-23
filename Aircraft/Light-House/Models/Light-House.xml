@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="Light-House-bombableinclude.xml">
+
+        <description>Light-House</description>
+
+	<path>Aircraft/Light-House/Models/Longjan.ac</path>
+
+        <texture-path>Aircraft/Light-House/Models</texture-path>
+
+<nasal>
+  <load><![CDATA[
+    if (getprop("/scenery/lighthouse") == nil) setprop("/scenery/lighthouse",0);
+    var flashes=[0,2.8];
+    var length=[0.7,0.7];
+    var period=30;
+    var timer = maketimer(0.1, func(){
+        var light=0;
+        var time=getprop("/sim/time/steady-clock-sec")-period*math.floor(getprop("/sim/time/steady-clock-sec")/period);
+        forindex(i; flashes) {
+          if (time>=flashes[i] and time<flashes[i]+length[i]) light=1;
+        }
+        setprop("/scenery/lighthouse",light);
+    });
+    timer.simulatedTime=1;
+    timer.start();
+  ]]></load>
+
+  <unload><![CDATA[
+    timer.stop();
+  ]]></unload>
+</nasal>
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>20000</max-m>
+ </animation>
+ 
+<animation>
+  <object-name>Beam</object-name>
+  <type>select</type>
+  <condition>
+   <and>
+    <equals>
+     <property>/scenery/lighthouse</property>
+     <value>1</value>
+    </equals>
+   <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.56</value>
+   </greater-than>
+  </and>
+  </condition>
+ </animation>
+ 
+  <animation>
+  <type>noshadow</type>
+  <object-name>Beam</object-name>
+ </animation>
+
+<animation>
+  <type>dist-scale</type>
+  <object-name>Beam</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>1</dep>
+   </entry>
+   <entry>
+    <ind>10000</ind>
+    <dep>4</dep>
+   </entry>
+  </interpolation>
+ </animation>
+ 
+  <animation>
+    <type>billboard</type>
+    <object-name>Beam</object-name>
+    <spherical type="bool">false</spherical>
+  </animation>
+ 
+</PropertyList>
+
+
