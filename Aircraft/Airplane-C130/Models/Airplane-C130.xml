@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!-- Airplane-C130 model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Airplane-C130-bombableinclude.xml">
+
+        <description>Airplane-C130</description>
+
+	<path>Aircraft/Airplane-C130/Models/c130a.ac</path>
+
+        <texture-path>Aircraft/Airplane-C130/Models</texture-path>
+
+  <path>c130a.ac</path>
+
+  <animation>
+    <object-name>fuselage</object-name>
+    <object-name>helices</object-name>
+  </animation>
+
+</PropertyList>

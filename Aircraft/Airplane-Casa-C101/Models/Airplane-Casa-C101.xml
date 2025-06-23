@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Airplane-Casa-C101 model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Airplane-Casa-C101-bombableinclude.xml">
+
+        <description>Airplane-Casa-C101</description>
+
+	<path>Aircraft/Airplane-Casa-C101/Models/C101_static.ac</path>
+
+        <texture-path>Aircraft/Airplane-Casa-C101/Models</texture-path>
+	
+</PropertyList>
