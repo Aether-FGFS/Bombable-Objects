@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Humvee-Pickup model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Humvee-Pickup-bombableinclude.xml">
+
+        <description>Humvee-Pickup</description>
+
+	<path>AI/Aircraft/Humvee-Pickup/Models/humvee-pickup-odrab-low-poly.ac</path>
+
+        <texture-path>AI/Aircraft/Humvee-Pickup/Models</texture-path>
+	
+</PropertyList>

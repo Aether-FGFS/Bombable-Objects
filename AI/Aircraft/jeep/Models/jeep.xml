@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- jeep model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="jeep-bombableinclude.xml">
+
+        <description>jeep</description>
+
+	<path>AI/Aircraft/jeep/Models/jeep.ac</path>
+
+        <texture-path>AI/Aircraft/jeep/Models</texture-path>
+	
+</PropertyList>

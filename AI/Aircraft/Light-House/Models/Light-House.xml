@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="Light-House-bombableinclude.xml">
+
+
+        <description>Light-House</description>
+
+	<path>AI/Aircraft/Light-House/Models/Longjan.ac</path>
+
+        <texture-path>AI/Aircraft/Light-House/Models</texture-path>
+
+ 
+</PropertyList>
+
+

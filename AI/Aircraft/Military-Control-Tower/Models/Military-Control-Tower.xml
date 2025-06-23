@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!-- Military-Control-Tower model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Military-Control-Tower-bombableinclude.xml">
+
+        <description>Military-Control-Tower</description>
+
+	<path>AI/Aircraft/Military-Control-Tower/Models/RAFTower.ac</path>
+
+        <texture-path>AI/Aircraft/Military-Control-Tower/Models</texture-path>
+
+ <path>RAFTower.ac</path>
+
+ <animation>
+  <type>range</type>
+  <object-name>Railings</object-name>
+  <min-m>0</min-m>
+  <max-m>1500</max-m>
+ </animation>
+
+</PropertyList>
