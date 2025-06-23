@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Airport-Tower.xml">
+
+  <model>
+    <path>AI/Aircraft/Airport-Tower/Models/Airport-Tower.xml</path>
+  </model>
+
+</PropertyList>

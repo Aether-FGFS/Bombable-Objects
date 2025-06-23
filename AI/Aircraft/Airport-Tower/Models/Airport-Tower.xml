@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Airport-Tower model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Airport-Tower-bombableinclude.xml">
+
+        <description>Airport-Tower</description>
+
+	<path>AI/Aircraft/Airport-Tower/Models/EGHH_tower.ac</path>
+
+        <texture-path>AI/Aircraft/Airport-Tower/Models</texture-path>
+	
+</PropertyList>
