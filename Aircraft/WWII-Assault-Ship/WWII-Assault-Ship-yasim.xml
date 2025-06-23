@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<airplane mass="4480000.0">
+
+  <approach speed="160" aoa="4">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.1"/>
+  </approach>
+
+  <cruise speed="180" alt="23200">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/>
+  </cruise>
+
+  <cockpit x="-3.5" y="0.41" z="0.76"/>
+
+  <fuselage ax="0" ay="0.0" az="9.8" bx="-68.2" by="0" bz="6.0" width="13.0" taper="0.2" midpoint="10"/>
+
+  <wing x="-45.50" y="0.0" z="0.6"
+        chord="1.0"
+        length="0.7"
+        taper="1.0">
+  </wing>
+
+  <mstab x="-62.5" y="4.1" z="6.0"
+         chord="45.0"
+         length="3.5"
+         taper="1.0"
+         sweep="-2.0"
+         dihedral="-90"
+         camber="0.0" >
+  </mstab>
+
+  <jet x="-39.9" y="4.65" z="1.2"
+       n1-idle="30"
+       n1-max="70"
+       n2-idle="35"
+       n2-max="75"
+       exhaust-speed="110"
+       egt="850"
+       tsfc="0.039"
+       mass="10000"
+       thrust="2200000"
+       rotate="-170" >
+       <actionpt x="-65.0" y="1.65" z="-0.2"/>
+       <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+       <control-input axis="/controls/engines/engine[0]/mixture" control="VECTOR" src0="0" src1="1" dst0="1" dst1="0"/>
+  </jet>
+
+  <jet x="-39.9" y="-4.65" z="1.0"
+       n1-idle="30"
+       n1-max="70"
+       n2-idle="35"
+       n2-max="75"
+       exhaust-speed="110"
+       egt="850"
+       tsfc="0.039"
+       mass="10000"
+       thrust="2200000"
+       rotate="-170" >
+       <actionpt x="-65.0" y="-1.65" z="-0.2"/>
+       <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+       <control-input axis="/controls/engines/engine[0]/mixture" control="VECTOR" src0="0" src1="1" dst0="1" dst1="0"/>
+  </jet>
+
+  <gear x="0.0" y="0.0" z="-0.2"
+        compression="1.7"
+        spring="5"
+        damp="13.8"
+        on-water="1"
+        on-solid="0"
+        dfric="1.7"
+        sfric="1"
+        castering="true">
+        <control-input axis="/controls/flight/aileron" control="STEER" src0="-1.0" src1="1.0" dst0="-0.4" dst1="0.4"/>
+  </gear>
+
+  <gear x="-68.4" y="-0.0" z="-0.2"
+        compression="1.7"
+        spring="5"
+        damp="13.8"
+        on-water="1"
+        on-solid="0" 
+        dfric="1.7"
+        sfric="1">
+        <control-input axis="/controls/flight/aileron" control="STEER" invert="true" src0="-1.0" src1="1.0" dst0="-0.4" dst1="0.4"/>
+  </gear>
+
+  <gear x="-34.8" y="6.5" z="0.1"
+        compression="4.3"
+        spring="3.9"
+        damp="20.8"
+        on-water="1"
+        on-solid="0"
+        ignored-by-solver="1"  
+        dfric="1.7"
+        sfric="1">
+  </gear>
+
+  <gear x="-34.8" y="0.0" z="-0.2"
+        compression="0.9"
+        spring="0.2"
+        damp="5.8"
+        on-water="1"
+        on-solid="0"   
+        dfric="1.7"
+        sfric="1">
+  </gear>
+
+  <gear x="-34.8" y="-6.5" z="0.1"
+        compression="4.3"
+        spring="3.9"
+        damp="20.8"
+        on-water="1"
+        on-solid="0"
+        ignored-by-solver="1" 
+        dfric="1.7"
+        sfric="1">
+  </gear>
+
+  <tank x="-35.7" y="5.0" z="0.95" capacity="550000"/>
+  <tank x="-35.7" y="-5.0" z="0.95" capacity="550000"/>
+  <tank x="-35.7" y="5.0" z="0.95" capacity="550000"/>
+  <tank x="-35.7" y="-5.0" z="0.95" capacity="550000"/>
+
+  <ballast x="0.0" y="0.0" z="0.0" mass="150000"/>
+
+</airplane>
+

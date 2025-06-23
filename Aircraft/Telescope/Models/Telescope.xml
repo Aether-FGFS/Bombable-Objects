@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Telescope model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Telescope-bombableinclude.xml">
+
+        <description>Telescope</description>
+
+	<path>Aircraft/Telescope/Models/LovellT.ac</path>
+
+        <texture-path>Aircraft/Telescope/Models</texture-path>
+	
+</PropertyList>

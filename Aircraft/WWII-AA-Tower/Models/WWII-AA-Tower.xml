@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-AA-Tower model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="WWII-AA-Tower-bombableinclude.xml">
+
+        <description>WWII-AA-Tower</description>
+
+	<path>Aircraft/WWII-AA-Tower/Models/flakturm-vienna-3g.ac</path>
+
+        <texture-path>Aircraft/WWII-AA-Tower/Models</texture-path>
+	
+</PropertyList>

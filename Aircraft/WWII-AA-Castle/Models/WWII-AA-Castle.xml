@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-AA-Castle model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="WWII-AA-Castle-bombableinclude.xml">
+
+        <description>WWII-AA-Castle</description>
+
+	<path>Aircraft/WWII-AA-Castle/Models/CHATEAU2TARASCON.ac</path>
+
+        <texture-path>Aircraft/WWII-AA-Castle/Models</texture-path>
+	
+</PropertyList>

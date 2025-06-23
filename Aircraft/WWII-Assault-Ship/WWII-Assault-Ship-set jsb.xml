@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<!--
+  WWII-Assault-Ship.
+
+  Copyright (C) 2025  Aether
+  This file is licensed under the GPL license version 2 or later.
+-->
+<PropertyList>
+
+ <sim>
+
+  <description>WWII-Assault-Ship</description>
+  <author>Aether</author>
+  <aircraft-version>2025-06-25</aircraft-version>
+
+  <long-description>
+  WWII-Assault-Ship
+  </long-description>
+
+  <tags>
+   <tag>seacraft</tag>
+   <!-- tag>steam-engine</tag -->
+   <tag>single-engine</tag>
+   <!-- tag>1860s</tag -->
+   <!-- tag>civilwar</tag -->
+  </tags>
+
+  <status type="string">alpha</status>
+  <rating>
+   <FDM type="int">1</FDM>
+   <systems type="int">1</systems>
+   <cockpit type="int">1</cockpit>
+   <model type="int">2</model>
+  </rating>
+
+  <flight-model>jsb</flight-model>
+  <aero>WWII-Assault-Ship</aero>
+
+  <presets>
+   <onground type="bool">true</onground>
+   <!-- altitude-agl-ft type="double">6.0</altitude-agl-ft -->
+  </presets>
+  <startup>
+   <splash-texture>Aircraft/WWII-Assault-Ship/WWII-Assault-Ship-splash.png</splash-texture>
+  </startup>
+
+  <!-- 3d model -->
+  <model>
+   <path>Aircraft/WWII-Assault-Ship/Models/WWII-Assault-Ship.xml</path>
+  </model>
+
+  <!-- Views -->
+  <view n="0">
+   <!-- Pilot's position. -->
+   <name>Pilot View</name>
+   <internal>true</internal>
+   <config>
+    <!-- x/y/z == right/up/back -->
+    <x-offset-m type="double">  0.000 </x-offset-m>
+    <y-offset-m type="double">  4.577 </y-offset-m>
+    <z-offset-m type="double">  7.637 </z-offset-m>
+    <pitch-offset-deg type="double"> 0.0 </pitch-offset-deg>
+   </config>
+  </view>
+
+  <view n="100">
+   <name>Turret View</name>
+   <type>lookfrom</type>
+   <internal type="bool">true</internal>
+   <config>
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <!-- x/y/z == right/up/back -->
+    <x-offset-m type="double"> -2.00 </x-offset-m>
+    <y-offset-m type="double">  3.70 </y-offset-m>
+    <z-offset-m type="double"> 25.45 </z-offset-m>
+   </config>
+  </view>
+
+  <view n="101">
+   <name>Engineer View</name>
+   <type>lookfrom</type>
+   <internal type="bool">true</internal>
+   <config>
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <!-- x/y/z == right/up/back -->
+    <x-offset-m type="double">  0.00 </x-offset-m>
+    <y-offset-m type="double">  2.50 </y-offset-m>
+    <z-offset-m type="double"> 35.00 </z-offset-m>
+    <heading-offset-deg type="double"> 180 </heading-offset-deg>
+    <default-heading-offset-deg type="double"> 180 </default-heading-offset-deg>
+    <pitch-offset-deg type="double"> 0 </pitch-offset-deg>
+   </config>
+  </view>
+
+  <view n="102">
+   <name>Turret Deck View</name>
+   <type>lookfrom</type>
+   <internal type="bool">true</internal>
+   <config>
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <!-- x/y/z == right/up/back -->
+    <x-offset-m type="double">  0.00 </x-offset-m>
+    <y-offset-m type="double">  6.28 </y-offset-m>
+    <z-offset-m type="double"> 25.45 </z-offset-m>
+   </config>
+  </view>
+
+  <!-- Move the center of the external views. -->
+  <view n="1">
+   <config>
+    <target-z-offset-m> 20.0 </target-z-offset-m>
+   </config>
+  </view>
+  <view n="2">
+   <config>
+    <target-z-offset-m> 20.0 </target-z-offset-m>
+   </config>
+  </view>
+  <view n="3">
+   <config>
+    <target-z-offset-m> 20.0 </target-z-offset-m>
+   </config>
+  </view>
+  <view n="5">
+   <config>
+    <target-z-offset-m> 20.0 </target-z-offset-m>
+   </config>
+  </view>
+  <view n="6">
+   <config>
+    <target-z-offset-m> 20.0 </target-z-offset-m>
+   </config>
+  </view>
+
+  <chase-distance-m type="double">-120.0</chase-distance-m>
+
+  <!-- sound>
+   <audible>true</audible>
+   <path>Aircraft/Submarine_Scout/Sounds/Submarine_Scout-sound.xml</path>
+  </sound -->
+
+  <!-- Aircraft specific help. -->
+  <!-- help include="help.xml"/ -->
+
+  <systems>
+   <electrical>
+    <path/>
+   </electrical>
+  </systems>
+  <instrumentation>
+   <!-- path>Aircraft/Submarine_Scout/Systems/instrumentation.xml</path -->
+  </instrumentation>
+
+  <!-- Armament etc. -->
+  <!-- submodels>
+   <serviceable type="bool">true</serviceable>
+   <path></path>
+  </submodels -->
+
+  <multiplay>
+   <generic>
+   </generic>
+  </multiplay>
+
+  <max-simtime-per-frame n="0" type="double">0.1</max-simtime-per-frame>
+
+  <menubar>
+   <default>
+    <!-- menu n="100">
+     <label>USS Monitor</label>
+     <item>
+      <label>About</label>
+      <binding>
+       <command>nasal</command>
+       <script>Monitor.about()</script>
+      </binding>
+     </item>
+    </menu -->
+   </default>
+  </menubar>
+
+ </sim>
+
+ <controls>
+  <armament>
+   <training-mode type="bool">false</training-mode> 
+  </armament>
+ </controls>
+
+ <payload>
+  <weight>
+   <name type="string">Coal in port bunker</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">50000.0</max-lb>
+  </weight>
+  <weight>
+   <name type="string">Coal in starboard bunker</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">50000.0</max-lb>
+  </weight>
+  <weight>
+   <name type="string">Water in the starboard boiler</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">20900.0</max-lb>
+  </weight>
+  <weight>
+   <name type="string">Water in the port boiler</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">20900.0</max-lb>
+  </weight>
+  <weight>
+   <name type="string">Stores</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[4]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">30000.0</max-lb>
+  </weight>
+  <weight>
+   <name type="string">Ammunition and powder</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[5]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">50000.0</max-lb>
+  </weight>
+ </payload>
+
+ <!-- instrumentation n="0">
+ </instrumentation -->
+
+ <nasal>
+  <Admiral-Kuznetsov>
+   <script>
+###############################################################################
+var ground = func {
+    # Send the current ground level to the JSBSim hydrodynamics model.
+    setprop("/fdm/jsbsim/hydro/environment/water-level-ft",
+            getprop("/position/ground-elev-ft") +
+            getprop("/fdm/jsbsim/hydro/environment/wave-amplitude-ft"));
+
+    # Connect the JSBSim hydrodynamics wave model with the custom water shader.
+    setprop("environment/waves/time-sec",
+            getprop("/fdm/jsbsim/simulation/sim-time-sec"));
+    setprop("environment/waves/from-deg",
+            getprop("/fdm/jsbsim/hydro/environment/waves-from-deg"));
+    setprop("environment/waves/length-ft",
+            getprop("/fdm/jsbsim/hydro/environment/wave-length-ft"));
+    setprop("environment/waves/amplitude-ft",
+            getprop("/fdm/jsbsim/hydro/environment/wave-amplitude-ft"));
+    setprop("environment/waves/angular-frequency-rad_sec",
+            getprop("/fdm/jsbsim/hydro/environment/wave/angular-frequency-rad_sec"));
+    setprop("environment/waves/wave-number-rad_ft",
+            getprop("/fdm/jsbsim/hydro/environment/wave/wave-number-rad_ft"));
+
+
+    settimer(ground, 0.0);
+}
+
+settimer(ground, 0.0);
+
+# On-screen displays
+var left  = screen.display.new(20, 10);
+var right = screen.display.new(-300, 10);
+
+left.add("/fdm/jsbsim/sim-time-sec");
+left.add("/orientation/heading-magnetic-deg");
+left.add("/fdm/jsbsim/hydro/beta-deg");
+left.add("/fdm/jsbsim/hydro/pitch-deg");
+left.add("/fdm/jsbsim/hydro/roll-deg");
+left.add("/fdm/jsbsim/hydro/height-agl-ft");
+left.add("/fdm/jsbsim/inertia/cg-x-in");
+left.add("/fdm/jsbsim/inertia/cg-z-in");
+left.add("/fdm/jsbsim/fcs/rudder-pos-norm");
+#left.add("/fdm/jsbsim/hydro/qbar-u-psf");
+#left.add("/fdm/jsbsim/hydro/qbar-v-psf");
+#left.add("/fdm/jsbsim/hydro/fbx-lbs");
+#left.add("/fdm/jsbsim/hydro/fby-lbs");
+left.add("/fdm/jsbsim/hydro/fdrag-lbs");
+left.add("/fdm/jsbsim/hydro/fbz-lbs");
+left.add("/fdm/jsbsim/hydro/X/force-lbs");
+left.add("/fdm/jsbsim/hydro/Y/force-lbs");
+left.add("/fdm/jsbsim/hydro/yaw-moment-lbsft");
+left.add("/fdm/jsbsim/hydro/pitch-moment-lbsft");
+left.add("/fdm/jsbsim/hydro/roll-moment-lbsft");
+#left.add("/fdm/jsbsim/");
+#left.add("/fdm/jsbsim/");
+
+right.add("/fdm/jsbsim/hydro/v-kt");
+right.add("/fdm/jsbsim/hydro/vbx-fps");
+right.add("/fdm/jsbsim/hydro/vby-fps");
+right.add("/fdm/jsbsim/propulsion/boiler/steam-absolute-pressure-psi");
+right.add("/fdm/jsbsim/propulsion/engine/steam-mean-pressure-psi");
+right.add("/fdm/jsbsim/propulsion/engine/power-available-hp");
+right.add("/fdm/jsbsim/propulsion/engine/power-required-hp");
+right.add("/fdm/jsbsim/propulsion/engine/engine-rpm");
+right.add("/fdm/jsbsim/propulsion/engine/advance-ratio");
+right.add("/fdm/jsbsim/propulsion/engine/thrust-lbs");
+right.add("/fdm/jsbsim/propulsion/engine/shaft-position-norm");
+#right.add("/fdm/jsbsim/");
+
+###############################################################################
+   </script>
+  </Admiral-Kuznetsov>
+  <!-- Walk View -->
+  <walkview>
+   <file>Aircraft/Generic/WalkView/walkview.nas</file>
+  </walkview>
+  <walkviews>
+   <script>
+###############################################################################
+# Constraints
+
+# Turret floor
+var turretFloor = walkview.makeUnionConstraint
+   (
+    [walkview.CircularXYSurface.new([25.45, 0.00, 3.70], 2.90),
+     walkview.ActionConstraint.new
+         (walkview.SlopingYAlignedPlane.new([ 25.8, -1.16, 3.70], 
+                                            [ 26.3, -0.35, 3.70]),
+         func {
+             #print("Crouching!");
+             walkview.active_walker().set_eye_height(1.40);
+         },
+         func(x, y) {
+             #print("Standing!");
+             walkview.active_walker().set_eye_height(1.70);
+         }),
+     walkview.ActionConstraint.new
+         (walkview.SlopingYAlignedPlane.new([ 25.8,  0.35, 3.70], 
+                                            [ 26.3,  1.16, 3.70]),
+         func {
+             #print("Crouching!");
+             walkview.active_walker().set_eye_height(1.40);
+         },
+         func(x, y) {
+             #print("Standing!");
+             walkview.active_walker().set_eye_height(1.70);
+         })
+    ]); 
+
+# Turret roof
+var turretRoof =
+    walkview.CircularXYSurface.new([25.45, 0.00, 6.28], 2.90);
+
+# Berth deck
+var berthDeck = walkview.makeUnionConstraint
+    (
+     [walkview.LinePlane.new([7.00,  0.00, 0.87], [12.79, 0.00, 0.87], 3.0),
+      walkview.LinePlane.new([12.79, 0.00, 0.50], [25.60, 0.00, 0.50], 5.0),
+      # Main bulkhead doors.
+      walkview.LinePlane.new([25.60,-2.21, 0.33], [25.80,-2.21, 0.33], 0.3),
+      walkview.LinePlane.new([25.60, 2.21, 0.33], [25.80, 2.21, 0.33], 0.3),
+      # Galley
+      walkview.LinePlane.new([25.80, 0.00, 0.33], [26.90, 0.00, 0.33], 6.0),
+      # Outside the boilers.
+      walkview.LinePlane.new([26.90,-2.85, 0.33], [32.50,-2.85, 0.33], 0.3),
+      walkview.LinePlane.new([26.90, 2.85, 0.33], [32.50, 2.85, 0.33], 0.3),
+      # Aft of the boilers.
+      walkview.LinePlane.new([32.50, 0.00, 0.33], [33.50, 0.00, 0.33], 6.0),
+      walkview.LinePlane.new([33.50, 0.00, 0.33], [35.50, 0.00, 0.33], 5.0)
+     ]);
+
+# Create the view managers.
+var turret_walker =
+    walkview.Walker.new("Turret View",
+                        turretFloor);
+#                       [walkview.JSBSimPointmass.new(27)]);
+var turret_deck_walker =
+    walkview.Walker.new("Turret Deck View",
+                        turretRoof);
+#                       [walkview.JSBSimPointmass.new(27)]);
+var berth_deck_walker =
+    walkview.Walker.new("Engineer View",
+                        berthDeck);
+#                       [walkview.JSBSimPointmass.new(28)]);
+
+###############################################################################
+   </script>
+  </walkviews>
+ </nasal>
+
+ <input>
+  <keyboard include="Aircraft/Generic/WalkView/walk-view-keys.xml">
+   <!-- Keyboard commands -->
+
+  </keyboard>
+ </input>
+
+ <fdm>
+  <jsbsim>
+   <fcs>
+    <throttle-cmd-norm alias="/controls/engines/engine/throttle"/>
+    <mixture-cmd-norm  alias="/controls/engines/engine/mixture"/>
+   </fcs>
+  </jsbsim>
+ </fdm>
+
+</PropertyList>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!-- WWII-B17 model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="WWII-B17-bombableinclude.xml">
+
+
+        <description>WWII-B17</description>
+
+	<path>Aircraft/WWII-B17/Models/KOFF_B17.ac</path>
+
+        <texture-path>Aircraft/WWII-B17/Models</texture-path>
+
+ 
+</PropertyList>
