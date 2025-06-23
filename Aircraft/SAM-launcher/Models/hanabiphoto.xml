@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>hanabiphoto.ac</path>
+
+		  <animation>
+		    <type>billboard</type> 
+                    <object-name>Plane2</object-name>
+                    <spherical type="bool">true</spherical>
+                  </animation>
+		  <animation>
+		    <type>material</type> 
+                    <object-name>Plane2</object-name>
+		    <emission>	
+		      <red>1</red>	
+		      <green>1</green>	
+		      <blue>1</blue>
+		    </emission>
+                     <texture>hanabiphoto.png</texture>
+		  </animation>
+
+   <!-- Transparent Surfaces for Rembrandt rendering -->
+   <effect>
+       <inherits-from>Effects/model-transparent</inherits-from>
+   　  <condition>
+      　 <property>sim/rendering/rembrandt/enabled</property>
+   　  </condition>
+         <object-name>Plane2</object-name>
+   </effect>
+
+  <!--<animation>
+    <type>timed</type>
+    <object-name>Plane2</object-name>
+    <object-name>Plane3</object-name>
+    <duration-sec>3</duration-sec>
+  </animation>-->
+
+<!-- EXTRACT
+ <animation>
+  <type>translate</type>
+                    <object-name>Plane2</object-name>
+  <property>sim/time/elapsed-sec</property>
+  <offset>0</offset>
+  <factor>-5</factor>
+  <max-m>1</max-m>
+  <axis> 
+    <z>1</z>
+  </axis>
+ </animation> -->
+
+<!-- INFLATE -->
+ <!--<animation>
+  <type>scale</type>
+  <object-name>Plane2</object-name>
+  <property>sim/time/elapsed-sec</property>
+  <offset>0</offset>
+  <x-max>2</x-max>
+  <y-max>2</y-max>
+  <z-max>2</z-max>
+  <x-factor>1</x-factor>
+  <y-factor>1</y-factor>
+  <z-factor>1</z-factor>
+ </animation>-->
+
+
+</PropertyList>

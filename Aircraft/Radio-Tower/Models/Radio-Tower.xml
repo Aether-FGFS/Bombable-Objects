@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Radio-Tower model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList>
+
+        <description>Radio-Tower</description>
+
+	<path>Aircraft/Radio-Tower/Models/Tinshill_BT_tower.ac</path>
+
+        <texture-path>Aircraft/Radio-Tower/Models</texture-path>
+	
+</PropertyList>

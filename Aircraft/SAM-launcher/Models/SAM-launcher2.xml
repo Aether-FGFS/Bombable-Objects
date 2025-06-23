@@ -1,0 +1,40 @@
+<PropertyList include="SAM-launcher-bombableinclude.xml">
+ 
+<!-- for fixed tyoe -->
+	<path>launcher.ac</path>
+	<offsets>
+		<z-m>0.18</z-m>
+	</offsets>
+
+<!-- instruments -->
+
+
+	<model>
+		<path>Aircraft/SAM-launcher/Models/SA-2.xml</path>
+		<name>Missile-Stbd</name>
+		<offsets>
+			<x-m>-3.6</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>4.52</z-m>
+			<pitch-deg>22</pitch-deg>
+		</offsets>
+	</model>
+
+	<animation>
+		<type>select</type>
+		<object-name>Missile-Stbd</object-name>
+		<condition>
+			<not>
+				<equals>
+					<property>controls/armament/station[3]/missiles</property>
+					<value>1</value>
+				</equals>
+			</not>
+		</condition>
+	</animation>
+
+
+
+
+</PropertyList>
+ 

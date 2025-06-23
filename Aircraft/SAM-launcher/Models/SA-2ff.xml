@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <path>SA-2fsf.ac</path>
+
+  <model>
+    <path>Aircraft/SAM-launcher/Models/effects/rocket_smoke2.xml</path>
+	<condition>
+                <and>
+		<equals>
+			<property>/controls/armament/station[3]/missiles</property>
+					<value type="bool">1</value>
+		</equals>
+		<!--<greater-than>
+		   <property>controls/scenery/object/sam/SA-2/launch</property>
+		<value>0.1</value>
+		</greater-than>-->
+              </and>
+	</condition>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m> -0.0 </y-m>
+      <z-m> -0.0 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>-->
+
+	<!--<model>
+		<path>Aircraft/SAM-launcher/Models/effects/flammes/flammesG.xml</path>
+		<offsets>
+			<x-m>10.3</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>-->
+
+  <!--<animation>
+    <object-name>flamme1</object-name>
+    <object-name>flamme2</object-name>
+    <object-name>flamme3</object-name>
+    <object-name>brule</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>flamme1</object-name>
+    <object-name>flamme1</object-name>
+    <object-name>flamme2</object-name>
+    <object-name>brule</object-name>
+  </animation>
+
+<animation>
+<type>material</type> 
+    <object-name>flamme1</object-name>
+    <object-name>flamme2</object-name>
+    <object-name>flamme3</object-name>
+<emission>	
+<red>1</red>	
+<green>1</green>	
+<blue>1</blue>
+</emission>
+</animation>-->
+
+  <animation>
+    <type>select</type>
+    <object-name>flamme12</object-name>
+    <object-name>flamme32</object-name>
+    <object-name>brule2</object-name>
+    <condition>
+		<equals>
+			<property>/controls/armament/station[3]/missiles</property>
+					<value type="bool">1</value>
+		</equals>
+    </condition>
+  </animation>
+
+   <!-- Transparent Surfaces for Rembrandt rendering -->
+   <effect>
+       <inherits-from>Effects/model-transparent</inherits-from>
+   　  <condition>
+      　 <property>sim/rendering/rembrandt/enabled</property>
+   　  </condition>
+	    <object-name>flamme12</object-name>
+	    <object-name>flamme32</object-name>
+	    <object-name>brule2</object-name>
+   </effect>
+
+
+</PropertyList>

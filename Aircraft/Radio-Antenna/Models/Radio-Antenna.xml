@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Radio-Antenna model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Radio-Antenna-bombableinclude.xml">
+
+        <description>Radio-Antenna</description>
+
+	<path>Aircraft/Radio-Antenna/Models/ny_alesund_luftskipmasten.ac</path>
+
+        <texture-path>Aircraft/Radio-Antenna/Models</texture-path>
+	
+</PropertyList>
