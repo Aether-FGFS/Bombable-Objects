@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Fuel-Oil-Farm model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Fuel-Oil-Farm-bombableinclude.xml">
+
+        <description>Fuel-Oil-Farm</description>
+
+	<path>Aircraft/Fuel-Oil-Farm/Models/TankFO60x15m.ac</path>
+
+        <texture-path>Aircraft/Fuel-Oil-Farm/Models</texture-path>
+	
+</PropertyList>
