@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <gun n="0">
+    <serviceable type="bool">true</serviceable>
+    <fire type="bool">false</fire>
+    <equipped type="bool">false</equipped>
+  </gun>
+  <gun n="1">
+    <serviceable type="bool">true</serviceable>
+    <fire type="bool">false</fire>
+    <equipped type="bool">true</equipped>
+  </gun>
+
+  <gun n="2">
+    <serviceable type="bool">true</serviceable>
+    <fire type="bool">false</fire>
+    <equipped type="bool">true</equipped>
+  </gun>
+
+
+</PropertyList>
