@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- Browning 50 middle -->
+  <filter>
+    <name>Browning50 heading</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <input>sim/current-view/heading-offset-deg</input>
+    <output>sim/armament/browning/heading</output>
+    <gain>
+      <value>-1</value>
+    </gain>
+
+    <enable>
+      <condition>
+        <equals>
+          <property>sim/current-view/name</property>
+          <value>Browning Gunner</value>
+        </equals>
+      </condition>
+    </enable>
+
+  </filter>
+
+
+  <filter>
+    <name>Browning50 Elevation</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <input>sim/current-view/pitch-offset-deg</input>
+    <output>sim/armament/browning/elevation</output>
+    <gain>
+      <value>-1</value>
+    </gain>
+
+    <enable>
+      <condition>
+        <equals>
+          <property>sim/current-view/name</property>
+          <value>Browning Gunner</value>
+        </equals>
+      </condition>
+    </enable>
+  </filter>
+
+<!-- Browning 30 front-->
+  <filter>
+    <name>Browning30 heading</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <input>sim/current-view/heading-offset-deg</input>
+    <output>sim/armament/browning30/heading</output>
+    <gain>
+      <value>-1</value>
+    </gain>
+
+    <enable>
+      <condition>
+        <equals>
+          <property>sim/current-view/name</property>
+          <value>Browning Front</value>
+        </equals>
+      </condition>
+    </enable>
+
+  </filter>
+
+
+  <filter>
+    <name>Browning30 Elevation</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <input>sim/current-view/pitch-offset-deg</input>
+    <output>sim/armament/browning30/elevation</output>
+    <gain>
+      <value>-1</value>
+    </gain>
+
+    <enable>
+      <condition>
+        <equals>
+          <property>sim/current-view/name</property>
+          <value>Browning Front</value>
+        </equals>
+      </condition>
+    </enable>
+
+  </filter>
+</PropertyList>
