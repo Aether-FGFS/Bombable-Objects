@@ -1,4 +1,5 @@
 This are Bombable Objects for Flightgear Flight Simulator. 
+==========================================================
 
 
  To use Bombable-Objects, install Bombable v.5.0, updated by
