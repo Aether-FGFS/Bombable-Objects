@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+
+  <PropertyList> 
+    <path>l3000.ac</path>
+
+  <nasal include="l3000-tanker-bombableinclude.xml"/> 
+
+
+  <animation>
+    <type>material</type>
+    <property-base>sim/model</property-base>
+    <texture-prop>livery</texture-prop>
+
+    <texture>l3000-1c.png</texture>
+
+    <object-name>bracket.L</object-name>
+    <object-name>bracket.R</object-name>
+    <object-name>bracket</object-name>
+    <object-name>frame.L</object-name>
+    <object-name>frame.R</object-name>
+    <object-name>frame</object-name>
+    <object-name>platform</object-name>
+    <object-name>rearcabin</object-name>
+    <object-name>cover</object-name>
+    <object-name>tarp</object-name>
+    <object-name>suspension.1</object-name>
+    <object-name>suspension.2</object-name>
+    <object-name>suspension.3</object-name>
+    <object-name>suspension.4</object-name>
+    <object-name>cabin</object-name>
+    <object-name>bumper</object-name>
+    <object-name>fender.L</object-name>
+    <object-name>lamp.L</object-name>
+    <object-name>fender.R</object-name>
+    <object-name>lamp.R</object-name>
+    <object-name>tank</object-name>
+    <object-name>door.L</object-name>
+    <object-name>door.R</object-name>
+    <object-name>bumper</object-name>
+    <object-name>steps</object-name>
+    <object-name>cooler</object-name>
+    <object-name>chassis</object-name>
+    <object-name>rearfender.R</object-name>
+    <object-name>box.R</object-name>
+    <object-name>wheel1.R</object-name>
+    <object-name>wheel2.R</object-name>
+    <object-name>fender.R</object-name>
+    <object-name>rearfender.R</object-name>
+    <object-name>box.R</object-name>
+    <object-name>wheel1.R</object-name>
+    <object-name>wheel2.R</object-name>
+    <object-name>fender.L</object-name>
+    <object-name>rearfender.L</object-name>
+    <object-name>box.L</object-name>
+    <object-name>wheel1.L</object-name>
+    <object-name>wheel2.L</object-name>
+
+  </animation>
+
+
+<animation>
+  <type>select</type>
+  <object-name>bracket.L</object-name>
+  <object-name>bracket.R</object-name>
+  <object-name>bracket</object-name>
+  <object-name>frame.L</object-name>
+  <object-name>frame.R</object-name>
+  <object-name>frame</object-name>
+  <object-name>platform</object-name>
+  <condition>
+		<or>
+ 		  <equals>
+   		 <property>sim/model/variant</property>
+   		 <value>1</value>
+   		</equals>
+ 		  <equals>
+   		 <property>sim/model/variant</property>
+   		 <value>2</value>
+   		</equals>
+ 		  <equals>
+   		 <property>sim/model/variant</property>
+   		 <value>3</value>
+   		</equals>
+		</or>
+  </condition>
+ </animation>
+
+<animation>
+  <type>select</type>
+  <object-name>cover</object-name>
+  <object-name>tarp</object-name>
+  <object-name>suspension.1</object-name>
+  <object-name>suspension.2</object-name>
+  <object-name>suspension.3</object-name>
+  <object-name>suspension.4</object-name>
+  <condition>
+   <equals>
+    <property>sim/model/variant</property>
+    <value>2</value>
+   </equals>
+  </condition>
+ </animation>
+
+
+ <animation>
+  <type>select</type>
+  <object-name>rearcabin</object-name>
+  <object-name>cabglass</object-name>
+  <object-name>door1glass</object-name>
+  <object-name>door2glass</object-name>
+  <condition>
+   <equals>
+    <property>sim/model/variant</property>
+    <value>4</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>tank</object-name>
+  <condition>
+   <equals>
+    <property>sim/model/variant</property>
+    <value>5</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>orientation/roll-deg</property>
+	<factor>1</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <property>orientation/model-pitch</property>
+	<factor>1</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+
+    <model> 
+      <path>AI/Aircraft/l3000/quadflak2cm.xml</path>
+	  <name>flak</name>
+      <offsets> 
+        <x-m>1.2</x-m>
+        <y-m>0.0</y-m>
+        <z-m>-0.326</z-m>
+      </offsets>
+    </model>
+ <animation>
+  <type>select</type>
+  <object-name>flak</object-name>
+  <condition>
+   <equals>
+    <property>sim/model/variant</property>
+    <value>3</value>
+   </equals>
+  </condition>
+ </animation>
+
+
+  </PropertyList> 

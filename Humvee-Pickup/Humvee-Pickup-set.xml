@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Humvee-Pickup.xml">
+
+  <model>
+    <path>AI/Aircraft/Humvee-Pickup/Models/Humvee-Pickup.xml</path>
+  </model>
+
+</PropertyList>
