@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Power-Station model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Power-Station-bombableinclude.xml">
+
+        <description>Power-Station</description>
+
+	<path>AI/Aircraft/Power-Station/Models/cpp_Swidnik.ac</path>
+
+        <texture-path>AI/Aircraft/Power-Station/Models</texture-path>
+	
+</PropertyList>

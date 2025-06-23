@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- SA-2 model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="SA-2-bombableinclude.xml">
+
+        <description>SA-2</description>
+
+	<path>AI/Aircraft/SA-2/Models/SA-2.ac</path>
+
+        <texture-path>AI/Aircraft/SA-2/Models</texture-path>
+	
+</PropertyList>

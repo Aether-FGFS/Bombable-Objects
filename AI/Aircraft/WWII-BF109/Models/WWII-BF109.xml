@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!-- WWII-BF109 model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="WWII-BF109-bombableinclude.xml">
+
+
+        <description>WWII-BF109</description>
+
+	<path>AI/Aircraft/WWII-BF109/Models/bf109.ac</path>
+
+        <texture-path>AI/Aircraft/WWII-BF109/Models</texture-path>
+
+
+</PropertyList>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Radar-SA2 model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Radar-SA2-bombableinclude.xml">
+
+        <description>Radar-SA2</description>
+
+	<path>AI/Aircraft/Radar-SA2/Models/SA-2_Van.ac</path>
+
+        <texture-path>AI/Aircraft/Radar-SA2/Models</texture-path>
+	
+</PropertyList>

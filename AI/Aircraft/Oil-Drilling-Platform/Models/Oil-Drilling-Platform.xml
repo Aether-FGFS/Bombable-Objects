@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Oil-Drilling-Platform config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Oil-Drilling-Platform-bombableinclude.xml">
+
+        <description>Oil-Drilling-Platform</description>
+
+	<path>AI/Aircraft/Oil-Drilling-Platform/Models/oilrig09.ac</path>
+
+        <texture-path>AI/Aircraft/Oil-Drilling-Platform/Models</texture-path>
+	
+</PropertyList>

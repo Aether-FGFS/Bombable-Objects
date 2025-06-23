@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Radio-Tower.xml">
+
+  <model>
+    <path>AI/Aircraft/Radio-Tower/Models/Radio-Tower.xml</path>
+  </model>
+
+</PropertyList>

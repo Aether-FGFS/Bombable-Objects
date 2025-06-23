@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Railway-Bridge model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Railway-Bridge-bombableinclude.xml">
+
+        <description>Railway-Bridge</description>
+
+	<path>AI/Aircraft/Railway-Bridge/Models/YtterbyRailwayBridge.ac</path>
+
+        <texture-path>AI/Aircraft/Railway-Bridge/Models</texture-path>
+	
+</PropertyList>
