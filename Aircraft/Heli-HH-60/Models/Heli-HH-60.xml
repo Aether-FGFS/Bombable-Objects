@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Heli-HH-60 model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Heli-HH-60-bombableinclude.xml">
+
+        <description>Heli-HH-60</description>
+
+	<path>Aircraft/Heli-HH-60/Models/HH-60-lowpoly.ac</path>
+
+        <texture-path>Aircraft/Heli-HH-60/Models</texture-path>
+	
+</PropertyList>

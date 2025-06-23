@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!-- Hangar-Shelter model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Hangar-Shelter-bombableinclude.xml">
+
+        <description>Hangar-Shelter</description>
+
+	<path>Aircraft/Hangar-Shelter/Models/TAB-VEE-C_Shelter.ac</path>
+
+        <texture-path>Aircraft/Hangar-Shelter/Models</texture-path>
+
+
+ 
+  
+  
+ </PropertyList>
