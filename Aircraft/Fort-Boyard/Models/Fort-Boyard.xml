@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Fort-Boyard model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Fort-Boyard-bombableinclude.xml">
+
+        <description>Fort-Boyard</description>
+
+	<path>Aircraft/Fort-Boyard/Models/FortBoyard.ac</path>
+
+        <texture-path>Aircraft/Fort-Boyard/Models</texture-path>
+	
+</PropertyList>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Bloodhound-SAM model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Bloodhound-SAM-bombableinclude.xml">
+
+        <description>Bloodhound-SAM</description>
+
+	<path>Aircraft/Bloodhound-SAM/Models/Bloodhound.ac</path>
+
+        <texture-path>Aircraft/Bloodhound-SAM/Models</texture-path>
+	
+</PropertyList>

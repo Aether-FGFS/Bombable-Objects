@@ -1,0 +1,188 @@
+<PropertyList include="Carrier_A01-bombableinclude.xml">
+
+        <description>Carrier_A01</description>
+
+	<path>Aircraft/Carrier_A01/Models/Carrier_A01.ac</path>
+
+        <texture-path>Aircraft/Carrier_A01/Models</texture-path>
+       
+
+
+  
+    <model>
+    <path>Models/Geometry/Nimitz/Models/flols.xml</path>
+     <offsets>
+   <x-m>-42</x-m>
+    <y-m>18</y-m>
+    <z-m>17.90</z-m>
+   <heading-deg>268</heading-deg>
+      </offsets>
+	  </model>
+	
+
+	
+ 
+
+
+
+	
+
+<animation>
+		 <object-name>Light_green</object-name>	
+        <enable-hot type="bool">false</enable-hot>
+    </animation>
+    <animation>
+        <type>alpha-test</type>
+        <alpha-factor>0.01</alpha-factor>
+    </animation>
+    <animation>
+        <type>select</type>
+		  <object-name>Light_green</object-name>		 
+        <condition><greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+            </greater-than>
+        </condition>
+    </animation>
+    <animation>
+        <type>timed</type>     
+		 <object-name>Light_green</object-name>	
+        <use-personality type="bool">true</use-personality>
+        <branch-duration-sec>
+        <random>
+            <min>43200.0</min>
+            <max>43200.0</max>
+        </random>
+        </branch-duration-sec>
+        <branch-duration-sec>
+        <random>
+            <min>43200.0</min>
+            <max>43200.0</max>
+        </random>
+        </branch-duration-sec>
+        </animation>
+	<animation>
+		 <object-name>Light_red</object-name>	
+        <enable-hot type="bool">false</enable-hot>
+    </animation>
+    <animation>
+        <type>alpha-test</type>
+        <alpha-factor>0.01</alpha-factor>
+    </animation>
+    <animation>
+        <type>select</type>
+		  <object-name>Light_red</object-name>		 
+        <condition><greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+            </greater-than>
+        </condition>
+    </animation>
+    <animation>
+        <type>timed</type>     
+		 <object-name>Light_red</object-name>	
+        <use-personality type="bool">true</use-personality>
+        <branch-duration-sec>
+        <random>
+            <min>43200.0</min>
+            <max>43200.0</max>
+        </random>
+        </branch-duration-sec>
+        <branch-duration-sec>
+        <random>
+            <min>43200.0</min>
+            <max>43200.0</max>
+        </random>
+        </branch-duration-sec>
+        </animation>
+		
+<animation>
+		 <object-name>Light_white</object-name>	
+        <enable-hot type="bool">false</enable-hot>
+    </animation>
+    <animation>
+        <type>alpha-test</type>
+        <alpha-factor>0.01</alpha-factor>
+    </animation>
+    <animation>
+        <type>select</type>
+		  <object-name>Light_white</object-name>		 
+        <condition><greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+            </greater-than>
+        </condition>
+    </animation>
+	
+    <animation>
+        <type>timed</type>     
+		 <object-name>Light_white</object-name>	
+        <use-personality type="bool">true</use-personality>
+        <branch-duration-sec>
+        <random>
+            <min>43200.0</min>
+            <max>43200.0</max>
+        </random>
+        </branch-duration-sec>
+        <branch-duration-sec>
+        <random>
+            <min>43200.0</min>
+            <max>43200.0</max>
+        </random>
+        </branch-duration-sec>
+        </animation>
+		
+<animation>
+		 <object-name>Light_yellow</object-name>	
+        <enable-hot type="bool">false</enable-hot>
+    </animation>
+    <animation>
+        <type>alpha-test</type>
+        <alpha-factor>0.01</alpha-factor>
+    </animation>
+    <animation>
+        <type>select</type>
+		  <object-name>Light_yellow</object-name>		 
+        <condition><greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+            </greater-than>
+        </condition>
+    </animation>
+    <animation>
+        <type>timed</type>     
+		 <object-name>Light_yellow</object-name>	
+        <use-personality type="bool">true</use-personality>
+        <branch-duration-sec>
+        <random>
+            <min>43200.0</min>
+            <max>43200.0</max>
+        </random>
+        </branch-duration-sec>
+        <branch-duration-sec>
+        <random>
+            <min>43200.0</min>
+            <max>43200.0</max>
+        </random>
+        </branch-duration-sec>
+        </animation>				
+<model>
+<path>Models/Aircraft/F-15-lowpoly.xml</path>
+<offsets>
+<x-m>-45</x-m>
+<y-m>93</y-m>
+<z-m>13.85</z-m>
+<heading-deg>220</heading-deg>
+</offsets>
+</model> 
+
+<model>
+<path>Models/Aircraft/dauphin.ac</path>
+<offsets>
+<x-m>-43.5</x-m>
+<y-m>34.5</y-m>
+<z-m>9.7</z-m>
+<heading-deg>300</heading-deg>
+</offsets>
+</model> 
+</PropertyList>

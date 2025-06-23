@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Fuel-Depot model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Fuel-Depot-bombableinclude.xml">
+
+        <description>Fuel-Depot</description>
+
+	<path>Aircraft/Fuel-Depot/Models/LEGA_fuel.ac</path>
+
+        <texture-path>Aircraft/Fuel-Depot/Models</texture-path>
+	
+</PropertyList>

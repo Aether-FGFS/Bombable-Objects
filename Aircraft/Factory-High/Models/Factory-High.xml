@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!-- Factory-High model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Factory-High-bombableinclude.xml">
+
+        <description>Factory-High</description>
+ 
+        <path>Aircraft/Factory-High/Models/factory1.ac</path>
+
+        <texture-path>Aircraft/Factory-High/Models</texture-path>
+
+
+</PropertyList>
