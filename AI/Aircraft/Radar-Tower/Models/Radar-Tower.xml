@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Radar-Tower model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Radar-Tower-bombableinclude.xml">
+
+        <description>Radar-Tower</description>
+
+	<path>AI/Aircraft/Radar-Tower/Models/Radar_Avia.ac</path>
+
+        <texture-path>AI/Aircraft/Radar-Tower/Models</texture-path>
+
+        <animation>
+          <type>range</type>
+          <object-name>antena</object-name>
+          <max-m>18000</max-m>
+        </animation>
+
+        <animation>
+          <type>rotate</type>
+          <object-name>antena</object-name>
+          <property>/sim/time/elapsed-sec</property>
+          <factor>-90.0</factor>
+          <center>
+          <x-m>0</x-m>
+          <y-m>0</y-m>
+          <z-m>10.3</z-m>
+          </center>
+          <axis>
+          <x>0</x>
+          <y>0</y>
+          <z>1</z>
+          </axis>
+       </animation>
+
+	
+</PropertyList>

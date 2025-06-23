@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Atomic-Powerplant model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Atomic-Powerplant-bombableinclude.xml">
+
+        <description>Atomic-Powerplant</description>
+
+	<path>AI/Aircraft/Atomic-Powerplant/Models/generic_power_plant.ac</path>
+
+        <texture-path>AI/Aircraft/Atomic-Powerplant/Models</texture-path>
+	
+</PropertyList>
