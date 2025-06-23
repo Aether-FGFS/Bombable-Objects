@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <scenario>
+   <description>Fuel-Oil-Farm Training scenario.  Starts at KSFO! </description>
+		
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Fuel-Oil-Farm</callsign>
+      <name>Fuel-Oil-Farm</name>
+      <model type="string">Aircraft/Fuel-Oil-Farm/Models/Fuel-Oil-Farm.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2952</longitude>
+      <altitude>0</altitude>
+      <speed>0.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+     <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Fuel-Oil-Farm1</callsign>
+      <name>Fuel-Oil-Farm1</name>
+      <model type="string">Aircraft/Fuel-Oil-Farm/Models/Fuel-Oil-Farm.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2962</longitude>
+      <altitude>0</altitude>
+      <speed>0.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Fuel-Oil-Farm2</callsign>
+      <name>Fuel-Oil-Farm2</name>
+      <model type="string">Aircraft/Fuel-Oil-Farm/Models/Fuel-Oil-Farm.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2942</longitude>
+      <altitude>0</altitude>
+      <speed>0.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+ </scenario>
+
+</PropertyList>
+

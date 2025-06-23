@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <scenario>
+   <description>Telescope Bombable Training scenario.  Starts at KSFO! </description>
+		
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Telescope</callsign>
+      <name>Telescope</name>
+      <model type="string">Aircraft/Telescope/Models/Telescope.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2902</longitude>
+      <altitude>0</altitude>
+      <speed>0.0</speed>
+      <rudder type="double">25</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+ </scenario>
+
+</PropertyList>
+

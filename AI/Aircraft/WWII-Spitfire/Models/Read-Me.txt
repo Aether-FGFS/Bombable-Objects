@@ -1,0 +1,25 @@
+English/Français
+
+[English]
+----------
+low-poly Spitfire as staic scenery for virtual meetings
+textures come from Vivian MAEZZA's Spitfire
+
+===============
+BARANGER Emmanuel
+May 30, 2007. 
+
+http://helijah.free.fr/flightgear/hangar.htm
+embaranger@free.fr
+
+[Français]
+----------
+Spitfire basse résolution réalisé en tant que décors statique pour des meetings aériens virtuels.
+Textures récupérées sur le spitfire de Vivian Meazza
+
+===============
+BARANGER Emmanuel
+30 Mai 2007.
+
+http://helijah.free.fr/flightgear/hangar.htm
+embaranger@free.fr

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!-- WWII-Spitfire model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="WWII-Spitfire-bombableinclude.xml">
+
+
+        <description>WWII-Spitfire</description>
+
+	<path>Aircraft/WWII-Spitfire/Models/spitfire.ac</path>
+
+        <texture-path>Aircraft/WWII-Spitfire/Models</texture-path>
+
+
+</PropertyList>

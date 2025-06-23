@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-Hangar model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="WWII-Hangar-bombableinclude.xml">
+
+        <description>WWII-Hangar</description>
+
+	<path>AI/Aircraft/WWII-Hangar/Models/LFMUbat1.ac</path>
+
+        <texture-path>AI/Aircraft/WWII-Hangar/Models</texture-path>
+	
+</PropertyList>

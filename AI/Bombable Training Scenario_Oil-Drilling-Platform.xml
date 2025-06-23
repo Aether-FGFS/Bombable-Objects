@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <scenario>
+   <description>Oil-Drilling-Platform Bombable Training scenario.  Starts at KSFO! </description>
+		
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Oil-Drilling-Platform</callsign>
+      <name>Oil-Drilling-Platform</name>
+      <model type="string">Aircraft/Oil-Drilling-Platform/Models/Oil-Drilling-Platform.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2902</longitude>
+      <altitude>0</altitude>
+      <speed>0.0</speed>
+      <rudder type="double">25</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+ </scenario>
+
+</PropertyList>
+
