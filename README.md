@@ -9,7 +9,10 @@
  Installation: Copy AI and Aircraft folder from Bombable-Objects
   and paste it into your Flightgear installation, under fgdata 
   folder. You can add Bombable-Objects to custom folder, and 
-  register it in FGFS, but AI must be added into fgdata/AI. 
+  register it in FGFS, but AI must be added into fgdata/AI.
+  Open file Add to fallback_ models.txt and copy models. Navigate
+  to fgdata/AI/Aircraft folder, and open file fallback_models. 
+  Paste your selection to proper place, save file and you are done. 
   AI folder contains AI Scenarios for Bombable-Objects. 
 
 
