@@ -26,8 +26,7 @@
   etc. In the case of an aircraft carrier, create it at a waypoint 
   above sea level.
   
-
- In the case of AI objects, some of them may shoot AA guns at you. 
+ Beware !!!  Some AI objects may shoot AA guns at you. 
 
  Have a good luck and lot of fun using them. :)
 
