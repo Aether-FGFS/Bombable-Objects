@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!-- USS-Oliver-Perry model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="USS-Oliver-Perry-bombableinclude.xml">
+
+
+
+        <description>USS-Oliver-Perry</description>
+
+	<path>AI/Aircraft/USS-Oliver-Perry/Models/OliverPerryFFG.ac</path>
+
+        <texture-path>AI/Aircraft/USS-Oliver-Perry/Models</texture-path>
+
+        
+
+</PropertyList>
