@@ -32,7 +32,7 @@
 <model n="744" type="string">AI/Aircraft/Telescope/Models/Telescope.xml</model>
 <model n="745" type="string">AI/Aircraft/WWII-AA-Castle/Models/WWII-AA-Castle.xml</model>
 <model n="746" type="string">AI/Aircraft/WWII-AA-Tower/Models/WWII-AA-Tower.xml</model>
-<model n="747" type="string">AI/Aircraft/WWII-Assault-Ship/Models/WWII-Assault-Ship.xml</model>
+<model n="747" type="string">AI/Aircraft/USS_Olympia/Models/USS_Olympia.xml</model>
 <model n="748" type="string">AI/Aircraft/WWII-Hangar/Models/WWII-Hangar.xml</model>
 <model n="749" type="string">AI/Aircraft/WWII-Spitfire/Models/WWII-Spitfire.xml</model>
 <model n="750" type="string">AI/Aircraft/WWII-B17/Models/WWII-B17.xml</model>
