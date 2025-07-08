@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<PropertyList include="Models/USS_Olympia.xml">
-
-  <model>
-    <path>AI/Aircraft/USS_Olympia/Models/USS_Olympia.xml</path>
-  </model>
-
-</PropertyList>
