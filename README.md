@@ -28,7 +28,7 @@
   
  Beware !!!  Some AI objects may shoot AA guns at you. 
 
- Have a good luck and lot of fun using them. :)
+ Remember that war is disaster for regular people and soldiers.
 
 
 
