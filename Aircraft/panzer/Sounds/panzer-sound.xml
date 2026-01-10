@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+ 
+<PropertyList>
+
+<fx>
+
+  <engine>
+   <name>engine</name>
+   <mode>looped</mode>
+   <path>Aircraft/panzer/Sounds/panzerengine.wav</path>
+   <property>/engines/engine/running</property>
+   <volume>
+    <property>/orientation/alpha-deg</property>
+    <type>log</type>
+    <min>0.2</min>
+    <max>1.0</max>
+   </volume>
+   <volume>
+    <property>/sim/current-view/internal</property>
+    <factor>0.4</factor>
+   </volume>
+   <pitch>
+    <property>/engines/engine/mp-osi</property>
+    <factor>0.1</factor>
+    <min>0.4</min>
+    <max>2.0</max>
+    <offset>0.9</offset>
+   </pitch>
+  </engine>
+
+
+  <rumble>
+   <name>rumble</name>
+   <mode>looped</mode>
+   <path>Aircraft/panzer/Sounds/panzeraccel.wav</path>
+   <condition>
+     <property>gear/gear[0]/wow</property>
+     <property>gear/gear[1]/wow</property>
+     <property>gear/gear[2]/wow</property>
+   </condition>
+   <volume>
+    <property>velocities/groundspeed-kt</property>
+    <type>log</type>
+    <factor>0.5</factor>
+   </volume>
+  </rumble>
+
+
+  <turret>
+   <name>turret</name>
+   <mode>in-transit</mode>
+   <condition>
+    <property>controls/flight/aileron</property>
+   </condition>
+   <volume>
+   <factor>0.1</factor>
+   </volume>
+   <path>Aircraft/panzer/Sounds/panzerturret.wav</path>
+  </turret>
+
+</fx>
+ 
+</PropertyList>

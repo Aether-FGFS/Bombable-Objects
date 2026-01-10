@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+ <sim>
+
+  <description>Panzer</description>
+  <author>Jack Mermod</author>
+  <status>alpha</status>
+  <flight-model>yasim</flight-model>
+  <aero>panzer-yasim</aero>
+
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <sound>
+   <path>Aircraft/panzer/Sounds/panzer-sound.xml</path>
+  </sound>
+
+  <model>
+   <path>Aircraft/panzer/Models/panzer.xml</path>
+   <crew>
+     <pilot>
+       <visible type="int">1</visible>
+     </pilot>
+   </crew>
+  </model> 
+
+  <startup>
+   <splash-texture>Aircraft/panzer/splash.png</splash-texture>
+  </startup>
+
+  <help>
+   <title>Panzer</title>
+  </help>
+
+		<menubar>
+			<default>
+				<menu n="10">
+					<label>Panzer</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>Find Tow</label>	
+						<binding>
+							<command>property-toggle</command>
+							<property>/controls/aerotow/find-aircraft</property>
+						</binding>
+					</item>
+					<item>
+						<label>Dis-/Connect</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>/controls/gear/roof</property>
+						</binding>
+					</item>
+				</menu>
+			</default>
+		</menubar>
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y" type="double">-0.65</x-offset-m> <!-- panzer x-axis from left to right -->
+    <y-offset-m archive="y" type="double">2</y-offset-m> <!-- panzer y-axis from up to down -->
+    <z-offset-m archive="y" type="double">0</z-offset-m> <!-- panzer z-axis from front to back -->
+    <pitch-offset-deg>0.0</pitch-offset-deg>
+   </config>
+  </view>
+  <view n="1">
+   <config>
+    <target-z-offset-m archive="y" type="double">2.6</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="2">
+   <config>
+    <target-z-offset-m archive="y" type="double">2.6</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="3">
+   <config>
+    <target-z-offset-m archive="y" type="double">2.6</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="4">
+   <config>
+    <target-z-offset-m archive="y" type="double">2.6</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="5">
+   <config>
+    <target-z-offset-m archive="y" type="double">2.6</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="6">
+   <config>
+    <target-z-offset-m archive="y" type="double">2.6</target-z-offset-m>
+   </config>
+  </view>
+
+  <multiplay>
+   <generic>
+     <string n="9" type="string"/>
+     <int n="10" alias="controls/armament/trigger" />
+   </generic>
+  </multiplay>
+
+ </sim>
+
+ <engines>
+  <engine>
+   <rpm type="double">2800</rpm>
+  </engine>
+ </engines>
+ <controls>
+   <engines>
+      <engine n="0">
+        <magnetos>3</magnetos>
+      </engine>
+   </engines>
+	<gear>
+		<screen type="bool">false</screen>
+		<roof type="bool">false</roof>
+	</gear>
+ </controls>
+<input>
+	<keyboard>
+
+        <key n="77"> 
+          <name>M</name>
+          <desc>engage Reverse</desc>
+          <binding> 
+            <command>property-assign</command>
+            <property>controls/engines/engine[0]/mixture</property>
+            <value type="double">0.0</value>
+          </binding>
+        </key>
+
+        <key n="109"> 
+          <name>m</name>
+          <desc>disengage Reverse</desc>
+          <binding> 
+            <command>property-assign</command>
+            <property>controls/engines/engine[0]/mixture</property>
+            <value type="double">1.0</value>
+          </binding>
+        </key>
+
+
+	</keyboard>
+</input>
+
+<nasal>
+<tracks>
+<file>Aircraft/panzer/tank-tracks.nas</file>
+</tracks>
+</nasal>
+
+</PropertyList>
+
+
+
+
