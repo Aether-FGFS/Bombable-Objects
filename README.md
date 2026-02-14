@@ -12,11 +12,10 @@
   register it in FGFS, but AI must be added into fgdata/AI.
   Open file Add to fallback_ models.txt and copy models. Navigate
   to fgdata/AI/Aircraft folder, and open file fallback_models. 
-  Paste your selection to proper place, save file and you are done. 
-  AI folder contains AI Scenarios for Bombable-Objects. 
-
-
- Run it as AI scenario and bring it to your location, using 
+  Paste your selection to proper place, save file and you are done.
+  
+ AI folder contains AI Scenarios for Bombable-Objects. 
+  Run it as AI scenario and bring it to your location, using 
   Bombable addon menu,  or use it as "airplane" and attack it
   in Multiplayer session.
   
