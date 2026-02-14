@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <scenario>
+   <description>jeep-M151 Bombable Training scenario.  Starts at KSFO! </description>
+		
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-0</callsign>
+      <name>jeep-M151-0</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2902</longitude>
+      <altitude>0.10</altitude>
+      <speed>8</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-1</callsign>
+      <name>jeep-M151-1</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2902</longitude>
+      <altitude>0.10</altitude>
+      <speed>9</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-2</callsign>
+      <name>jeep-M151-2</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2902</longitude>
+      <altitude>0.10</altitude>
+      <speed>10</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-3</callsign>
+      <name>jeep-M151-3</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2902</longitude>
+      <altitude>0.10</altitude>
+      <speed>8</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">110</heading>
+    </entry>
+ </scenario>
+
+</PropertyList>
+
