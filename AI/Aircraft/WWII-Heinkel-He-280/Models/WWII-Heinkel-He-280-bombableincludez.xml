@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Nasal code -->
+  <nasal>
+
+    <load>
+      <![CDATA[
+      var nodeName = cmdarg().getPath();
+
+      print("Loading WWII-Heinkel-He-280 ", nodeName);
+
+      if ( bombable.check_overall_initialized (nodeName) ) {
+        return;
+      }
+      var object_init = func() {
+        thisNodeName = cmdarg().getPath();
+
+        var bombableObject = {
+
+          objectNodeName : thisNodeName,
+          objectNode     : props.globals.getNode(thisNodeName),
+          updateTime_s   : 1/3,
+          altitudes : {
+            wheelsOnGroundAGL_m : 0 ,
+            minimumAGL_m : 0,
+            maximumAGL_m : 0,
+            crashedAGL_m : -1,
+          },
+          velocities : {
+            maxSpeedReduce_percent                       : 0.5,
+            minSpeed_kt                                  : 0,
+            cruiseSpeed_kt                               : 0,
+            attackSpeed_kt                               : 0,
+            maxSpeed_kt                                  : 0,
+            damagedAltitudeChangeMaxRate_meterspersecond : 30,
+
+            diveTerminalVelocities: {
+              point1: { airspeed_kt : 220, vertical_speed_fps : - 35.4},
+              point2: { airspeed_kt : 250, vertical_speed_fps : - 125.1},
+              point3: { airspeed_kt : 270, vertical_speed_fps : - 143.0},
+              point4: { airspeed_kt : 280, vertical_speed_fps : - 173.9},
+            },
+            climbTerminalVelocities: {
+              point1: { airspeed_kt : 220, vertical_speed_fps : 18},
+              point2: { airspeed_kt : 130, vertical_speed_fps : 30},
+              point3: { airspeed_kt : 95, vertical_speed_fps : 35},
+            },
+          },
+          evasions : {
+            dodgeDelayMax_sec             : 15,
+            dodgeDelayMin_sec             : 5,
+            dodgeMax_deg                  : 75,
+            dodgeMin_deg                  : 57,
+            rollRateMax_degpersec         : 110,
+            dodgeROverLPreference_percent : 50,
+            dodgeAltMin_m                 : -5000,
+            dodgeAltMax_m                 : 5000,
+            dodgeVertSpeedClimb_mps       : 100,
+            dodgeVertSpeedDive_mps        : 200,
+          },
+          attacks : {
+            maxDistance_m              : 14000,
+            minDistance_m              : 2500,
+            continueAttackAngle_deg    : 20,
+            altitudeHigherCutoff_m     : 13000,
+            altitudeLowerCutoff_m      : 5000,
+            climbPower                 : 0,
+            divePower                  : 0,
+            rollMin_deg                : 0,
+            rollMax_deg                : 0,
+            rollRateMax_degpersec      : 0,
+            attackCheckTime_sec        : 10,
+            attackCheckTimeEngaged_sec : 0.7,
+          },
+          weapons : {
+          },
+          dimensions : {
+            width_m             : 12.20,
+            length_m            : 10.0,
+            height_m            : 3.06,
+            damageRadius_m      : 5.20,
+            vitalDamageRadius_m : 2,
+            crashRadius_m       : 6,
+          },
+          vulnerabilities : {
+            damageVulnerability               : 6,
+            engineDamageVulnerability_percent : 6,
+            fireVulnerability_percent         : 7,
+            fireDamageRate_percentpersecond   : 0.1,
+            fireExtinguishMaxTime_seconds     : 80,
+            fireExtinguishSuccess_percentage  : 65,
+            explosiveMass_kg                  : 27772,
+          },
+          damageLiveries : {
+            damageLivery : [  ]
+          },
+        };
+        bombable.initialize ( bombableObject );
+        # bombable.location_init ( thisNodeName );
+        bombable.ground_init ( thisNodeName );
+        bombable.attack_init ( thisNodeName );
+        bombable.weapons_init ( thisNodeName );
+        bombable.bombable_init ( thisNodeName );
+        bombable.startSmoke("jetcontrail", thisNodeName );
+      }
+      object_init();
+      ]]>
+    </load>
+    <unload>
+      <![CDATA[
+      print("Unload WWII-Heinkel-He-280.");
+      var nodeName= cmdarg().getPath();
+      bombable.de_overall_initialize( nodeName );
+      bombable.initialize_del( nodeName );
+      bombable.ground_del( nodeName );
+      bombable.location_del (nodeName);
+      bombable.bombable_del( nodeName );
+      bombable.attack_del( nodeName );
+      bombable.weapons_del (nodeName);
+    ]]>
+    </unload>
+  </nasal>
+
+</PropertyList>

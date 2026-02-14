@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!-- WWII-DO-335 model config file -->
+<!-- Aether 2026 -->
+
+<PropertyList include="WWII-DO-335-bombableinclude.xml">
+
+
+        <description>WWII-DO-335</description>
+
+	<path>Aircraft/WWII-DO-335/Models/do335.ac</path>
+
+        <texture-path>Aircraft/WWII-DO-335/Models</texture-path>
+
+ 
+</PropertyList>

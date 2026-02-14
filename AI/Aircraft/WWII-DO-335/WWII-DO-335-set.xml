@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/WWII-DO-335.xml">
+
+  <model>
+    <path>AI/Aircraft/WWII-DO-335/Models/WWII-DO-335.xml</path>
+  </model>
+
+</PropertyList>
