@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!-- jeep-M151 model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="jeep-M151-bombableinclude.xml">
+
+        <description>jeep-M151</description>
+
+	<path>AI/Aircraft/jeep-M151/Models/jeepM151.ac</path>
+
+        <texture-path>AI/Aircraft/jeep-M151/Models</texture-path>
+
+        <offsets>
+		<z-m>0.730859 </z-m>
+	</offsets>
+	
+</PropertyList>

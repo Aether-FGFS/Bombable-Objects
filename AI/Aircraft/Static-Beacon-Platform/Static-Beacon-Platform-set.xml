@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Static-Beacon-Platform.xml">
+
+  <model>
+    <path>AI/Aircraft/Static-Beacon-Platform/Models/Static-Beacon-Platform.xml</path>
+  </model>
+
+</PropertyList>

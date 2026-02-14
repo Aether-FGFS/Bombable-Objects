@@ -8,7 +8,7 @@
 
 		<load>
 			<![CDATA[
-			print("Loading jeep ", cmdarg().getPath());
+			print("Loading jeep-M151 ", cmdarg().getPath());
 
         var nodeName = cmdarg().getPath(); 
         ##checks whether it has been initialized already; if so, just return
@@ -138,8 +138,7 @@
           # The weapons system makes the AI aircraft fire on the main aircraft 
           # You can define any number of weapons--just enclose each in curly brackets
           # and separate with commas (,).           
-          weapons : {
-                    
+          weapons : {                                  
           },  
           
 
@@ -243,7 +242,7 @@
 		</load>
 		<unload>
 			<![CDATA[
-			print("Unload jeep.");
+			print("jeep-M151.");
 
       ########################################################################
       ########################################################################                

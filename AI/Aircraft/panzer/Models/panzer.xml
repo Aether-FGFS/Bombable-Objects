@@ -50,7 +50,7 @@
 <!-- Start Extra Details -->
 
   <model>
-    <path>Aircraft/panzer/Models/panzer_details.ac</path>
+    <path>AI/Aircraft/panzer/Models/panzer_details.ac</path>
     <offsets>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -64,7 +64,7 @@
 <!-- End Extra Details -->
 <!-- Start Tracks -->
   <model>
-    <path>Aircraft/panzer/Models/tracks.xml</path>
+    <path>AI/Aircraft/panzer/Models/tracks.xml</path>
     <offsets>
       <x-m>-1.7</x-m>
       <y-m>0.5</y-m>
@@ -81,7 +81,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/tracks.xml</path>
+    <path>AI/Aircraft/panzer/Models/tracks.xml</path>
     <offsets>
       <x-m>1.7</x-m>
       <y-m>0.5</y-m>
@@ -102,7 +102,7 @@
 <!-- Start Large Gears -->
 
   <model>
-    <path>Aircraft/panzer/Models/large_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/large_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>-2.85</y-m>
@@ -114,7 +114,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/large_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/large_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>-2.85</y-m>
@@ -126,7 +126,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/large_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/large_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>3.3</y-m>
@@ -138,7 +138,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/large_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/large_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>3.3</y-m>
@@ -152,7 +152,7 @@
 <!-- End Large Gears -->
 <!-- Start Small Gears -->
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>0</y-m>
@@ -164,7 +164,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>0</y-m>
@@ -176,7 +176,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>1</y-m>
@@ -188,7 +188,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>1</y-m>
@@ -200,7 +200,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>2</y-m>
@@ -212,7 +212,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>2</y-m>
@@ -224,7 +224,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>-0.8</y-m>
@@ -236,7 +236,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>-0.8</y-m>
@@ -248,7 +248,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>-1.7</y-m>
@@ -260,7 +260,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>-1.7</y-m>
@@ -272,7 +272,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>-1.24</y-m>
@@ -284,7 +284,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>-1.24</y-m>
@@ -296,7 +296,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>-1.65</y-m>
@@ -308,7 +308,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>-1.65</y-m>
@@ -320,7 +320,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>-0.5</y-m>
@@ -332,7 +332,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>-0.5</y-m>
@@ -344,7 +344,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>0.3</y-m>
@@ -356,7 +356,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>1.2</y-m>
@@ -368,7 +368,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>0.3</y-m>
@@ -380,7 +380,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>1.2</y-m>
@@ -392,7 +392,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>2.2</y-m>
@@ -404,7 +404,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>-1.97</x-m>
       <y-m>2.75</y-m>
@@ -416,7 +416,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>2.2</y-m>
@@ -428,7 +428,7 @@
   </model>
 
   <model>
-    <path>Aircraft/panzer/Models/small_gear.xml</path>
+    <path>AI/Aircraft/panzer/Models/small_gear.xml</path>
     <offsets>
       <x-m>1.97</x-m>
       <y-m>2.75</y-m>
