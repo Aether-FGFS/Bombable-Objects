@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-Military-Water-Tank model config file -->
+<!-- Aether 2026, Hugo Kamm 3D -->
+
+<PropertyList include="WWII-Military-Water-Tank-bombableinclude.xml">
+
+        <description>WWII-Military-Water-Tank</description>
+
+	<path>AI/Aircraft/WWII-Military-Water-Tank/Models/EGYP-BA8.ac</path>
+
+        <texture-path>AI/Aircraft/WWII-Military-Water-Tank/Models</texture-path>
+	
+</PropertyList>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-Military-Office model config file -->
+<!-- Aether 2025 , Hugo Kamm 3D  -->
+
+<PropertyList include="WWII-Military-Office-bombableinclude.xml">
+
+        <description>WWII-Military-Office</description>
+
+	<path>AI/Aircraft/WWII-Military-Office/Models/EGYP-BA13.ac</path>
+
+        <texture-path>AI/Aircraft/WWII-Military-Office/Models</texture-path>
+	
+</PropertyList>

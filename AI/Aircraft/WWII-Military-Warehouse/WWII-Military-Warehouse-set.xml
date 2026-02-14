@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/WWII-Military-Warehouse.xml">
+
+  <model>
+    <path>AI/Aircraft/WWII-Military-Warehouse/Models/WWII-Military-Warehouse.xml</path>
+  </model>
+
+</PropertyList>

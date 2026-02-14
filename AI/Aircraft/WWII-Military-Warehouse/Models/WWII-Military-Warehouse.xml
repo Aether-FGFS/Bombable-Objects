@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-Military-Warehouse model config file -->
+<!-- Aether 2026, Hugo Kamm 3D -->
+
+<PropertyList include="WWII-Military-Warehouse-bombableinclude.xml">
+
+        <description>WWII-Military-Warehouse</description>
+
+	<path>AI/Aircraft/WWII-Military-Warehouse/Models/EGYP-BA16.ac</path>
+
+        <texture-path>AI/Aircraft/WWII-Military-Warehouse/Models</texture-path>
+	
+</PropertyList>
