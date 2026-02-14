@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-Hangar model config file -->
+<!-- Aether 2026 , Hugo Kamm 3d -->
+
+<PropertyList include="WWII-Military-Office-bombableinclude.xml">
+
+        <description>WWII-Military-Office</description>
+
+	<path>Aircraft/WWII-Military-Office/Models/EGYP-BA13.ac</path>
+
+        <texture-path>Aircraft/WWII-Hangar/Models</texture-path>
+	
+</PropertyList>

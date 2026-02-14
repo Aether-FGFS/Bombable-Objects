@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-Military-Barrack model config file -->
+<!-- Aether 2026 , Hugo Kamm 3D -->
+
+<PropertyList include="WWII-Military-Barrack-bombableinclude.xml">
+
+        <description>WWII-Military-Barrack</description>
+
+	<path>Aircraft/WWII-Military-Barrack/Models/EGYP-A03R.ac</path>
+
+        <texture-path>Aircraft/WWII-Military-Barrack/Models</texture-path>
+	
+</PropertyList>
