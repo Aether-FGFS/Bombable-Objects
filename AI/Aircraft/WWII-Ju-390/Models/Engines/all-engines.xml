@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Exterior left -->
+  <model>
+    <path>engine.xml</path>
+    <offsets>
+      <x-m>  -9.68312 </x-m>
+      <y-m> -11.80005 </y-m>
+      <z-m>  -1.09583 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Center left -->
+  <model>
+    <path>engine.xml</path>
+    <offsets>
+      <x-m> -10.06312 </x-m>
+      <y-m>  -7.91921 </y-m>
+      <z-m>  -1.09583 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Interior left -->
+  <model>
+    <path>engine.xml</path>
+    <offsets>
+      <x-m> -10.07000 </x-m>
+      <y-m>  -3.74842 </y-m>
+      <z-m>  -1.09583 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Interior right -->
+  <model>
+    <path>engine.xml</path>
+    <offsets>
+      <x-m> -10.07000 </x-m>
+      <y-m>   3.74842 </y-m>
+      <z-m>  -1.09583 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Center right -->
+  <model>
+    <path>engine.xml</path>
+    <offsets>
+      <x-m> -10.06312 </x-m>
+      <y-m>   7.91921 </y-m>
+      <z-m>  -1.09583 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Exterior right -->
+  <model>
+    <path>engine.xml</path>
+    <offsets>
+      <x-m> -9.68312 </x-m>
+      <y-m> 11.80005 </y-m>
+      <z-m> -1.09583 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

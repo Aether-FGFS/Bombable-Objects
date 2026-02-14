@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/WWII-Horten-Ho-IX.xml">
+
+  <model>
+    <path>AI/Aircraft/WWII-Horten-Ho-IX/Models/WWII-Horten-Ho-IX.xml</path>
+  </model>
+
+</PropertyList>
