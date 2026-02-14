@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="WWII-ME-262-bombableinclude.xml">
+
+  <path>me262.ac</path>
+
+  <offsets>
+    <pitch-deg>-3</pitch-deg>
+    <roll-deg>0</roll-deg>
+    <x-m>0</x-m>
+    <y-m>0</y-m>
+    <z-m>1.25</z-m>
+  </offsets>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>me262</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+
+    <object-name>heliceG1</object-name>
+    <object-name>heliceG2</object-name>
+    <object-name>heliceD1</object-name>
+    <object-name>heliceD2</object-name>
+    <object-name>rouessorties</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>me262</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+    <object-name>heliceG1</object-name>
+    <object-name>heliceG2</object-name>
+    <object-name>heliceD1</object-name>
+    <object-name>heliceD2</object-name>
+    <object-name>rouessorties</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <effect>
+    <inherits-from>AI/Aircraft/ME-262/Models/Effects/Bump/bumpspec</inherits-from>
+    <object-name>me262</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+  </effect>
+
+  <!-- L'hélice -->
+  <animation>
+    <type>spin</type>
+    <object-name>heliceG1</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 10 </factor>
+    <center>
+      <x-m> -3.77457 </x-m>
+      <y-m> -1.91343 </y-m>
+      <z-m> -0.69957 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceG2</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 10 </factor>
+    <center>
+      <x-m>  0.31043 </x-m>
+      <y-m> -1.92468 </y-m>
+      <z-m> -0.69961 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceD1</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 10 </factor>
+    <center>
+      <x-m> -3.77457 </x-m>
+      <y-m>  1.91343 </y-m>
+      <z-m> -0.69957 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceD2</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 10 </factor>
+    <center>
+      <x-m>  0.31043 </x-m>
+      <y-m>  1.92468 </y-m>
+      <z-m> -0.69961 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Roues sorties -->
+  <animation>
+    <type>select</type>
+    <object-name>rouessorties</object-name>
+    <object-name>portesouvertes</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>60</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <!-- Roues rentrée -->
+  <animation>
+    <type>select</type>
+    <object-name>portesfermees</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>59</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- WWII-Military-Building model config file -->
+<!-- Aether 2026, Hugo Kamm 3D -->
+
+<PropertyList include="WWII-Military-Building-bombableinclude.xml">
+
+        <description>WWII-Military-Building</description>
+
+	<path>AI/Aircraft/WWII-Military-Building/Models/EGYP-TWR2.ac</path>
+
+        <texture-path>AI/Aircraft/WWII-Military-Building/Models</texture-path>
+	
+</PropertyList>

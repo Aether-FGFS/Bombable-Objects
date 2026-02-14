@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/WWII-ME-262.xml">
+
+  <model>
+    <path>AI/Aircraft/WWII-ME-262/Models/WWII-ME-262.xml</path>
+  </model>
+
+</PropertyList>
