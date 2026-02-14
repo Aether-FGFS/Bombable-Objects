@@ -28,9 +28,14 @@
   
  Beware !!!  Some AI objects may shoot AA guns at you. 
 
+ You can find WWII Historic scenario for Multiplayer use under AI folder. 
+ Run it, to get targets at same location as your friends. You can run some 
+ moving vehicles or scenery around you, before activating WWII Scenario, to 
+ get some extra targets. 
+
  Remember that war is disaster for regular people and soldiers.
 
 
 
 
- Aether 2025.
+ Aether 2026.
