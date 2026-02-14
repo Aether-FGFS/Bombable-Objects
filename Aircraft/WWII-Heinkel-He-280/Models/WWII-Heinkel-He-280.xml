@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="WWII-Heinkel-He-280-bombableinclude.xml">
+
+  <path>he280.ac</path>
+
+  <offsets>
+    <pitch-deg>-142</pitch-deg>
+    <roll-deg>0</roll-deg>
+    <x-m>0</x-m>
+    <y-m>0</y-m>
+    <z-m>-1.8</z-m>
+  </offsets>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>he280</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+
+    <object-name>heliceG</object-name>
+    <object-name>heliceD</object-name>
+    <object-name>rouessorties</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>he280</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+    <object-name>heliceG</object-name>
+    <object-name>heliceD</object-name>
+    <object-name>rouessorties</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <effect>
+    <inherits-from>AI/Aircraft/Heinkel-He-280/Models/Effects/Bump/bumpspec</inherits-from>
+    <object-name>he280</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+  </effect>
+
+  <!-- L'hélice -->
+  <animation>
+    <type>spin</type>
+    <object-name>heliceG</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 10 </factor>
+    <center>
+      <x-m> -0.97828 </x-m>
+      <y-m> -1.81631 </y-m>
+      <z-m> -0.45353 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceD</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 10 </factor>
+    <center>
+      <x-m> -0.97828 </x-m>
+      <y-m>  1.81631 </y-m>
+      <z-m> -0.45353 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Roues sorties -->
+  <animation>
+    <type>select</type>
+    <object-name>rouessorties</object-name>
+    <object-name>portesouvertes</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>60</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <!-- Roues rentrée -->
+  <animation>
+    <type>select</type>
+    <object-name>portesfermees</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>59</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+</PropertyList>
