@@ -27,10 +27,11 @@
   
  Beware !!!  Some AI objects may shoot AA guns at you. 
 
- You can find WWII Historic scenario and Vietnam War scenario 
-  for Multiplayer use under AI folder. 
-  After installation run it as AI Scenario , to get targets 
-  at same location as your friends. Info is included in description.
+ Under AI folder, You can find WWII Historic scenario and Vietnam War scenario 
+  for Multiplayer use. 
+  After installation run it as AI Scenario to get targets 
+  at same location as your friends over Multiplayer. Info is included in 
+  Scenario.xml.
 
  Remember that war is disaster for regular people and soldiers.
 
