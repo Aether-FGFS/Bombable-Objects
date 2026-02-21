@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Airport-Tower-1 model config file -->
+<!-- Aether 2025,François CARREEL 3D -->
+<PropertyList include="Airport-Tower-1-bombableinclude.xml">
+
+  <description>Airport-Tower-1</description>
+
+  <path>ParisTWR.ac</path>
+
+
+
+</PropertyList>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Static-F-106-dart-bombableinclude.xml">
+
+  <path>f106.ac</path>
+
+  <offsets>
+     <pitch-deg>0</pitch-deg>
+     <roll-deg>0</roll-deg>
+     <x-m>0</x-m>
+     <y-m>0</y-m>
+     <z-m>2.97</z-m>
+  </offsets>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>f106</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+
+    <object-name>rouessorties</object-name>
+  </animation>
+
+  <model>
+    <path>Effects/light/all-lights.xml</path>
+  </model>
+
+  <animation>
+    <type>material</type>
+    <object-name>f106</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+    <object-name>rouessorties</object-name>
+    <property-base>/ai/models/multiplayer/sim/multiplay/generic</property-base>
+    <texture-prop>string[1]</texture-prop>
+    <texture>/ai/models/multiplayer/sim/multiplay/generic/string[1]</texture>
+  </animation>
+
+  <!-- Roues sorties -->
+  <animation>
+    <type>select</type>
+    <object-name>rouessorties</object-name>
+    <object-name>portesouvertes</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>60</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <!-- Roues rentrée -->
+  <animation>
+    <type>select</type>
+    <object-name>portesfermees</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>59</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+</PropertyList>
