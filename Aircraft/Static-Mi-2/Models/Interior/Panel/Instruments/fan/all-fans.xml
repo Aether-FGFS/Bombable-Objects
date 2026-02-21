@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>fan.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.150 </y-m>
+      <z-m> 0.270 </z-m>
+      <heading-deg> 10 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

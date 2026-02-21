@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>pedals.xml</path>
+    <offsets>
+      <x-m> -5.088 </x-m>
+      <y-m> -0.200 </y-m>
+      <z-m> -1.234 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>pedals.xml</path>
+    <offsets>
+      <x-m> -4.828 </x-m>
+      <y-m>  0.350 </y-m>
+      <z-m> -1.234 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

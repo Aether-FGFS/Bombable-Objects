@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>pedals.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>pedalL</object-name>
+    <object-name>pedalR</object-name>
+  </animation>
+
+  <animation>
+    <name>Pedalier</name>
+    <object-name>base</object-name>
+    <object-name>pedalL</object-name>
+    <object-name>pedalR</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Pedalier</object-name>
+    <property>controls/flight/rudder</property>
+    <factor> -15 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>pedalL</object-name>
+    <property>controls/flight/rudder</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m> -0.04274 </x-m>
+      <y-m> -0.10331 </y-m>
+      <z-m>  0.02388 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>pedalR</object-name>
+    <property>controls/flight/rudder</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m> -0.04274 </x-m>
+      <y-m>  0.10331 </y-m>
+      <z-m>  0.02388 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
