@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <scenario>
+    <name>UB_I (with AA defenses!) training scenario near San Francisco</name>
+    <description>This scenario puts UB_I in San Francisco Bay near the San Francisco International Airport (KSFO).
+
+
+  
+    When you bomb and shoot the ferries they will slow down, finally catch fire, and then stop completely (to see the smoke and fire you must have Particles enabled in View/Rendering Options).
+
+    To damage UB_I takes a direct hit from a machine gun or heavy gun, or a close strike by a heavy bomb.   
+
+    Install this scenario in the FlightGear/data/AI directory or under Addons/Bombable-5.0/Scenarios.
+
+    Any aircraft that shoots guns or drops bombs can damage i400.  
+    </description>
+    <!-- COLUMN 1 (moving column)-->
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>UB_I</callsign>
+      <name>UB_I</name>
+      <model type="string">Aircraft/UB_I/Models/UB_I.xml</model>
+      <latitude type="double">37.608720</latitude>
+      <longitude type="double">-122.3076</longitude>
+      <altitude>0</altitude>
+      <speed>12.0</speed>
+      <rudder type="double">-40</rudder>
+      <bank type="double">-40</bank>
+      <heading type="double">355</heading>
+    </entry>
+  </scenario>
+</PropertyList>

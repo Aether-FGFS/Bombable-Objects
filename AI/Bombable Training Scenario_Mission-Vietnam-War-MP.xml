@@ -1,0 +1,729 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <scenario>
+   <description>Vietnam War Bombable Training scenario.  Starts at VVPB , VVVH, Vietnam and sea! </description>
+		
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Nimitz</callsign>
+      <name>Nimitz</name>
+      <model type="string">Aircraft/Nimitz/Models/Nimitz.xml</model>
+      <latitude type="double">17.3341</latitude>
+      <longitude type="double">108.8731</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">306</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>USS Lake Champlain</callsign>
+      <name>USS Lake Champlain</name>
+      <model type="string">Aircraft/USS-Lake-Champlain/Models/USS-Lake-Champlain.xml</model>
+      <latitude type="double">17.3451</latitude>
+      <longitude type="double">108.8681</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">310</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>USS Oliver Perry</callsign>
+      <name>USS Oliver Perry</name>
+      <model type="string">Aircraft/USS-Oliver-Perry/Models/USS-Oliver-Perry.xml</model>
+      <latitude type="double">17.3391</latitude>
+      <longitude type="double">108.8891</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">310</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Prepositioning Force Ship</callsign>
+      <name>Prepositioning Force Ship</name>
+      <model type="string">Aircraft/Prepositioning-Force-Ship/Models/Prepositioning-Force-Ship.xml</model>
+      <latitude type="double">17.3161</latitude>
+      <longitude type="double">108.8851</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">310</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>UB_I</callsign>
+      <name>UB_I</name>
+      <model type="string">Aircraft/UB_I/Models/UB_I.xml</model>
+      <latitude type="double">17.3455</latitude>
+      <longitude type="double">108.8851</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">297</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Coast Guard</callsign>
+      <name>Coast Guard</name>
+      <model type="string">Aircraft/Coast-Guard/Models/Coast-Guard.xml</model>
+      <latitude type="double">17.2681</latitude>
+      <longitude type="double">107.5741</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">061</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>LNG-Tanker</callsign>
+      <name>LNG-Tanker</name>
+      <model type="string">Aircraft/LNG-Tanker/Models/LNG-Tanker.xml</model>
+      <latitude type="double">18.8250</latitude>
+      <longitude type="double">106.5200</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">310</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>LNG-Tanker-1</callsign>
+      <name>LNG-Tanker-1</name>
+      <model type="string">Aircraft/LNG-Tanker/Models/LNG-Tanker.xml</model>
+      <latitude type="double">18.8260</latitude>
+      <longitude type="double">106.5214</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">306</heading>
+    </entry>
+
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Coast-Guard-1</callsign>
+      <name>Coast-Guard-1</name>
+      <model type="string">Aircraft/Coast-Guard/Models/Coast-Guard.xml</model>
+      <latitude type="double">18.8260</latitude>
+      <longitude type="double">106.5214</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">314</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Military-Control-Tower-VVDN</callsign>
+      <name>Military-Control-Tower-VVDN</name>
+      <model type="string">Aircraft/Military-Control-Tower/Models/Military-Control-Tower.xml</model>
+      <latitude type="double">16.0421</latitude>
+      <longitude type="double">108.202</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">265</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>SAM-launcher-VVDN</callsign>
+      <name>SAM-launcher-VVDN</name>
+      <model type="string">Aircraft/SAM-launcher/Models/SAM-launcher.xml</model>
+      <latitude type="double">16.039</latitude>
+      <longitude type="double">108.202</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">265</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Radio-Antenna-VVDN</callsign>
+      <name>Radio-Antenna-VVDN</name>
+      <model type="string">Aircraft/Radio-Antenna/Models/Radio-Antenna.xml</model>
+      <latitude type="double">16.045</latitude>
+      <longitude type="double">108.203</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">265</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>B-36-0-VVPB</callsign>
+      <name>B-36-0</name>
+      <model type="string">Aircraft/Static-B-36/Models/b36d.xml</model>
+      <latitude type="double">16.3987</latitude>
+      <longitude type="double">107.7001</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">029</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>B-36-1-VVPB</callsign>
+      <name>B-36-1</name>
+      <model type="string">Aircraft/Static-B-36/Models/b36d.xml</model>
+      <latitude type="double">16.3987</latitude>
+      <longitude type="double">107.7018</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">029</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>B-36-2-VVPB</callsign>
+      <name>B-36-2</name>
+      <model type="string">Aircraft/Static-B-36/Models/b36d.xml</model>
+      <latitude type="double">16.3987</latitude>
+      <longitude type="double">107.7009</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">029</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-VVPB</callsign>
+      <name>jeep-M151</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">16.3987</latitude>
+      <longitude type="double">107.7016</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">029</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Fuel-Truck-VVPB</callsign>
+      <name>Fuel-Truck</name>
+      <model type="string">Aircraft/Fuel-Truck/Models/Fuel-Truck.xml</model>
+      <latitude type="double">16.3987</latitude>
+      <longitude type="double">107.7005</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">166</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Control-Tower-VVPB</callsign>
+      <name>Control-Tower</name>
+      <model type="string">Aircraft/Control-Tower/Models/Control-Tower.xml</model>
+      <latitude type="double">16.3980</latitude>
+      <longitude type="double">107.7004</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">094</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Airport-Lamp-VVPB</callsign>
+      <name>Airport-Lamp</name>
+      <model type="string">Aircraft/Airport-Lamp/Models/Airport-Lamp.xml</model>
+      <latitude type="double">16.4000</latitude>
+      <longitude type="double">107.7004</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">274</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Airport-Lamp-1-VVPB</callsign>
+      <name>Airport-Lamp-1-VVPB</name>
+      <model type="string">Aircraft/Airport-Lamp/Models/Airport-Lamp.xml</model>
+      <latitude type="double">16.4000</latitude>
+      <longitude type="double">107.7016</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">274</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Static-Helipad-VVPB</callsign>
+      <name>Static-Helipad-VVPB</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3984</latitude>
+      <longitude type="double">107.6994</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Static-Helipad-1-VVPB</callsign>
+      <name>Static-Helipad-1-VVPB</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3988</latitude>
+      <longitude type="double">107.6994</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Static-Helipad-2-VVPB</callsign>
+      <name>Static-Helipad-2-VVPB</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3998</latitude>
+      <longitude type="double">107.6994</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Static-Helipad-3-VVPB</callsign>
+      <name>Static-Helipad-3-VVPB</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3994</latitude>
+      <longitude type="double">107.6994</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Sikorsky-S58-VVPB</callsign>
+      <name>Sikorsky-S58</name>
+      <model type="string">Aircraft/Static-S58/Models/Static-S58.xml</model>
+      <latitude type="double">16.3982</latitude>
+      <longitude type="double">107.7004</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">177</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Sikorsky-S58-1-VVPB</callsign>
+      <name>Sikorsky-S58-1</name>
+      <model type="string">Aircraft/Static-S58/Models/Static-S58.xml</model>
+      <latitude type="double">16.3982</latitude>
+      <longitude type="double">107.7000</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">177</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>V22-Osprey-VVPB</callsign>
+      <name>V22-Osprey-VVPB</name>
+      <model type="string">Aircraft/Static-V22-Osprey/Models/Static-V22-Osprey.xml</model>
+      <latitude type="double">16.3982</latitude>
+      <longitude type="double">107.7009</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">177</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>F-106-1</callsign>
+      <name>F-106-1</name>
+      <model type="string">Aircraft/Static-F-106-dart/Models/Static-F-106-dart.xml</model>
+      <latitude type="double">16.3982</latitude>
+      <longitude type="double">107.7020</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">177</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>F-106-2</callsign>
+      <name>F-106-2</name>
+      <model type="string">Aircraft/Static-F-106-dart/Models/Static-F-106-dart.xml</model>
+      <latitude type="double">16.3982</latitude>
+      <longitude type="double">107.7014</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">177</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>F-106-3</callsign>
+      <name>F-106-3</name>
+      <model type="string">Aircraft/Static-F-106-dart/Models/Static-F-106-dart.xml</model>
+      <latitude type="double">16.3982</latitude>
+      <longitude type="double">107.7016</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">177</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>F-106-4</callsign>
+      <name>F-106-4</name>
+      <model type="string">Aircraft/Static-F-106-dart/Models/Static-F-106-dart.xml</model>
+      <latitude type="double">16.3982</latitude>
+      <longitude type="double">107.7022</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">177</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>F-106-5</callsign>
+      <name>F-106-5</name>
+      <model type="string">Aircraft/Static-F-106-dart/Models/Static-F-106-dart.xml</model>
+      <latitude type="double">16.3982</latitude>
+      <longitude type="double">107.7018</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">177</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Military-Building</callsign>
+      <name>Military-Building</name>
+      <model type="string">Aircraft/WWII-Hangar/Models/WWII-Hangar.xml</model>
+      <latitude type="double">16.3980</latitude>
+      <longitude type="double">107.6990</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">270</heading>
+    </entry>
+
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Airport-Tower-1-VVVH</callsign>
+      <name>Airport-Tower-1</name>
+      <model type="string">Aircraft/Airport-Tower-1/Models/Airport-Tower-1.xml</model>
+      <latitude type="double">18.7430</latitude>
+      <longitude type="double">105.6670</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Airport-Lamp-VVVH</callsign>
+      <name>Airport-Lamp-VVVH</name>
+      <model type="string">Aircraft/Airport-Lamp/Models/Airport-Lamp.xml</model>
+      <latitude type="double">18.7440</latitude>
+      <longitude type="double">105.6682</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">355</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Airport-Lamp-VVVH</callsign>
+      <name>Airport-Lamp-1-VVVH</name>
+      <model type="string">Aircraft/Airport-Lamp/Models/Airport-Lamp.xml</model>
+      <latitude type="double">18.7449</latitude>
+      <longitude type="double">105.6682</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">355</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>WWII-Hangar-VVVM</callsign>
+      <name>WWII-Hangar</name>
+      <model type="string">Aircraft/WWII-Hangar/Models/WWII-Hangar.xml</model>
+      <latitude type="double">18.7440</latitude>
+      <longitude type="double">105.6670</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>MiG-15bis-VVVM</callsign>
+      <name>Static-MiG-15bis</name>
+      <model type="string">Aircraft/Static-MiG-15bis/Models/Static-MiG-15bis.xml</model>
+      <latitude type="double">18.7430</latitude>
+      <longitude type="double">105.6680</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>MiG-15bis-1-VVVH</callsign>
+      <name>MiG-15bis-1</name>
+      <model type="string">Aircraft/Static-MiG-15bis/Models/Static-MiG-15bis.xml</model>
+      <latitude type="double">18.7430</latitude>
+      <longitude type="double">105.6682</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>MiG-15bis-2-VVVH</callsign>
+      <name>MiG-15bis-2</name>
+      <model type="string">Aircraft/Static-MiG-15bis/Models/Static-MiG-15bis.xml</model>
+      <latitude type="double">18.7432</latitude>
+      <longitude type="double">105.6680</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>MiG-15bis-3-VVVH</callsign>
+      <name>MiG-15bis-3</name>
+      <model type="string">Aircraft/Static-MiG-15bis/Models/Static-MiG-15bis.xml</model>
+      <latitude type="double">18.7432</latitude>
+      <longitude type="double">105.6682</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Static-Mi-2-VVVH</callsign>
+      <name>Static-Mi-2</name>
+      <model type="string">Aircraft/Static-Mi-2/Models/Static-Mi-2.xml</model>
+      <latitude type="double">18.7420</latitude>
+      <longitude type="double">105.6682</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Static-Helipad-VVVH</callsign>
+      <name>Static-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">18.7420</latitude>
+      <longitude type="double">105.6682</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Static-Helipad-1-VVVH</callsign>
+      <name>Static-Helipad-1</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">18.7420</latitude>
+      <longitude type="double">105.6679</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Static-Helipad-2-VVVH</callsign>
+      <name>Static-Helipad-2</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">18.7420</latitude>
+      <longitude type="double">105.6676</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Airport-Caises-VVVH</callsign>
+      <name>Airport-Caises</name>
+      <model type="string">Aircraft/Airport-Caises/Models/Airport-Caises.xml</model>
+      <latitude type="double">18.7424</latitude>
+      <longitude type="double">105.6678</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Airport-Terminal-VVVH</callsign>
+      <name>Airport-Terminal</name>
+      <model type="string">Aircraft/Airport-Terminal/Models/Airport-Terminal.xml</model>
+      <latitude type="double">18.7430</latitude>
+      <longitude type="double">105.6665</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">175</heading>
+    </entry>
+
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>SA-2</callsign>
+      <name>SA-2</name>
+      <model type="string">Aircraft/SA-2/Models/SA-2.xml</model>
+      <latitude type="double">17.4950</latitude>
+      <longitude type="double">106.4800</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">175</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>SA-2-1</callsign>
+      <name>SA-2-1</name>
+      <model type="string">Aircraft/SA-2/Models/SA-2.xml</model>
+      <latitude type="double">17.4920</latitude>
+      <longitude type="double">106.4804</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">175</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-SA</callsign>
+      <name>jeep-M151-SA</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">17.4930</latitude>
+      <longitude type="double">106.4794</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">034</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Radar-SA2</callsign>
+      <name>Radar-SA2</name>
+      <model type="string">Aircraft/Radar-SA2/Models/Radar-SA2.xml</model>
+      <latitude type="double">17.4940</latitude>
+      <longitude type="double">106.4811</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">75</heading>
+    </entry>
+
+
+
+ </scenario>
+
+</PropertyList>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <scenario>
+   <description>Static-MiG-15bis Training scenario.  Starts at KSFO! </description>
+		
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>MiG-15bis</callsign>
+      <name>MiG-15bis</name>
+      <model type="string">Aircraft/Static-MiG-15bis/Models/Static-MiG-15bis.xml</model>
+      <latitude type="double">37.608200</latitude>
+      <longitude type="double">-122.2902</longitude>
+      <altitude>0</altitude>
+      <speed>0.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">110</heading>
+    </entry>
+
+ </scenario>
+
+</PropertyList>
+
