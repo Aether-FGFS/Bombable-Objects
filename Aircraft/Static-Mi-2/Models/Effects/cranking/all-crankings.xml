@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Left -->
+  <model>
+    <path>cranking0.xml</path>
+    <offsets>
+      <x-m> -3.65989 </x-m>
+      <y-m> -0.71476 </y-m>
+      <z-m>  0.29891 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>cranking0.xml</path>
+    <offsets>
+      <x-m> -3.67096 </x-m>
+      <y-m> -0.71561 </y-m>
+      <z-m>  0.70576 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>cranking1.xml</path>
+    <offsets>
+      <x-m> -3.65989 </x-m>
+      <y-m>  0.71476 </y-m>
+      <z-m>  0.29891 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>cranking1.xml</path>
+    <offsets>
+      <x-m> -3.67096 </x-m>
+      <y-m>  0.71561 </y-m>
+      <z-m>  0.70576 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

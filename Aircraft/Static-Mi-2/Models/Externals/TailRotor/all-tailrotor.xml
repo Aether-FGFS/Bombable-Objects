@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>tailrotor.xml</path>
+    <offsets>
+      <x-m> 5.60175 </x-m>
+      <y-m> 0.45646 </y-m>
+      <z-m> 1.01097 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
