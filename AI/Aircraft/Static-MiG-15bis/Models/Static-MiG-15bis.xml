@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!-- Static-MiG-15bis model config file -->
+<!-- Aether 2025 -->
+
+<PropertyList include="Static-MiG-15bis-bombableinclude.xml">
+
+        <description>Static-MiG-15bis</description>
+
+
+	<path>AI/Aircraft/Static-MiG-15bis/Models/Static-MiG-15bis.ac</path>
+        <texture-path>AI/Aircraft/Static-MiG-15bis/Models</texture-path>
+
+        <offsets>
+           <pitch-deg>2</pitch-deg>
+           <roll-deg>0</roll-deg>
+           <x-m>0</x-m>
+           <y-m>0</y-m>
+           <z-m>1.45</z-m>
+        </offsets>
+
+
+        <animation>
+        <type>select</type>
+        <object-name>gear</object-name>
+          <condition>
+            <greater-than>
+                <property>gear/gear[0]/position-norm</property>
+                <value>0.2</value>
+            </greater-than>
+          </condition>
+        </animation>
+
+
+
+	<!-- Select the external loads as appropriate -->
+	<!-- Select extermal tanks -->
+	
+	
+	
+		
+
+</PropertyList>
