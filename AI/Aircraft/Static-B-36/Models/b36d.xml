@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="b36d-bombableinclude.xml">
+
+  <path>b36d.ac</path>
+
+  <offsets>
+    <pitch-deg>-1</pitch-deg>
+    <roll-deg>0</roll-deg>
+    <x-m>0</x-m>
+    <y-m>0</y-m>
+    <z-m>7.4</z-m>
+  </offsets>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>b36d</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGC</object-name>
+    <object-name>bolGI</object-name>
+    <object-name>bolDI</object-name>
+    <object-name>bolDC</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+
+    <object-name>heliceGE</object-name>
+    <object-name>heliceGC</object-name>
+    <object-name>heliceGI</object-name>
+    <object-name>heliceDI</object-name>
+    <object-name>heliceDC</object-name>
+    <object-name>heliceDE</object-name>
+    <object-name>fanGE</object-name>
+    <object-name>fanGI</object-name>
+    <object-name>fanDI</object-name>
+    <object-name>fanDE</object-name>
+    <object-name>rouessorties</object-name>
+
+    <object-name>propdiscGE</object-name>
+    <object-name>propdiscGC</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propdiscDI</object-name>
+    <object-name>propdiscDC</object-name>
+    <object-name>propdiscDE</object-name>
+    <object-name>propblurGE</object-name>
+    <object-name>propblurGC</object-name>
+    <object-name>propblurGI</object-name>
+    <object-name>propblurDI</object-name>
+    <object-name>propblurDC</object-name>
+    <object-name>propblurDE</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>b36d</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGC</object-name>
+    <object-name>bolGI</object-name>
+    <object-name>bolDI</object-name>
+    <object-name>bolDC</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+    <object-name>heliceGE</object-name>
+    <object-name>heliceGC</object-name>
+    <object-name>heliceGI</object-name>
+    <object-name>heliceDI</object-name>
+    <object-name>heliceDC</object-name>
+    <object-name>heliceDE</object-name>
+    <object-name>fanGE</object-name>
+    <object-name>fanGI</object-name>
+    <object-name>fanDI</object-name>
+    <object-name>fanDE</object-name>
+    <object-name>rouessorties</object-name>
+    <object-name>propdiscGE</object-name>
+    <object-name>propdiscGC</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propdiscDI</object-name>
+    <object-name>propdiscDC</object-name>
+    <object-name>propdiscDE</object-name>
+    <object-name>propblurGE</object-name>
+    <object-name>propblurGC</object-name>
+    <object-name>propblurGI</object-name>
+    <object-name>propblurDI</object-name>
+    <object-name>propblurDC</object-name>
+    <object-name>propblurDE</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <effect>
+    <inherits-from>AI/Aircraft/B-36D-Peacemaker/Models/Effects/Bump/bumpspec</inherits-from>
+    <object-name>b36d</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGC</object-name>
+    <object-name>bolGI</object-name>
+    <object-name>bolDI</object-name>
+    <object-name>bolDC</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>propdiscGE</object-name>
+    <object-name>propdiscGC</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propdiscDI</object-name>
+    <object-name>propdiscDC</object-name>
+    <object-name>propdiscDE</object-name>
+    <object-name>propblurGE</object-name>
+    <object-name>propblurGC</object-name>
+    <object-name>propblurGI</object-name>
+    <object-name>propblurDI</object-name>
+    <object-name>propblurDC</object-name>
+    <object-name>propblurDE</object-name>
+  </effect>
+
+  <!-- L'hélice -->
+  <animation>
+    <name>HeliceCompleteGE</name>
+    <object-name>heliceGE</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>propdiscGE</object-name>
+    <object-name>propblurGE</object-name>
+  </animation>
+
+  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscGE</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>14</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurGE</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>60</value>
+        </greater-than>
+        <less-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>101</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>heliceGE</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>101</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>HeliceCompleteGE</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m>  -3.73570 </x-m>
+      <y-m> -19.73700 </y-m>
+      <z-m>  -2.10230 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- L'hélice -->
+  <animation>
+    <name>HeliceCompleteGC</name>
+    <object-name>heliceGC</object-name>
+    <object-name>bolGC</object-name>
+    <object-name>propdiscGC</object-name>
+    <object-name>propblurGC</object-name>
+  </animation>
+
+  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscGC</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>14</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurGC</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>60</value>
+        </greater-than>
+        <less-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>101</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>heliceGC</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>101</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>HeliceCompleteGC</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m>  -3.62361 </x-m>
+      <y-m> -13.73700 </y-m>
+      <z-m>  -2.33200 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- L'hélice -->
+  <animation>
+    <name>HeliceCompleteGI</name>
+    <object-name>heliceGI</object-name>
+    <object-name>bolGI</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propblurGI</object-name>
+  </animation>
+
+  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscGI</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>14</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurGI</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>60</value>
+        </greater-than>
+        <less-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>101</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>heliceGI</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>101</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>HeliceCompleteGI</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -3.10554 </x-m>
+      <y-m> -7.73700 </y-m>
+      <z-m> -2.56900 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- L'hélice -->
+  <animation>
+    <name>HeliceCompleteDI</name>
+    <object-name>heliceDI</object-name>
+    <object-name>bolDI</object-name>
+    <object-name>propdiscDI</object-name>
+    <object-name>propblurDI</object-name>
+  </animation>
+
+  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscDI</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>14</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurDI</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>60</value>
+        </greater-than>
+        <less-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>101</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>heliceDI</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>101</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>HeliceCompleteDI</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -3.10554 </x-m>
+      <y-m>  7.73700 </y-m>
+      <z-m> -2.56900 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- L'hélice -->
+  <animation>
+    <name>HeliceCompleteDC</name>
+    <object-name>heliceDC</object-name>
+    <object-name>bolDC</object-name>
+    <object-name>propdiscDC</object-name>
+    <object-name>propblurDC</object-name>
+  </animation>
+
+  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscDC</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>14</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurDC</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>60</value>
+        </greater-than>
+        <less-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>101</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>heliceDC</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>101</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>HeliceCompleteDC</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -3.62361 </x-m>
+      <y-m> 13.73700 </y-m>
+      <z-m> -2.33200 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- L'hélice -->
+  <animation>
+    <name>HeliceCompleteDE</name>
+    <object-name>heliceDE</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>propdiscDE</object-name>
+    <object-name>propblurDE</object-name>
+  </animation>
+
+  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscDE</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>14</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurDE</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>60</value>
+        </greater-than>
+        <less-than>
+          <property>velocities/true-airspeed-kt</property>
+          <value>101</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>heliceDE</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>101</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>HeliceCompleteDE</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -3.73570 </x-m>
+      <y-m> 19.73700 </y-m>
+      <z-m> -2.10230 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Fan jet -->
+  <animation>
+    <type>spin</type>
+    <object-name>fanGE</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m>  -5.14499 </x-m>
+      <y-m> -26.34300 </y-m>
+      <z-m>  -4.60172 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>fanGI</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m>  -5.09455 </x-m>
+      <y-m> -25.04301 </y-m>
+      <z-m>  -4.60172 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>fanDI</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m> -5.09455 </x-m>
+      <y-m> 25.04301 </y-m>
+      <z-m> -4.60172 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>fanDE</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m> -5.14499 </x-m>
+      <y-m> 26.34300 </y-m>
+      <z-m> -4.60172 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Roues sorties -->
+  <animation>
+    <type>select</type>
+    <object-name>rouessorties</object-name>
+    <object-name>portesouvertes</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>60</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <!-- Roues rentrée -->
+  <animation>
+    <type>select</type>
+    <object-name>portesfermees</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>59</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+</PropertyList>

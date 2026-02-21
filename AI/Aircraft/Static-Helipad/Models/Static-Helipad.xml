@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Static-Helipad-bombableinclude.xml">
+
+  <path>Ballycotton_Lighthouse_Helipad.ac</path>
+
+        <offsets>
+           <pitch-deg>0</pitch-deg>
+           <roll-deg>0</roll-deg>
+           <x-m>0</x-m>
+           <y-m>0</y-m>
+           <z-m>0.07</z-m>
+        </offsets>  
+
+ 
+
+</PropertyList>
