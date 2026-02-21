@@ -1,7 +1,18 @@
 <?xml version="1.0"?>
 <PropertyList>
  <scenario>
-   <description>Vietnam War Bombable Training scenario.  Starts at VVPB , VVVH, Vietnam and sea! </description>
+    <description>
+      Vietnam War Bombable Training scenario.  Starts at VVVH for Vietnam side,VVPB and Nimitz for US side.
+       
+       You must have installed Bombable-Carriers-Ships and Bombable-Objects package for this scenario 
+       to work. 
+
+      Various targets have been discovered by Military reconnaissance over Vietnam and sea! 
+
+      Objectives are - 1. Defeat your airport, vehicles, ships. 
+                       2. Eliminate enemy SA-2 site,LNG tanker,
+                           ships and destroy enemy airport.
+    </description>
 		
     <entry>
       <search-order>PREFER_AI</search-order>
