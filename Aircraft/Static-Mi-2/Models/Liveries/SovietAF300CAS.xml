@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name    type="string">Soviet Air Forces 300th Composite Aviation Squadron</name>
+        <texture type="string">Liveries/4096x4096/SovietAF300CAS.png</texture>
+        <specular>
+          <red   type="float"> 0.03 </red>
+          <green type="float"> 0.03 </green>
+          <blue  type="float"> 0.03 </blue>
+        </specular>
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>
