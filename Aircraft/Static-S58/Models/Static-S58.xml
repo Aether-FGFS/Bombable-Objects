@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!-- Static-S58 model config file -->
+<!-- Aether 2026 -->
+
+<PropertyList include="Static-S58-bombableinclude.xml">
+
+
+        <description>Static-S58</description>
+
+	<path>Aircraft/Static-S58/Models/s58.ac</path>
+
+        <texture-path>Aircraft/Static-S58/Models</texture-path>
+
+        <offsets>
+          <pitch-deg>0.5</pitch-deg>
+          <roll-deg>0</roll-deg>
+          <x-m>0</x-m>
+          <y-m>0</y-m>
+          <z-m>1.33</z-m>
+        </offsets>   
+
+
+</PropertyList>
