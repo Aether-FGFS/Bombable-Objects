@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!-- Control-Tower model config file -->
+<!-- Aether 2026, Jean-paul Chatre 3D -->
+
+<PropertyList include="Control-Tower-bombableinclude.xml">
+
+
+        <description>Control-Tower</description>
+
+	<path>AI/Aircraft/Control-Tower/Models/LFMHtw.ac</path>
+
+        <texture-path>AI/Aircraft/Control-Tower/Models</texture-path>
+
+
+</PropertyList>

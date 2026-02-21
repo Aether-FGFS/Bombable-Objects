@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="LNG-Tanker-bombableinclude.xml">
+
+  <path>ship_LNG.ac</path>
+
+        <description>LNG-Tanker</description>
+
+	<path>AI/Aircraft/LNG-Tanker/Models/ship_LNG.ac</path>
+
+        <texture-path>AI/Aircraft/LNG-Tanker/Models</texture-path>
+
+        <offsets>
+           <pitch-deg>0</pitch-deg>
+           <roll-deg>0</roll-deg>
+           <x-m>0</x-m>
+           <y-m>0</y-m>
+           <z-m>0.05</z-m>
+        </offsets>  
+
+ 
+
+</PropertyList>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Airport-Tower-1 model config file -->
+<!-- Aether 2026 -->
+
+<PropertyList include="Airport-Tower-1-bombableinclude.xml">
+
+        <description>Airport-Tower-1</description>
+
+	<path>AI/Aircraft/Airport-Tower-1/Models/ParisTWR.ac</path>
+
+        <texture-path>AI/Aircraft/Airport-Tower-1/Models</texture-path>
+	
+</PropertyList>
