@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Static-S58-bombableinclude.xml">
+
+  <path>s58.ac</path>
+
+  <offsets>
+    <pitch-deg>-1</pitch-deg>
+    <roll-deg>0</roll-deg>
+    <x-m>0</x-m>
+    <y-m>0</y-m>
+    <z-m>1.35</z-m>
+  </offsets>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>s58</object-name>
+
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>s58</object-name>
+    <property-base>/ai/models/multiplayer/sim/multiplay/generic</property-base>
+    <texture-prop>string[1]</texture-prop>
+    <texture>/ai/models/multiplayer/sim/multiplay/generic/string[1]</texture>
+  </animation>
+
+  <model>
+    <path>Externals/MainRotor/all-mainrotor.xml</path>
+  </model>
+
+  <model>
+    <path>Externals/TailRotor/all-tailrotor.xml</path>
+  </model>
+
+  <model>
+    <path>Effects/light/all-lights.xml</path>
+  </model>
+
+</PropertyList>
