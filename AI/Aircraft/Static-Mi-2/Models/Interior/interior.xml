@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>plafond</object-name>
+    <object-name>planchet</object-name>
+    <object-name>montant</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intporteleft</object-name>
+    <object-name>intporteright</object-name>
+    <object-name>intporte</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteleft</object-name>
+    <object-name>intvitreporteright</object-name>
+    <object-name>intvitreporte</object-name>
+    <!-- HDR mode -->
+    <object-name>HDRintvitres</object-name>
+    <object-name>HDRintvitreporteleft</object-name>
+    <object-name>HDRintvitreporteright</object-name>
+    <object-name>HDRintvitreporte</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../Effects/Glass/glassrain</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteleft</object-name>
+    <object-name>intvitreporteright</object-name>
+    <object-name>intvitreporte</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>../Effects/Glass/glass</inherits-from>
+    <object-name>HDRintvitres</object-name>
+    <object-name>HDRintvitreporteleft</object-name>
+    <object-name>HDRintvitreporteright</object-name>
+    <object-name>HDRintvitreporte</object-name>
+  </effect>
+
+  <!-- Sélection des vitres en fonction de HDR ou pas -->
+  <animation>
+    <type>select</type>
+    <condition>
+      <!-- <property>sim/rendering/hdr/hdr-enabled</property> -->
+      <property>sim/multiplay/generic/bool[2]</property>
+    </condition>
+    <object-name>HDRintvitres</object-name>
+    <object-name>HDRintvitreporteleft</object-name>
+    <object-name>HDRintvitreporteright</object-name>
+    <object-name>HDRintvitreporte</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <!-- <not><property>sim/rendering/hdr/hdr-enabled</property></not> -->
+      <not><property>sim/multiplay/generic/bool[2]</property></not>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteleft</object-name>
+    <object-name>intvitreporteright</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <model>
+    <path>Panel/all-panels.xml</path>
+  </model>
+
+  <model>
+    <path>Overhead/all-overhead.xml</path>
+  </model>
+
+  <model>
+    <path>../Pilot/all-pilots.xml</path>
+  </model>
+
+  <model>
+    <path>Seats/all-seats.xml</path>
+  </model>
+
+  <model>
+    <path>Panel/Instruments/pedals/all-pedals.xml</path>
+  </model>
+
+  <model>
+    <path>Panel/Instruments/yokes/all-yokes.xml</path>
+  </model>
+
+  <model>
+    <path>Panel/Instruments/collective/all-collectives.xml</path>
+  </model>
+
+  <animation>
+    <type>pick</type>
+    <object-name>intporteleft</object-name>
+    <object-name>intvitreporteleft</object-name>
+    <object-name>HDRintvitreporteleft</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>intporteleft</object-name>
+    <object-name>intvitreporteleft</object-name>
+    <object-name>HDRintvitreporteleft</object-name>
+    <!-- <property>sim/model/door-positions/crew/position-norm</property> -->
+    <property>sim/multiplay/generic/float[33]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -0.02 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.06 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>intporteleft</object-name>
+    <object-name>intvitreporteleft</object-name>
+    <object-name>HDRintvitreporteleft</object-name>
+    <!-- <property>sim/model/door-positions/crew/position-norm</property> -->
+    <property>sim/multiplay/generic/float[33]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.7 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteleft</object-name>
+    <object-name>intvitreporteleft</object-name>
+    <object-name>HDRintvitreporteleft</object-name>
+    <!-- <property>sim/model/door-positions/crew/position-norm</property> -->
+    <property>sim/multiplay/generic/float[33]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 6 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.52253 </x-m>
+      <y-m> -0.78039 </y-m>
+      <z-m> -0.88579 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>intporteright</object-name>
+    <object-name>intvitreporteright</object-name>
+    <object-name>HDRintvitreporteright</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <condition>
+          <and>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+            <less-than>
+              <property>gear/gear[0]/rollspeed-ms</property>
+              <value>10</value>
+            </less-than>
+          </and>
+        </condition>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteright</object-name>
+    <object-name>intvitreporteright</object-name>
+    <object-name>HDRintvitreporteright</object-name>
+    <!-- <property>sim/model/door-positions/passenger/position-norm</property> -->
+    <property>sim/multiplay/generic/float[34]</property>
+    <factor> 60 </factor>
+    <axis>
+      <x1-m> -4.87510 </x1-m>
+      <y1-m>  0.70173 </y1-m>
+      <z1-m> -1.00281 </z1-m>
+      <x2-m> -4.87510 </x2-m>
+      <y2-m>  0.71215 </y2-m>
+      <z2-m> -0.75257 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>intporte</object-name>
+    <object-name>intvitreporte</object-name>
+    <object-name>HDRintvitreporte</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <condition>
+          <and>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+            <less-than>
+              <property>gear/gear[0]/rollspeed-ms</property>
+              <value>10</value>
+            </less-than>
+          </and>
+        </condition>
+        <command>nasal</command>
+        <script>doors.baie.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intporte</object-name>
+    <object-name>intvitreporte</object-name>
+    <object-name>HDRintvitreporte</object-name>
+    <!-- <property>sim/model/door-positions/baie/position-norm</property> -->
+    <property>sim/multiplay/generic/float[35]</property>
+    <factor> -80 </factor>
+    <axis>
+      <x1-m> -2.43823 </x1-m>
+      <y1-m> -0.79737 </y1-m>
+      <z1-m> -0.88751 </z1-m>
+      <x2-m> -2.43823 </x2-m>
+      <y2-m> -0.81032 </y2-m>
+      <z2-m> -0.66821 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>
