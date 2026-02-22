@@ -21,7 +21,7 @@
       <name>Nimitz</name>
       <model type="string">Aircraft/Nimitz/Models/Nimitz.xml</model>
       <latitude type="double">16.9901</latitude>
-      <longitude type="double">108.0871</longitude>
+      <longitude type="double">108.0859</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
@@ -34,8 +34,8 @@
       <callsign>USS Lake Champlain</callsign>
       <name>USS Lake Champlain</name>
       <model type="string">Aircraft/USS-Lake-Champlain/Models/USS-Lake-Champlain.xml</model>
-      <latitude type="double">16.9951</latitude>
-      <longitude type="double">108.0881</longitude>
+      <latitude type="double">17.0001</latitude>
+      <longitude type="double">108.0821</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
@@ -48,8 +48,8 @@
       <callsign>USS Oliver Perry</callsign>
       <name>USS Oliver Perry</name>
       <model type="string">Aircraft/USS-Oliver-Perry/Models/USS-Oliver-Perry.xml</model>
-      <latitude type="double">16.9891</latitude>
-      <longitude type="double">108.0891</longitude>
+      <latitude type="double">17.0001</latitude>
+      <longitude type="double">108.0971</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
@@ -59,15 +59,15 @@
     <entry>
       <search-order>PREFER_AI</search-order>
       <type>ship</type>
-      <callsign>Prepositioning Force Ship</callsign>
-      <name>Prepositioning Force Ship</name>
-      <model type="string">Aircraft/Prepositioning-Force-Ship/Models/Prepositioning-Force-Ship.xml</model>
-      <latitude type="double">16.9861</latitude>
-      <longitude type="double">108.0851</longitude>
+      <callsign>USS-Ticonderoga</callsign>
+      <name>USS-Ticonderoga</name>
+      <model type="string">Aircraft/USS-Ticonderoga/Models/USS-Ticonderoga.xml</model>
+      <latitude type="double">16.9721</latitude>
+      <longitude type="double">108.0901</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
-      <heading type="double">310</heading>
+      <heading type="double">300</heading>
     </entry>
 
     <entry>
@@ -76,8 +76,8 @@
       <callsign>UB_I</callsign>
       <name>UB_I</name>
       <model type="string">Aircraft/UB_I/Models/UB_I.xml</model>
-      <latitude type="double">16.9855</latitude>
-      <longitude type="double">108.0851</longitude>
+      <latitude type="double">16.9755</latitude>
+      <longitude type="double">108.0761</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
@@ -87,7 +87,7 @@
     <entry>
       <search-order>PREFER_AI</search-order>
       <type>ship</type>
-      <callsign>Coast Guard</callsign>
+      <callsign>Coast Guard VAOP</callsign>
       <name>Coast Guard</name>
       <model type="string">Aircraft/Coast-Guard/Models/Coast-Guard.xml</model>
       <latitude type="double">17.2681</latitude>
@@ -130,7 +130,7 @@
     <entry>
       <search-order>PREFER_AI</search-order>
       <type>ship</type>
-      <callsign>Coast-Guard-1</callsign>
+      <callsign>Coast-Guard-1 VAOP</callsign>
       <name>Coast-Guard-1</name>
       <model type="string">Aircraft/Coast-Guard/Models/Coast-Guard.xml</model>
       <latitude type="double">18.8260</latitude>
