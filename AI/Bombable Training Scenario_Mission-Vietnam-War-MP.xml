@@ -273,7 +273,7 @@
       <callsign>Airport-Lamp-VVPB</callsign>
       <name>Airport-Lamp</name>
       <model type="string">Aircraft/Airport-Lamp/Models/Airport-Lamp.xml</model>
-      <latitude type="double">16.4000</latitude>
+      <latitude type="double">16.3990</latitude>
       <longitude type="double">107.7004</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
@@ -287,7 +287,7 @@
       <callsign>Airport-Lamp-1-VVPB</callsign>
       <name>Airport-Lamp-1-VVPB</name>
       <model type="string">Aircraft/Airport-Lamp/Models/Airport-Lamp.xml</model>
-      <latitude type="double">16.4000</latitude>
+      <latitude type="double">16.3990</latitude>
       <longitude type="double">107.7016</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
@@ -315,7 +315,7 @@
       <callsign>Static-Helipad-1-VVPB</callsign>
       <name>Static-Helipad-1-VVPB</name>
       <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
-      <latitude type="double">16.3988</latitude>
+      <latitude type="double">16.3987</latitude>
       <longitude type="double">107.6994</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
@@ -343,7 +343,7 @@
       <callsign>Static-Helipad-3-VVPB</callsign>
       <name>Static-Helipad-3-VVPB</name>
       <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
-      <latitude type="double">16.3994</latitude>
+      <latitude type="double">16.3995</latitude>
       <longitude type="double">107.6994</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
@@ -701,7 +701,7 @@
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
-      <heading type="double">175</heading>
+      <heading type="double">320</heading>
     </entry>
 
     <entry>
@@ -712,6 +712,20 @@
       <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
       <latitude type="double">17.4930</latitude>
       <longitude type="double">106.4794</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">034</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>SAM-launcher-VAOP</callsign>
+      <name>SAM-launcher-VAOP</name>
+      <model type="string">Aircraft/SAM-launcher/Models/SAM-launcher.xml</model>
+      <latitude type="double">17.0690</latitude>
+      <longitude type="double">106.6451</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
@@ -732,6 +746,47 @@
       <heading type="double">75</heading>
     </entry>
 
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Military-Barrack</callsign>
+      <name>Military-Barrack</name>
+      <model type="string">Aircraft/WWII-Military-Barrack/Models/WWII-Military-Barrack.xml</model>
+      <latitude type="double">17.0690</latitude>
+      <longitude type="double">106.6460</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">213</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>V
+      <callsign>WWII-Military-Office-VAOP</callsign>
+      <name>WWII-Military-Office-VAOP</name>
+      <model type="string">Aircraft/WWII-Military-Office/Models/WWII-Military-Office.xml</model>
+      <latitude type="double">17.0690</latitude>
+      <longitude type="double">106.6450</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">213</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-VAOP</callsign>
+      <name>jeep-M151-VAOP</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">17.0690</latitude>
+      <longitude type="double">106.6465</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">034</heading>
+    </entry>
 
 
  </scenario>
