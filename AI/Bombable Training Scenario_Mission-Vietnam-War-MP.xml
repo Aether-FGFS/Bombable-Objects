@@ -763,8 +763,8 @@
     <entry>
       <search-order>PREFER_AI</search-order>
       <type>ship</type>V
-      <callsign>WWII-Military-Office-VAOP</callsign>
-      <name>WWII-Military-Office-VAOP</name>
+      <callsign>Military-Office-VAOP</callsign>
+      <name>Military-Office-VAOP</name>
       <model type="string">Aircraft/WWII-Military-Office/Models/WWII-Military-Office.xml</model>
       <latitude type="double">17.0690</latitude>
       <longitude type="double">106.6450</longitude>
