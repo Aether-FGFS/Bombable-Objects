@@ -354,6 +354,286 @@
     <entry>
       <search-order>PREFER_AI</search-order>
       <type>ship</type>
+      <callsign>Phu Bai Combat Base-VVPB</callsign>
+      <name>Phu Bai Combat Base-VVPB</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3855249</latitude>
+      <longitude type="double">107.7008683</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>22d Surgical-Helipad-VVPB</callsign>
+      <name>22d Surgical-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3981668</latitude>
+      <longitude type="double">107.7010426</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>85th Evac-Helipad-VVPB</callsign>
+      <name>85th Evac-Helipad-1</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3955299</latitude>
+      <longitude type="double">107.6953924</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>AO Harrisburg-Helipad</callsign>
+      <name>AO Harrisburg-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">11.3013354</latitude>
+      <longitude type="double">106.7948112</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Arrow-Helipad</callsign>
+      <name>Arrow-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3612690</latitude>
+      <longitude type="double">107.6191457</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Berchtesgaden-Helipad</callsign>
+      <name>Berchtesgaden-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.2804309</latitude>
+      <longitude type="double">107.2673522</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Blaze-Helipad</callsign>
+      <name>Blaze-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.2857616</latitude>
+      <longitude type="double">107.3581423</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Boyd-Helipad</callsign>
+      <name>Boyd-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3854175</latitude>
+      <longitude type="double">107.5652001</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Camp Eagle-Helipad</callsign>
+      <name>Camp Eagle-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3880209</latitude>
+      <longitude type="double">107.6466368</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Camp Evans-Helipad</callsign>
+      <name>Camp Evans-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.5475934</latitude>
+      <longitude type="double">107.3706674</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Dak To (FB5)-Helipad</callsign>
+      <name>Dak To (FB5)-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">14.6270890</latitude>
+      <longitude type="double">107.6901512</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Eagle Beach-Helipad</callsign>
+      <name>Eagle Beach-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.5622700</latitude>
+      <longitude type="double">107.6518148</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Fury-Helipad</callsign>
+      <name>Fury-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.1284504</latitude>
+      <longitude type="double">107.3693557</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Gladiator-Helipad</callsign>
+      <name>Gladiator-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.4593547</latitude>
+      <longitude type="double">107.2628679</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Hill 916-Helipad</callsign>
+      <name>Hill 916-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.2426448</latitude>
+      <longitude type="double">107.1659174</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Hill 996-Helipad</callsign>
+      <name>Hill 996-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.2155627</latitude>
+      <longitude type="double">107.1637509</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Kathryn-Helipad</callsign>
+      <name>Kathryn-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.3684965</latitude>
+      <longitude type="double">107.3104764</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Mai Loc-Helipad</callsign>
+      <name>Mai Loc-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.7379131</latitude>
+      <longitude type="double">106.9679633</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Rendezvous-Helipad</callsign>
+      <name>Rendezvous-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">17.1374918</latitude>
+      <longitude type="double">107.2897130</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Sword-Helipad</callsign>
+      <name>Sword-Helipad</name>
+      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <latitude type="double">16.5504951</latitude>
+      <longitude type="double">107.2723585</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
       <callsign>Sikorsky-S58-VVPB</callsign>
       <name>Sikorsky-S58</name>
       <model type="string">Aircraft/Static-S58/Models/Static-S58.xml</model>
@@ -498,8 +778,8 @@
       <callsign>Airport-Lamp-VVVH</callsign>
       <name>Airport-Lamp-VVVH</name>
       <model type="string">Aircraft/Airport-Lamp/Models/Airport-Lamp.xml</model>
-      <latitude type="double">18.7440</latitude>
-      <longitude type="double">105.6682</longitude>
+      <latitude type="double">18.7432</latitude>
+      <longitude type="double">105.6681</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
@@ -512,8 +792,8 @@
       <callsign>Airport-Lamp-VVVH</callsign>
       <name>Airport-Lamp-1-VVVH</name>
       <model type="string">Aircraft/Airport-Lamp/Models/Airport-Lamp.xml</model>
-      <latitude type="double">18.7449</latitude>
-      <longitude type="double">105.6682</longitude>
+      <latitude type="double">18.7429</latitude>
+      <longitude type="double">105.6681</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
@@ -555,7 +835,7 @@
       <name>MiG-15bis-1</name>
       <model type="string">Aircraft/Static-MiG-15bis/Models/Static-MiG-15bis.xml</model>
       <latitude type="double">18.7430</latitude>
-      <longitude type="double">105.6682</longitude>
+      <longitude type="double">105.6678</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
@@ -584,7 +864,7 @@
       <name>MiG-15bis-3</name>
       <model type="string">Aircraft/Static-MiG-15bis/Models/Static-MiG-15bis.xml</model>
       <latitude type="double">18.7432</latitude>
-      <longitude type="double">105.6682</longitude>
+      <longitude type="double">105.6678</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
