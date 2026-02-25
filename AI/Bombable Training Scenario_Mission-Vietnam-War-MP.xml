@@ -987,6 +987,48 @@
     <entry>
       <search-order>PREFER_AI</search-order>
       <type>ship</type>
+      <callsign>Radar-SA2</callsign>
+      <name>Radar-SA2</name>
+      <model type="string">Aircraft/Radar-SA2/Models/Radar-SA2.xml</model>
+      <latitude type="double">17.4940</latitude>
+      <longitude type="double">106.4811</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">75</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>SAM Site B27-2</callsign>
+      <name>SAM Site B27-2</name>
+      <model type="string">Aircraft/SA-2/Models/SA-2.xml</model>
+      <latitude type="double">20.5942</latitude>
+      <longitude type="double">105.3332</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">320</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>SAM Site B27-2-Radar</callsign>
+      <name>SAM Site B27-2-Radar</name>
+      <model type="string">Aircraft/Radar-SA2/Models/Radar-SA2.xml</model>
+      <latitude type="double">20.5942</latitude>
+      <longitude type="double">105.3334</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">320</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
       <callsign>jeep-M151-SA</callsign>
       <name>jeep-M151-SA</name>
       <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
@@ -1010,20 +1052,6 @@
       <speed>0</speed>
       <rudder type="double">0</rudder>
       <heading type="double">034</heading>
-    </entry>
-
-    <entry>
-      <search-order>PREFER_AI</search-order>
-      <type>ship</type>
-      <callsign>Radar-SA2</callsign>
-      <name>Radar-SA2</name>
-      <model type="string">Aircraft/Radar-SA2/Models/Radar-SA2.xml</model>
-      <latitude type="double">17.4940</latitude>
-      <longitude type="double">106.4811</longitude>
-      <altitude>0</altitude>
-      <speed>0</speed>
-      <rudder type="double">0</rudder>
-      <heading type="double">75</heading>
     </entry>
 
     <entry>
