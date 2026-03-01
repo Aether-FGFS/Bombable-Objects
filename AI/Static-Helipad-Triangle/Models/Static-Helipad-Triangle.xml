@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<PropertyList include="Static-Helipad-Triangle-bombableinclude.xml">
+	<path>helipad_elba.ac</path>
+
+	<animation>
+		<object-name>helipad</object-name>
+		<enable-hot>false</enable-hot>
+	</animation>
+
+	<animation>
+		<type>noshadow</type>
+		<object-name>helipad</object-name>
+	</animation>
+
+        <offsets>
+           <pitch-deg>0</pitch-deg>
+           <roll-deg>0</roll-deg>
+           <x-m>0</x-m>
+           <y-m>0</y-m>
+           <z-m>0.05</z-m>
+        </offsets>  
+
+</PropertyList>
+

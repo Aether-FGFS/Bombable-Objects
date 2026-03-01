@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Models/Static-Helipad-Triangle.xml">
+
+  <model>
+    <path>AI/Aircraft/Static-Helipad-Triangle/Models/Static-Helipad-Triangle.xml</path>
+  </model>
+
+</PropertyList>
