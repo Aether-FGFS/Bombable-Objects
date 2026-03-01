@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<PropertyList include="Static-Hydrogen-Storage-bombableinclude.xml">
+	<path>LOWI_hydrogen_storage.ac</path>
+
+	<animation>
+		<object-name>Hydrogen-Storage</object-name>
+		<enable-hot>false</enable-hot>
+	</animation>
+
+	<animation>
+		<type>noshadow</type>
+		<object-name>Hydrogen-Storage</object-name>
+	</animation>
+
+        <offsets>
+           <pitch-deg>0</pitch-deg>
+           <roll-deg>0</roll-deg>
+           <x-m>0</x-m>
+           <y-m>0</y-m>
+           <z-m>0.05</z-m>
+        </offsets>  
+
+</PropertyList>
+
