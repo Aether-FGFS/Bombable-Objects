@@ -1079,7 +1079,7 @@
       <callsign>T-34-4-LUKK</callsign>
       <name>Tank-T-34-4-LUKK</name>
       <model type="string">Aircraft/WWII-static-T-34/Models/WWII-static-T-34-85early.xml</model>
-      <latitude type="double">47.003</latitude>
+      <latitude type="double">47.0032</latitude>
       <longitude type="double">28.652</longitude>
       <altitude>0.10</altitude>
       <speed>0.0</speed>
@@ -1095,7 +1095,7 @@
       <callsign>T-34-5-LUKK</callsign>
       <name>Tank-T-34-5-LUKK</name>
       <model type="string">Aircraft/WWII-static-T-34/Models/WWII-static-T-34-76.xml</model>
-      <latitude type="double">47.004</latitude>
+      <latitude type="double">47.0045</latitude>
       <longitude type="double">28.653</longitude>
       <altitude>0.10</altitude>
       <speed>0.0</speed>
@@ -1109,7 +1109,7 @@
       <callsign>T-34-6-LUKK</callsign>
       <name>Tank-T-34-6-LUKK</name>
       <model type="string">Aircraft/WWII-static-T-34/Models/WWII-static-T-34-76.xml</model>
-      <latitude type="double">47.004</latitude>
+      <latitude type="double">47.0043</latitude>
       <longitude type="double">28.656</longitude>
       <altitude>0.10</altitude>
       <speed>0.0</speed>
@@ -1123,7 +1123,7 @@
       <callsign>T-34-7-LUKK</callsign>
       <name>Tank-T-34-7-LUKK</name>
       <model type="string">Aircraft/T-34/Models/WWII-static-T-34-85early</model>
-      <latitude type="double">47.003</latitude>
+      <latitude type="double">47.0028</latitude>
       <longitude type="double">28.656</longitude>
       <altitude>0.10</altitude>
       <speed>0.0</speed>
@@ -1137,7 +1137,7 @@
       <callsign>T-34-8-LUKK</callsign>
       <name>Tank-T-34-8-LUKK</name>
       <model type="string">Aircraft/T-34/Models/T-34-76.xml</model>
-      <latitude type="double">47.003</latitude>
+      <latitude type="double">47.0035</latitude>
       <longitude type="double">28.656</longitude>
       <altitude>0.10</altitude>
       <speed>0.0</speed>
