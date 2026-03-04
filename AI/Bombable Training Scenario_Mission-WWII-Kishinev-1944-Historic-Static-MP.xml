@@ -55,7 +55,7 @@
       <type>ship</type>
       <callsign>panzer-04</callsign>
       <name>Tank-panzer-04</name>
-      <model type="string">Aircraft/panzer/Models/panzer.xml</model>
+      <model type="string">Aircraft/WWII-static-panzer/Models/WWII-static-panzer.xml</model>
       <latitude type="double">47.016</latitude>
       <longitude type="double">28.633</longitude>
       <altitude>0.10</altitude>
@@ -69,7 +69,7 @@
       <type>ship</type>
       <callsign>panzer-05</callsign>
       <name>Tank-panzer-05</name>
-      <model type="string">Aircraft/panzer/Models/panzer.xml</model>
+      <model type="string">Aircraft/WWII-static-panzer/Models/WWII-static-panzer.xml</model>
       <latitude type="double">47.016</latitude>
       <longitude type="double">28.634</longitude>
       <altitude>0.10</altitude>
@@ -111,7 +111,7 @@
       <type>ship</type>
       <callsign>panzer-08</callsign>
       <name>Tank-panzer-08</name>
-      <model type="string">Aircraft/panzer/Models/panzer.xml</model>
+      <model type="string">Aircraft/WWII-static-panzer/Models/WWII-static-panzer.xml</model>
       <latitude type="double">47.014</latitude>
       <longitude type="double">28.638</longitude>
       <altitude>0.10</altitude>
@@ -181,7 +181,7 @@
       <type>ship</type>
       <callsign>panzer-13</callsign>
       <name>Tank-panzer-13</name>
-      <model type="string">Aircraft/panzer/Models/panzer.xml</model>
+      <model type="string">Aircraft/WWII-static-panzer/Models/WWII-static-panzer.xml</model>
       <latitude type="double">47.012</latitude>
       <longitude type="double">28.644</longitude>
       <altitude>0.10</altitude>
@@ -210,7 +210,7 @@
       <type>ship</type>
       <callsign>panzer-15</callsign>
       <name>Tank-panzer-15</name>
-      <model type="string">Aircraft/panzer/Models/panzer.xml</model>
+      <model type="string">Aircraft/WWII-static-panzer/Models/WWII-static-panzer.xml</model>
       <latitude type="double">47.010</latitude>
       <longitude type="double">28.644</longitude>
       <altitude>0.10</altitude>
