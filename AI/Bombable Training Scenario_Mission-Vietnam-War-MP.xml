@@ -775,15 +775,71 @@
     <entry>
       <search-order>PREFER_AI</search-order>
       <type>ship</type>
+      <callsign>Military-Building-Dak To (FB5)</callsign>
+      <name>Military-Building-Dak To (FB5)</name>
+      <model type="string">Aircraft/WWII-Military-Building/Models/WWII-Military-Building.xml</model>
+      <latitude type="double">14.6271890</latitude>
+      <longitude type="double">107.6903512</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">225</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-Dak To (FB5)</callsign>
+      <name>jeep-M151-Dak To (FB5)</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">14.6271890</latitude>
+      <longitude type="double">107.6902512</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">034</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
       <callsign>Eagle Beach-Helipad</callsign>
       <name>Eagle Beach-Helipad</name>
       <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
-      <latitude type="double">16.5622700</latitude>
-      <longitude type="double">107.6518148</longitude>
+      <latitude type="double">16.5610</latitude>
+      <longitude type="double">107.6520</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
       <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Military-Building-Eagle Beach</callsign>
+      <name>Military-Building-Eagle Beach</name>
+      <model type="string">Aircraft/WWII-Military-Building/Models/WWII-Military-Building.xml</model>
+      <latitude type="double">16.5606</latitude>
+      <longitude type="double">107.65202</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">225</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-Eagle Beach</callsign>
+      <name>jeep-M151-Eagle Beach</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">16.56051</latitude>
+      <longitude type="double">107.65210</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">075</heading>
     </entry>
 
     <entry>
@@ -791,13 +847,27 @@
       <type>ship</type>
       <callsign>Fury-Helipad</callsign>
       <name>Fury-Helipad</name>
-      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <model type="string">Aircraft/Static-Helipad-Circle/Models/Static-Helipad-Circle.xml</model>
       <latitude type="double">16.1284504</latitude>
-      <longitude type="double">107.3693557</longitude>
+      <longitude type="double">107.3700</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
       <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-Fury</callsign>
+      <name>jeep-M151-Fury</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">16.1285504</latitude>
+      <longitude type="double">107.3701</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">075</heading>
     </entry>
 
     <entry>
@@ -805,13 +875,13 @@
       <type>ship</type>
       <callsign>Gladiator-Helipad</callsign>
       <name>Gladiator-Helipad</name>
-      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
-      <latitude type="double">16.4593547</latitude>
-      <longitude type="double">107.2628679</longitude>
+      <model type="string">Aircraft/Static-Helipad-Square/Models/Static-Helipad-Square.xml</model>
+      <latitude type="double">16.45948</latitude>
+      <longitude type="double">107.26381</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
-      <heading type="double">085</heading>
+      <heading type="double">195</heading>
     </entry>
 
     <entry>
@@ -819,13 +889,41 @@
       <type>ship</type>
       <callsign>Hill 916-Helipad</callsign>
       <name>Hill 916-Helipad</name>
-      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
-      <latitude type="double">16.2426448</latitude>
-      <longitude type="double">107.1659174</longitude>
+      <model type="string">Aircraft/Static-Helipad-Circle/Models/Static-Helipad-Circle.xml</model>
+      <latitude type="double">16.2424</latitude>
+      <longitude type="double">107.1660</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
       <heading type="double">085</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Military-Building-Hill 916</callsign>
+      <name>Military-Building-Hill 916</name>
+      <model type="string">Aircraft/WWII-Military-Building/Models/WWII-Military-Building.xml</model>
+      <latitude type="double">16.2421</latitude>
+      <longitude type="double">107.1661</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">175</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-Hill 916</callsign>
+      <name>jeep-M151-Hill 916</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">16.2423</latitude>
+      <longitude type="double">107.1660</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">075</heading>
     </entry>
 
     <entry>
@@ -833,13 +931,13 @@
       <type>ship</type>
       <callsign>Hill 996-Helipad</callsign>
       <name>Hill 996-Helipad</name>
-      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <model type="string">Aircraft/Static-Helipad-Kitt-Peak/Models/Static-Helipad-Kitt-Peak.xml</model>
       <latitude type="double">16.2155627</latitude>
-      <longitude type="double">107.1637509</longitude>
+      <longitude type="double">107.16512</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
-      <heading type="double">085</heading>
+      <heading type="double">290</heading>
     </entry>
 
     <entry>
@@ -847,13 +945,13 @@
       <type>ship</type>
       <callsign>Kathryn-Helipad</callsign>
       <name>Kathryn-Helipad</name>
-      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <model type="string">Aircraft/Static-Helipad-Triangle/Models/Static-Helipad-Triangle.xml</model>
       <latitude type="double">16.3684965</latitude>
       <longitude type="double">107.3104764</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
-      <heading type="double">085</heading>
+      <heading type="double">080</heading>
     </entry>
 
     <entry>
@@ -861,13 +959,41 @@
       <type>ship</type>
       <callsign>Mai Loc-Helipad</callsign>
       <name>Mai Loc-Helipad</name>
-      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <model type="string">Aircraft/Static-Helipad-Square/Models/Static-Helipad-Square.xml</model>
       <latitude type="double">16.7379131</latitude>
-      <longitude type="double">106.9679633</longitude>
+      <longitude type="double">106.9675</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
-      <heading type="double">085</heading>
+      <heading type="double">175</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Military-Building-Mai Loc</callsign>
+      <name>Military-Building-Mai Loc</name>
+      <model type="string">Aircraft/WWII-Military-Building/Models/WWII-Military-Building.xml</model>
+      <latitude type="double">16.73796</latitude>
+      <longitude type="double">106.9679</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">175</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-Mai Loc</callsign>
+      <name>jeep-M151-Mai Loc</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">16.7380</latitude>
+      <longitude type="double">106.9680</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">075</heading>
     </entry>
 
     <entry>
@@ -875,13 +1001,13 @@
       <type>ship</type>
       <callsign>Rendezvous-Helipad</callsign>
       <name>Rendezvous-Helipad</name>
-      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
-      <latitude type="double">17.1374918</latitude>
-      <longitude type="double">107.2897130</longitude>
+      <model type="string">Aircraft/Static-Helipad-Kitt-Peak/Models/Static-Helipad-Kitt-Peak.xml</model>
+      <latitude type="double">16.2409</latitude>
+      <longitude type="double">107.2732</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
-      <heading type="double">085</heading>
+      <heading type="double">035</heading>
     </entry>
 
     <entry>
@@ -889,13 +1015,41 @@
       <type>ship</type>
       <callsign>Sword-Helipad</callsign>
       <name>Sword-Helipad</name>
-      <model type="string">Aircraft/Static-Helipad/Models/Static-Helipad.xml</model>
+      <model type="string">Aircraft/Static-Helipad-Circle/Models/Static-Helipad-Circle.xml</model>
       <latitude type="double">16.5504951</latitude>
+      <longitude type="double">107.2721585</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">175</heading>
+    </entry>
+
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>Military-Building-Sword</callsign>
+      <name>Military-Building-Sword</name>
+      <model type="string">Aircraft/WWII-Military-Building/Models/WWII-Military-Building.xml</model>
+      <latitude type="double">16.5507251</latitude>
       <longitude type="double">107.2723585</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
       <rudder type="double">0</rudder>
-      <heading type="double">085</heading>
+      <heading type="double">175</heading>
+    </entry>
+v
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep-M151-Sword</callsign>
+      <name>jeep-M151-Sword</name>
+      <model type="string">Aircraft/jeep-M151/Models/jeep-M151.xml</model>
+      <latitude type="double">16.5508251</latitude>
+      <longitude type="double">107.2723585</longitude>
+      <altitude>0</altitude>
+      <speed>0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">075</heading>
     </entry>
 
     <entry>
