@@ -708,7 +708,7 @@
       <callsign>Military-Building-Camp Eagle</callsign>
       <name>Military-Building-Camp Eagle</name>
       <model type="string">Aircraft/WWII-Military-Building/Models/WWII-Military-Building.xml</model>
-      <latitude type="double">16.3881209</latitude>
+      <latitude type="double">16.3883209</latitude>
       <longitude type="double">107.646630</longitude>
       <altitude>0</altitude>
       <speed>0</speed>
