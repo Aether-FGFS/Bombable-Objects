@@ -2,7 +2,7 @@
  ==========================================================
 
 
- To use Bombable-Objects, install Bombable v.5.0, updated by
+ To use Bombable-Objects, install Bombable v.6.0, updated by
   Helijah. Install it as addon module into Flightgear. 
   
 
