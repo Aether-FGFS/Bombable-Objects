@@ -4,6 +4,10 @@
 
  To use Bombable-Objects, install Bombable v.6.0, updated by
   Helijah. Install it as addon module into Flightgear. 
+
+ For MPdamage, you must have installed AI model with added bombableinclude.xml
+  or Impacts will not work over multiplayer. Install AI aircraft into
+  fgdata/AI/Aircraft ,  and you are ready for action.
   
 
  Installation: Copy AI and Aircraft folder from Bombable-Objects
