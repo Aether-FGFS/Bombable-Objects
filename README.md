@@ -6,8 +6,7 @@
   Helijah. Install it as addon module into Flightgear. 
 
  For MPdamage, you must have installed AI model with added bombableinclude.xml
-  or Impacts will not work over multiplayer. Install AI aircraft into
-  fgdata/AI/Aircraft ,  and you are ready for action.
+  or Impacts will not work over multiplayer.
   
 
  Installation: Copy AI and Aircraft folder from Bombable-Objects
