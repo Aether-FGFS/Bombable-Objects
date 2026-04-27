@@ -3,7 +3,7 @@
 <PropertyList>
 
   <sound>
-    <path>Aircraft/UH-1/Models/Effects/Weapons/guns/12mm/guns-sound.xml</path>
+    <path>Aircraft/panzer/Models/Effects/Weapons/guns/12mm/guns-sound.xml</path>
   </sound>
 
   <model>
