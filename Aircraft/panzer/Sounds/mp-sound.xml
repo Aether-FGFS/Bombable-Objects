@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<fx>
+
+  <!-- ================================================
+       MP PANZER SOUNDS - what other players hear
+       via sim/multiplay/generic properties
+
+       Transmitted properties:
+         bool[1]   = turret rotating
+         int[10]   = cannon fire
+         int[11]   = hull MG fire
+         int[12]   = AA MG fire
+  ================================================ -->
+
+  <!-- Engine - always running (tank engine is always on) -->
+  <engine>
+   <n>mp-engine</n>
+   <mode>looped</mode>
+   <path>Aircraft/panzer/Sounds/panzerengine.wav</path>
+   <volume>
+    <offset>0.7</offset>
+    <max>1.0</max>
+   </volume>
+   <pitch>
+    <offset>1.0</offset>
+   </pitch>
+   <reference-dist>30</reference-dist>
+   <max-dist>3000</max-dist>
+  </engine>
+
+  <!-- Track rumble - always on with engine -->
+  <rumble>
+   <n>mp-rumble</n>
+   <mode>looped</mode>
+   <path>Aircraft/panzer/Sounds/panzeraccel.wav</path>
+   <volume>
+    <offset>0.3</offset>
+    <max>0.6</max>
+   </volume>
+   <reference-dist>20</reference-dist>
+   <max-dist>500</max-dist>
+  </rumble>
+
+  <!-- Turret rotation - bool[1] must be in multiplay aliases -->
+  <turret>
+   <n>mp-turret</n>
+   <mode>looped</mode>
+   <path>Aircraft/panzer/Sounds/panzerturret.wav</path>
+   <condition>
+    <property>sim/multiplay/generic/bool[1]</property>
+   </condition>
+   <volume>
+    <offset>0.5</offset>
+    <max>1.0</max>
+   </volume>
+   <reference-dist>20</reference-dist>
+   <max-dist>200</max-dist>
+  </turret>
+
+  <!-- Cannon - 75mm KwK 40 -->
+  <cannon>
+   <n>mp-cannon</n>
+   <mode>once</mode>
+   <path>Aircraft/panzer/Sounds/panzerflak88.wav</path>
+   <condition>
+    <property>sim/multiplay/generic/int[10]</property>
+   </condition>
+   <volume>
+    <offset>1.0</offset>
+    <max>3.0</max>
+   </volume>
+   <reference-dist>100</reference-dist>
+   <max-dist>6000</max-dist>
+  </cannon>
+
+  <!-- Hull MG 34 -->
+  <mg>
+   <n>mp-mg-hull</n>
+   <mode>looped</mode>
+   <path>Aircraft/panzer/Sounds/panzermg34.wav</path>
+   <condition>
+    <property>sim/multiplay/generic/int[11]</property>
+   </condition>
+   <volume>
+    <offset>0.8</offset>
+    <max>1.0</max>
+   </volume>
+   <reference-dist>50</reference-dist>
+   <max-dist>3000</max-dist>
+  </mg>
+
+  <!-- AA MG 34 - Fliegerabwehr -->
+  <mg-aa>
+   <n>mp-mg-aa</n>
+   <mode>looped</mode>
+   <path>Aircraft/panzer/Sounds/panzermg34.wav</path>
+   <condition>
+    <property>sim/multiplay/generic/int[12]</property>
+   </condition>
+   <volume>
+    <offset>0.8</offset>
+    <max>1.0</max>
+   </volume>
+   <reference-dist>50</reference-dist>
+   <max-dist>3000</max-dist>
+  </mg-aa>
+
+</fx>
+
+</PropertyList>

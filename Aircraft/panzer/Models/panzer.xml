@@ -1,5 +1,10 @@
 <PropertyList include="panzer-bombableinclude.xml">
  <path>panzer.ac</path>
+
+ <!-- MP sound - heard by other players -->
+ <sound>
+  <path>../Sounds/mp-sound.xml</path>
+ </sound>
         
 <offsets>
 <heading-deg>90.0</heading-deg>
@@ -11,9 +16,11 @@
         <animation>
                 <object-name>turret01</object-name>
                 <object-name>barrel</object-name>
-                <type>spin</type>
-                <property>controls/flight/aileron</property>
+                <type>rotate</type>
+                <property>sim/model/turret[0]/heading</property>
                 <factor>-1</factor>
+                <min-deg>-180</min-deg>
+                <max-deg>180</max-deg>
                 <center>
                         <x-m>0</x-m>
                         <y-m>0</y-m>
@@ -30,8 +37,8 @@
         <animation>
                 <object-name>barrel</object-name>
                 <type>rotate</type>
-                <property>controls/flight/elevator</property>
-                <factor>-6.5</factor>
+                <property>sim/multiplay/generic/float[9]</property>
+                <factor>1</factor>
                 <offset-deg>-5</offset-deg>
                 <min>-3</min>
                 <max>35</max>

@@ -77,13 +77,21 @@
             attackCheckTimeEngaged_sec : 0.6,
           },
           weapons : {
-            gun_left : {
-              name                : "7.5 cm.Kw.K.37 L/24 Gun",
+            cannon : {
+              name                : "7.5 cm.Kw.K.37 L/24 cannon",
               maxDamage_percent   : 80,
               maxDamageDistance_m : 2500,
               weaponAngle_deg     : { heading: 0, elevation: 0 },
               weaponOffset_m      : { x:0, y:0, z:1 },
-              weaponSize_m        : { start:0.1, end:0.1 },
+              weaponSize_m        : { start:0.75, end:0.75 },
+            },
+            gun_left : {
+              name                : "7.92 mm MG 34 Machine Gun",
+              maxDamage_percent   : 18,
+              maxDamageDistance_m : 1500,
+              weaponAngle_deg     : { heading: 0, elevation: 0 },
+              weaponOffset_m      : { x:0, y:0, z:1 },
+              weaponSize_m        : { start:0.08, end:0.08 },
             },
             gun_right : {
               name                : "7.92 mm MG 34 Machine Gun",
@@ -91,7 +99,7 @@
               maxDamageDistance_m : 1500,
               weaponAngle_deg     : { heading: 0, elevation: 0 },
               weaponOffset_m      : { x:1, y:1, z:0 },
-              weaponSize_m        : { start:0.1, end:0.1} ,
+              weaponSize_m        : { start:0.08, end:0.08} ,
             },
           },
           dimensions : {

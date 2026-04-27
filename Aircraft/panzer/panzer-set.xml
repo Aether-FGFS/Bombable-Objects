@@ -26,15 +26,33 @@
        <visible type="int">1</visible>
      </pilot>
    </crew>
-  </model> 
+  </model>
+
+  <submodels>
+    <serviceable type="bool">true</serviceable>
+    <path>Aircraft/panzer/Models/panzer-submodels.xml</path>
+  </submodels>
+
+  <multiplay>
+    <generic>
+      <string n="9" type="string"/>
+      <int n="10" alias="sim/multiplay/generic/int[10]"/>
+      <int n="11" alias="sim/multiplay/generic/int[11]"/>
+      <int n="12" alias="sim/multiplay/generic/int[12]"/>
+      <bool n="1" alias="sim/multiplay/generic/bool[1]"/>
+      <float n="8" alias="sim/multiplay/generic/float[8]"/>
+      <float n="9" alias="sim/multiplay/generic/float[9]"/>
+      <float n="10" alias="sim/multiplay/generic/float[10]"/>
+      <float n="11" alias="sim/multiplay/generic/float[11]"/>
+    </generic>
+  </multiplay> 
 
   <startup>
-   <splash-texture>Aircraft/panzer/splash.png</splash-texture>
+     <splash-texture>Aircraft/panzer/splash.png</splash-texture>
   </startup>
 
-  <help>
-   <title>Panzer</title>
-  </help>
+  <!-- Aircraft specific help. -->
+  <help include="help.xml"/>
 
 		<menubar>
 			<default>
@@ -104,12 +122,65 @@
    </config>
   </view>
 
-  <multiplay>
-   <generic>
-     <string n="9" type="string"/>
-     <int n="10" alias="controls/armament/trigger" />
-   </generic>
-  </multiplay>
+  <help>
+    <title>Panzer IV Ausf. G - Controls</title>
+    <key>
+      <name>W / S</name>
+      <desc>Drive forward / reverse (throttle)</desc>
+    </key>
+    <key>
+      <name>A / D  or  Left / Right</name>
+      <desc>Steer left / right</desc>
+    </key>
+    <key>
+      <name>m / M</name>
+      <desc>Engage / disengage reverse gear</desc>
+    </key>
+    <key>
+      <name>q / w</name>
+      <desc>Turret rotate left / right (hold = continuous, 2°/step)</desc>
+    </key>
+    <key>
+      <name>x</name>
+      <desc>Turret center (face forward)</desc>
+    </key>
+    <key>
+      <name>r / f  (hold)</name>
+      <desc>Barrel elevation up / down (continuous, limits -8° / +20°)</desc>
+    </key>
+    <key>
+      <name>c</name>
+      <desc>Barrel center (0° elevation)</desc>
+    </key>
+    <key>
+      <name>e</name>
+      <desc>Fire 75mm KwK 40 cannon (single shot, ~800 m/s)</desc>
+    </key>
+    <key>
+      <name>g  (hold)</name>
+      <desc>Fire MG 34 machine gun (7.92mm, ~755 m/s)</desc>
+    </key>
+    <line>Joystick: map turret axis to float[8], barrel axis to float[9]</line>
+    <line>Cannon trigger: sim/multiplay/generic/int[10]</line>
+    <line>MG trigger:     sim/multiplay/generic/int[11]</line>
+    <line>AA MG trigger:  sim/multiplay/generic/int[12]</line>
+    <key>
+      <n>u / o  (hold)</n>
+      <desc>AA MG rotate left / right</desc>
+    </key>
+    <key>
+      <n>i / k  (hold)</n>
+      <desc>AA MG elevation up / down (limits -10° / +85°)</desc>
+    </key>
+    <key>
+      <n>j</n>
+      <desc>AA MG center (heading + elevation reset)</desc>
+    </key>
+    <key>
+      <n>p  (hold)</n>
+      <desc>Fire AA MG 34 Fliegerabwehr (anti-aircraft)</desc>
+    </key>
+  </help>
 
  </sim>
 
@@ -128,6 +199,9 @@
 		<screen type="bool">false</screen>
 		<roof type="bool">false</roof>
 	</gear>
+	<panzer>
+		<turret-deg type="double">0</turret-deg>
+	</panzer>
  </controls>
 <input>
 	<keyboard>
@@ -153,6 +227,218 @@
         </key>
 
 
+        <!-- Kanón: e -->
+        <key n="101">
+          <n>e</n>
+          <desc>Fire cannon (30s reload)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.fire_cannon();</script>
+          </binding>
+        </key>
+
+        <!-- Guľomet: g (drž) -->
+        <key n="103">
+          <n>g</n>
+          <desc>Fire machine gun</desc>
+          <binding>
+            <command>property-assign</command>
+            <property>sim/multiplay/generic/int[11]</property>
+            <value type="int">1</value>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>property-assign</command>
+              <property>sim/multiplay/generic/int[11]</property>
+              <value type="int">0</value>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- Veža doľava: q -->
+        <key n="113">
+          <n>q</n>
+          <desc>Turret left (hold)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.turret_start(-1);</script>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>nasal</command>
+              <script>panzer_weapons.turret_stop();</script>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- Veža doprava: w (hold) -->
+        <key n="119">
+          <n>w</n>
+          <desc>Turret right (hold)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.turret_start(1);</script>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>nasal</command>
+              <script>panzer_weapons.turret_stop();</script>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- Veža na stred: x -->
+        <key n="120">
+          <n>x</n>
+          <desc>Turret center</desc>
+          <binding>
+            <command>property-assign</command>
+            <property>sim/multiplay/generic/float[8]</property>
+            <value type="double">0</value>
+          </binding>
+        </key>
+
+        <!-- Barrel up: r (hold) -->
+        <key n="114">
+          <n>r</n>
+          <desc>Barrel up (hold)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.barrel_start(0.5);</script>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>nasal</command>
+              <script>panzer_weapons.barrel_stop();</script>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- Barrel down: f (hold) -->
+        <key n="102">
+          <n>f</n>
+          <desc>Barrel down (hold)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.barrel_start(-0.5);</script>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>nasal</command>
+              <script>panzer_weapons.barrel_stop();</script>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- Barrel center: c -->
+        <key n="99">
+          <n>c</n>
+          <desc>Barrel center</desc>
+          <binding>
+            <command>property-assign</command>
+            <property>sim/multiplay/generic/float[9]</property>
+            <value type="double">0</value>
+          </binding>
+        </key>
+
+        <!-- AA MG rotate left: u (hold) -->
+        <key n="117">
+          <n>u</n>
+          <desc>AA MG rotate left (hold)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.aa_rotate_start(-2);</script>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>nasal</command>
+              <script>panzer_weapons.aa_rotate_stop();</script>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- AA MG rotate right: o (hold) -->
+        <key n="111">
+          <n>o</n>
+          <desc>AA MG rotate right (hold)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.aa_rotate_start(2);</script>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>nasal</command>
+              <script>panzer_weapons.aa_rotate_stop();</script>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- AA MG up: i (hold) -->
+        <key n="105">
+          <n>i</n>
+          <desc>AA MG barrel up (hold)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.aa_elev_start(1);</script>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>nasal</command>
+              <script>panzer_weapons.aa_elev_stop();</script>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- AA MG down: k (hold) -->
+        <key n="107">
+          <n>k</n>
+          <desc>AA MG barrel down (hold)</desc>
+          <binding>
+            <command>nasal</command>
+            <script>panzer_weapons.aa_elev_start(-1);</script>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>nasal</command>
+              <script>panzer_weapons.aa_elev_stop();</script>
+            </binding>
+          </mod-up>
+        </key>
+
+        <!-- AA MG center: j -->
+        <key n="106">
+          <n>j</n>
+          <desc>AA MG center (heading + elevation reset)</desc>
+          <binding>
+            <command>property-assign</command>
+            <property>sim/multiplay/generic/float[10]</property>
+            <value type="double">0</value>
+          </binding>
+          <binding>
+            <command>property-assign</command>
+            <property>sim/multiplay/generic/float[11]</property>
+            <value type="double">0</value>
+          </binding>
+        </key>
+
+        <!-- AA MG fire: y (hold) -->
+        <key n="121">
+          <n>y</n>
+          <desc>AA MG fire (hold)</desc>
+          <binding>
+            <command>property-assign</command>
+            <property>sim/multiplay/generic/int[12]</property>
+            <value type="int">1</value>
+          </binding>
+          <mod-up>
+            <binding>
+              <command>property-assign</command>
+              <property>sim/multiplay/generic/int[12]</property>
+              <value type="int">0</value>
+            </binding>
+          </mod-up>
+        </key>
+
 	</keyboard>
 </input>
 
@@ -160,6 +446,9 @@
 <tracks>
 <file>Aircraft/panzer/tank-tracks.nas</file>
 </tracks>
+<panzer_weapons>
+<file>Aircraft/panzer/panzer-weapons.nas</file>
+</panzer_weapons>
 </nasal>
 
 </PropertyList>
