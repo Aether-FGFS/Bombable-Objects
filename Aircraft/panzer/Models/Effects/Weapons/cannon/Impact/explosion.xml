@@ -3,7 +3,7 @@
 <PropertyList>
 
   <sound>
-    <path>Aircraft/UH-1/Models/Effects/Weapons/rocket/Impact/rocket-sound.xml</path>
+    <path>Aircraft/panzer/Models/Effects/Weapons/cannon/Impact/cannon-sound.xml</path>
   </sound>
 
   <model>
