@@ -1,0 +1,212 @@
+<airplane mass="27180">
+
+<approach speed="80.5" aoa="0" fuel="1.0">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.25"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle" value="0.25"/>
+  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.0"/>
+</approach>
+
+<cruise speed="43.3" alt="25000" fuel="1.0">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[0]/boost" value="1.0"/>
+</cruise>
+
+<fuselage ax="-0.0"  ay="0" az="0.7" bx="-3.3" by="0" bz="0.7" width="0.5" taper="1" cx="2.5" cz="2.5"/>
+
+<wing x="-1.50" y="0.0" z="0.6" taper="1.0" camber="0" length="0.7" chord="1.0" >
+</wing>
+<mstab x="-3.4" y="0.2" z="0.7" length="1.8" chord="1.2" >
+
+</mstab>
+
+<jet x="-1.5" y="1.0" z="0.50"
+   n1-idle="30" n1-max="90" n2-idle="35" n2-max="95" exhaust-speed="33"
+   egt="850" tsfc="0.1" mass="200" thrust="4780" rotate="180" >
+  <actionpt x="-5.7" y="1.8" z="0.2" />
+
+  <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+
+  <control-input axis="/controls/engines/engine[0]/mixture" control="VECTOR"
+                 src0="0" src1="1" dst0="1" dst1="0"/>
+</jet>
+
+<jet x="-1.5" y="-1.0" z="0.50"
+   n1-idle="30" n1-max="90" n2-idle="35" n2-max="95" exhaust-speed="33"
+   egt="850" tsfc="0.1" mass="200" thrust="4780" rotate="180" >
+  <actionpt x="-5.7" y="-1.8" z="0.2" />
+  <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+
+  <control-input axis="/controls/engines/engine[0]/mixture" control="VECTOR"
+                 src0="0" src1="1" dst0="1" dst1="0"/>
+</jet>
+
+
+<tank x="-1.8" y="0" z="0.1" capacity="570"/>
+
+<!-- Gear for Land -->
+<gear x="-0.5" y="0.7" z="-0.1" compression="0.20" spring="1.0" damp="5.8" on-water="0" on-solid="1"   dfric="0.7" sfric="0.8">
+  <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+	<control-input axis="/controls/flight/rudder" control="STEER"
+		square="true"/>
+</gear>
+<gear x="-0.5" y="-0.7" z="-0.1" compression="0.20" spring="1.0" damp="5.8" on-water="0" on-solid="1" dfric="0.7" sfric="0.8">
+   <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+<control-input axis="/controls/flight/rudder" control="STEER"
+		square="true"/>
+</gear>
+<gear x="-4.696" y="0.7" z="-0.1" compression="0.20" spring="1.0" damp="5.8" on-water="0" on-solid="1" dfric="0.7" sfric="0.8">
+   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+<control-input axis="/controls/flight/rudder" control="STEER" invert="true"
+		square="true"/>
+</gear>
+<gear x="-4.696" y="-0.7" z="-0.1" compression="0.20" spring="1.0" damp="5.8" on-water="0" on-solid="1" dfric="0.7" sfric="0.8">
+  <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+<control-input axis="/controls/flight/rudder" control="STEER" invert="true"
+		square="true"/>
+</gear>
+<!-- "help gear" -->
+<gear x="-0.2" y="0.7" z="0.2" compression="0.25" spring="1.0" damp="5.8" on-water="0" 
+		ignored-by-solver="1" on-solid="1" dfric="0.7" sfric="0.8">
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+</gear>
+<gear x="-0.2" y="-0.7" z="0.2" compression="0.25" spring="1.0" damp="5.8" on-water="0" 
+		ignored-by-solver="1"  on-solid="1" dfric="0.7" sfric="0.8">
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+</gear>
+<gear x="-1.5" y="0.7" z="-0.1" compression="0.25" spring="1.0" damp="5.8" on-water="0" 
+		ignored-by-solver="1" on-solid="1" dfric="0.7" sfric="0.8">
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+</gear>
+<gear x="-1.5" y="-0.7" z="-0.1" compression="0.25" spring="1.0" damp="5.8" on-water="0" 
+		ignored-by-solver="1"  on-solid="1" dfric="0.7" sfric="0.8">
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+</gear>
+<gear x="3.0" y="-0.7" z="-0.1" compression="0.25" spring="1.0" damp="5.8" on-water="0" 
+		ignored-by-solver="1"  on-solid="1" dfric="0.7" sfric="0.8">
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+</gear>
+<gear x="-3.0" y="-0.7" z="-0.1" compression="0.25" spring="1.0" damp="5.8" on-water="0" 
+		ignored-by-solver="1"  on-solid="1" dfric="0.7" sfric="0.8">
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+</gear>
+
+
+
+<!-- Gear for Water which is presently WIP-->
+
+
+<gear x="-0.5" y="0.7" z="0" compression="1.6" spring="5" damp="3.8" on-water="1"  on-solid="0" ignored-by-solver="1" 
+  dfric="3.7" sfric="1">
+  <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-0.8" src1="0.8" dst0="-0.5" dst1="0.5"/>
+</gear>
+<gear x="-0.5" y="-0.7" z="0" compression="1.6" spring="5" damp="3.8" on-water="1" on-solid="0" ignored-by-solver="1" 
+  dfric="3.7" sfric="1">
+   <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-0.8" src1="0.8" dst0="-0.5" dst1="0.5"/>
+</gear>
+<gear x="-4.696" y="0.7" z="0" compression="1.6" spring="5" damp="3.8" on-water="1" on-solid="0" ignored-by-solver="1"  
+  dfric="3.7" sfric="1">
+</gear>
+<gear x="-4.696" y="-0.7" z="0" compression="1.6" spring="5" damp="3.8" on-water="1" on-solid="0" ignored-by-solver="1"  
+  dfric="3.7" sfric="1">
+</gear>
+
+
+<!-- Aerotow -->
+
+<hitch name="aerotow" x="-1.523" y="0" z="1.2" force-is-calculated-by-other="0">
+<tow length="10" weight-per-meter="0.835" elastic-constant="100" break-force="1000000" mp-auto-connect-period="0.0"/>
+<winch max-tow-length="35" min-tow-length="10" initial-tow-length="10"/>
+<control-input axis="/controls/aerotow/find-aircraft" control="FINDAITOW"/>
+</hitch>
+
+
+
+
+</airplane>
+
+<!--
+
+M113 Specifications
+General
+ Length 191.5", Length  4.863 m 
+ Width 105.75", Width 2.686 m
+ Height 86.5", Height 2.200 m
+ Clearance 16" 
+ Weight, combat loaded  27,180 lb. (12,329 kg)
+ Weight, combat loaded and upgraded engine 29,785 lb. (13,510kg) 
+ Maximum weight  31,000 lb. (14,061 kg) 
+ Net weight  23,880 lb. (10,832 kg) 
+ Air drop weight 22,128 lb. (10,037 kg) 
+ Personnel capacity 2 + 11  
+ Fuel tank capacity  95 gallons (360 liters) 
+ Ground pressure 8.63 psi (0.60 kg/cm2)
+
+Performance
+ Speed Max on land  41 mi/h (66 km/h)
+ Speed in water, with track  3.6 mi/h (5.8 km/h) 
+ Upgraded Engine
+    Speed Max on land 43.496 mi/h (70 km/h)
+    Speed Avg Cross Country 12.427-21.748 mi/h (20-35 km/h)
+    Speed Max on low range 12.427 mi/h (20 km/h)
+ Cruising range  300 mi (483 km)
+ Turning radius  Pivot to infinite 
+ Slope  60% 
+ Side slope  40% 
+ Trench crossing  66 in. (168 cm) 
+ Vertical wall climbing 24 in. (61 cm) 
+ Braking (20-0 mi/h) 40 ft/(32-0 km/h) 9m
+ Acceleration 0-32 km/h at < 9 sec
+ Turning Radius 3 m at 10 km/h, 16 m at 70 km/h
+ Maximum Range 298 mi (480 km)
+
+Engine
+ Make and model  Detroit Diesel 6V53T 
+ Displacement  318 in.3 (5.2 liter) 
+ Fuel  Diesel (DF2) 
+ Rated horsepower  275 hp, 223hp@2500
+ Gross horsepower-to-weight ratio  20.2 hp/ton
+ Length/Width/Height/Mass 39in(99cm)/37in(94cm)/41in(104cm)/1695lb(769kg)
+ Drive Train Upgrade 350HP CAT Engine (upgradable to 400HP) at 4300lb(1181kg)
+
+Transmission, Automatic
+ Make and model  Allison X200-4B 
+ Type  Hydrokinetic 
+ Steering  Hydrostatic 
+ Brake type  Multiple wet plate 
+
+Running Gear
+ Suspension  Torsion bar 
+ Road wheels  5 per side, 24 inch diameter (61 cm) 
+ Track type  Steel single pin, detachable rubber pad 
+ Number of shoes  63 left, 64 right 
+ Track pitch  6 in. (15.2 cm) 
+ Track width  15 in. (38 cm) 
+ Shock absorbers  3 per side 
+ Wheel travel  9.0 in. (22.9 cm) 
+
+Electrical System
+ Generator   
+ Amperes  200, 300 optional 
+ Volts, dc  28 
+ Batteries  4, type 6TL, 120 amp-hr, 12-volt each 
+
+Armament
+ 50 cal MG  2,000 ready rds.
+ Scorpion Variant
+ FV101 Main Gun, Elevation -10 to 35 deg, 76mm L23A1 rifled gun 45 rds.
+  Maximum Range 2.20 km
+
+Armor
+ Basic hull  5083 Aluminum 
+ Bolt-on armor kit Steel armor 
+ Mine armor  Steel armor 
+ Gun shield kit  Steel armor 
+ Spall suppressant  Composite panel 
+
+Fire Extinguishers
+ Fixed  5 lb. (2.3 kg) CO2 for engine compartment 
+ Portable  5 lb. (2.3 kg) CO2 
+
+-->
