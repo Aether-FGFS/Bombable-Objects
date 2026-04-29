@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+
+  <sim>
+    <description>T-34-85early</description>
+    <status>alpha</status>
+    <flight-model>yasim</flight-model>
+    <aero>T-34-85early-yasim</aero>
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+    <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+    <sound>
+      <path>Aircraft/T-34/Sounds/T-34-sound.xml</path>
+    </sound>
+    <sound>
+      <path>../Sounds/mp-sound.xml</path>
+    </sound>
+    <model>
+      <path>Aircraft/T-34/Models/T-34-85early.xml</path>
+    </model>
+    <ai>
+      <submodels>
+        <contrails type="bool">false</contrails>
+      </submodels>
+    </ai>
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/T-34/Models/submodels.xml</path>
+    </submodels>
+    <startup>
+      <splash-texture>Aircraft/T-34/T-34-85-splash.png</splash-texture>
+    </startup>
+    <chase-distance-m type="double" archive="y">-15.0</chase-distance-m>
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y" type="double">-0.4</x-offset-m>
+        <y-offset-m archive="y" type="double">1.50</y-offset-m>
+        <z-offset-m archive="y" type="double">-1.8</z-offset-m>
+        <pitch-offset-deg>-15.0</pitch-offset-deg>
+      </config>
+    </view>
+    <view n="1">
+      <config>
+        <target-z-offset-m archive="y" type="double">0.6</target-z-offset-m>
+      </config>
+    </view>
+    <hud>
+      <enable3d>false</enable3d>
+    </hud>
+    <help>
+      <key><name>,</name><desc>Brakes</desc></key>
+      <key><name>.</name><desc>Accelerator</desc></key>
+      <key><name>M</name><desc>Reverse</desc></key>
+      <key><name>m</name><desc>Forward</desc></key>
+      <key><name>e</name><desc>Fire 85mm Cannon</desc></key>
+      <key><name>g</name><desc>Coaxial MG (hold)</desc></key>
+      <key><name>y</name><desc>AA MG fire (hold)</desc></key>
+      <key><name>u/o</name><desc>AA rotate left/right (hold)</desc></key>
+      <key><name>i/k</name><desc>AA barrel up/down (hold)</desc></key>
+      <key><name>j</name><desc>AA center</desc></key>
+      <key><name>q/w</name><desc>Turret left/right (hold)</desc></key>
+      <key><name>x</name><desc>Turret center</desc></key>
+      <key><name>r/f</name><desc>Barrel up/down (hold)</desc></key>
+      <key><name>c</name><desc>Barrel center</desc></key>
+      <key><name>Shift+N</name><desc>Front MG fire (hold)</desc></key>
+      <key><name>Shift+J/L</name><desc>Front MG left/right (hold)</desc></key>
+      <key><name>Shift+I/K</name><desc>Front MG up/down (hold)</desc></key>
+    </help>
+    <menubar include="Dialogs/T-34-85-menu.xml"/>
+    <multiplay>
+      <generic>
+        <string n="9" type="string"/>
+        <bool  n="1"  alias="sim/multiplay/generic/bool[1]"/>
+        <bool  n="2" alias="sim/multiplay/generic/bool[2]"/>
+        <float n="8"  alias="sim/multiplay/generic/float[8]"/>
+        <float n="9"  alias="sim/multiplay/generic/float[9]"/>
+        <float n="10" alias="sim/multiplay/generic/float[10]"/>
+        <float n="11" alias="sim/multiplay/generic/float[11]"/>
+        <float n="12" alias="sim/multiplay/generic/float[12]"/>
+        <float n="13" alias="sim/multiplay/generic/float[13]"/>
+        <int   n="10" alias="sim/multiplay/generic/int[10]"/>
+        <int   n="11" alias="sim/multiplay/generic/int[11]"/>
+        <int   n="12" alias="sim/multiplay/generic/int[12]"/>
+        <int   n="13" alias="sim/multiplay/generic/int[13]"/>
+      </generic>
+    </multiplay>
+  </sim>
+
+  <!-- NASAL: root uroven PropertyList -->
+  <nasal>
+    <liveries>
+      <file>Aircraft/T-34/Nasal/liveries85early.nas</file>
+    </liveries>
+    <t34_weapons>
+      <file>Aircraft/T-34/Nasal/T-34-weapons.nas</file>
+    </t34_weapons>
+  </nasal>
+
+  <engines>
+    <engine n="0"><rpm type="double">2</rpm></engine>
+    <engine n="1"><rpm type="double">2</rpm></engine>
+  </engines>
+
+  <controls>
+    <gear>
+      <roof type="bool">false</roof>
+    </gear>
+    <armament>
+      <trigger type="bool">false</trigger>
+      <master-arm type="bool">true</master-arm>
+      <position-norm type="int">1</position-norm>
+    </armament>
+  </controls>
+
+  <input>
+    <keyboard>
+
+      <key n="77">
+        <name>M</name><desc>Reverse</desc>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[0]/mixture</property>
+          <value type="double">0.0</value>
+        </binding>
+      </key>
+
+      <key n="109">
+        <name>m</name><desc>Forward</desc>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[0]/mixture</property>
+          <value type="double">1.0</value>
+        </binding>
+      </key>
+
+      <!-- ===== CANNON ===== -->
+      <key n="101">
+        <name>e</name>
+        <desc>Fire 85mm S-53 Cannon</desc>
+        <binding>
+         <command>nasal</command>
+         <script>t34_weapons.fire_cannon();</script>
+        </binding>
+      </key>
+
+      <!-- ===== COAXIAL MG ===== -->
+      <key n="103">
+        <name>g</name>
+         <desc>Coaxial MG (hold)</desc>
+         <binding>
+          <command>nasal</command>
+          <script>t34_weapons.fire_mg();</script>
+         </binding>
+        <mod-up>
+         <binding>
+          <command>nasal</command>
+          <script>t34_weapons.stop_mg();</script>
+        </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== AA MG FIRE ===== -->
+      <key n="121">
+        <name>y</name>
+        <desc>AA MG fire (hold)</desc>
+        <binding>
+         <command>nasal</command>
+         <script>t34_weapons.fire_aa();</script>
+        </binding>
+        <mod-up>
+         <binding>
+          <command>nasal</command>
+          <script>t34_weapons.stop_aa();</script>
+         </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== AA ROTATE LEFT ===== -->
+      <key n="117">
+        <name>u</name>
+         <desc>AA MG rotate left (hold)</desc>
+        <binding>
+          <command>nasal</command>
+          <script>t34_weapons.aa_rotate_start(-1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+           <command>nasal</command>
+           <script>t34_weapons.aa_rotate_stop();</script>
+          </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== AA ROTATE RIGHT ===== -->
+      <key n="111">
+        <name>o</name>
+         <desc>AA MG rotate right (hold)</desc>
+        <binding>
+          <command>nasal</command>
+          <script>t34_weapons.aa_rotate_start(1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+           <command>nasal</command>
+            <script>t34_weapons.aa_rotate_stop();</script>
+          </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== AA BARREL UP ===== -->
+      <key n="105">
+        <name>i</name><desc>AA barrel up (hold)</desc>
+         <binding>
+          <command>nasal</command>
+          <script>t34_weapons.aa_elev_start(1);</script>
+         </binding>
+        <mod-up>
+         <binding>
+          <command>nasal</command>
+          <script>t34_weapons.aa_elev_stop();</script>
+         </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== AA BARREL DOWN ===== -->
+      <key n="107">
+        <name>k</name>
+         <desc>AA barrel down (hold)</desc>
+        <binding>
+         <command>nasal</command>
+         <script>t34_weapons.aa_elev_start(-1);</script>
+        </binding>
+        <mod-up>
+        <binding>
+         <command>nasal</command>
+         <script>t34_weapons.aa_elev_stop();</script>
+        </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== AA CENTER ===== -->
+      <key n="106">
+        <name>j</name>
+         <desc>AA center</desc>
+        <binding>
+         <command>nasal</command>
+         <script>t34_weapons.aa_center();</script>
+        </binding>
+      </key>
+
+      <!-- ===== TURRET LEFT ===== -->
+      <key n="113">
+        <name>q</name>
+         <desc>Turret left (hold)</desc>
+        <binding>
+         <command>nasal</command>
+          <script>t34_weapons.turret_start(1);</script>
+          </binding>
+        <mod-up>
+          <binding>
+           <command>nasal</command>
+           <script>t34_weapons.turret_stop();</script>
+          </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== TURRET RIGHT ===== -->
+      <key n="119">
+        <name>w</name>
+         <desc>Turret right (hold)</desc>
+        <binding>
+          <command>nasal</command>
+          <script>t34_weapons.turret_start(-1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+           <command>nasal</command>
+           <script>t34_weapons.turret_stop();</script>
+          </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== TURRET CENTER ===== -->
+      <key n="120">
+        <name>x</name>
+         <desc>Turret center</desc>
+        <binding>
+          <command>nasal</command>
+          <script>t34_weapons.turret_center();</script>
+        </binding>
+      </key>
+
+      <!-- ===== BARREL UP ===== -->
+      <key n="114">
+        <name>r</name>
+         <desc>Barrel up (hold)</desc>
+        <binding>
+          <command>nasal</command>
+          <script>t34_weapons.barrel_start(1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+           <command>nasal</command>
+           <script>t34_weapons.barrel_stop();</script>
+          </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== BARREL DOWN ===== -->
+      <key n="102">
+        <name>f</name>
+        <desc>Barrel down (hold)</desc>
+        <binding>
+         <command>nasal</command>
+         <script>t34_weapons.barrel_start(-1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+           <command>nasal</command>
+           <script>t34_weapons.barrel_stop();</script>
+         </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== BARREL CENTER ===== -->
+      <key n="99">
+        <name>c</name>
+         <desc>Barrel center</desc>
+        <binding>
+         <command>nasal</command>
+         <script>t34_weapons.barrel_center();</script>
+        </binding>
+      </key>
+
+      <!-- ===== FRONT MG FIRE ===== -->
+      <key n="78">
+        <name>N</name>
+          <desc>Front MG fire (hold)</desc>
+        <binding>
+          <command>nasal</command>
+          <script>t34_weapons.fire_front_mg();</script>
+        </binding>
+        <mod-up>
+          <binding>
+           <command>nasal</command>
+           <script>t34_weapons.stop_front_mg();</script>
+          </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== FRONT MG left (Shift+J) ===== -->
+      <key n="74">
+        <name>J</name>
+          <desc>Front MG left (hold)</desc>
+        <binding>
+          <command>nasal</command>
+           <script>t34_weapons.front_mg_h_start(-1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+          <command>nasal</command>
+          <script>t34_weapons.front_mg_h_stop();</script>
+        </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== FRONT MG Right (Shift+L) ===== -->
+      <key n="76">
+        <name>L</name>
+         <desc>Front MG right (hold)</desc>
+        <binding>
+          <command>nasal</command>
+          <script>t34_weapons.front_mg_h_start(1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+          <command>nasal</command>
+          <script>t34_weapons.front_mg_h_stop();</script>
+        </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== FRONT MG Up (Shift+I) ===== -->
+      <key n="73">
+        <name>I</name>
+        <desc>Front MG up (hold)</desc>
+        <binding>
+         <command>nasal</command>
+         <script>t34_weapons.front_mg_v_start(1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+          <command>nasal</command>
+          <script>t34_weapons.front_mg_v_stop();</script>
+        </binding>
+        </mod-up>
+      </key>
+
+      <!-- ===== FRONT MG Down (Shift+K) ===== -->
+      <key n="75">
+        <name>K</name>
+        <desc>Front MG down (hold)</desc>
+        <binding>
+          <command>nasal</command>
+          <script>t34_weapons.front_mg_v_start(-1);</script>
+        </binding>
+        <mod-up>
+          <binding>
+           <command>nasal</command>
+           <script>t34_weapons.front_mg_v_stop();</script>
+          </binding>
+        </mod-up>
+      </key>
+
+    </keyboard>
+  </input>
+
+</PropertyList>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>T-34</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Equipments mode 1</label>
+        <binding>
+          <command>property-assign</command>
+          <property>/sim/model/equipments</property>
+          <value>1</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>sim/multiplay/generic/float[11]</property>
+          <value>1</value>
+        </binding>
+      </item>
+      <item>
+        <label>Equipments mode 2</label>
+        <binding>
+          <command>property-assign</command>
+          <property>/sim/model/equipments</property>
+          <value>2</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>sim/multiplay/generic/float[11]</property>
+          <value>2</value>
+        </binding>
+      </item>
+      <item>
+        <label>Reset equipments mode</label>
+        <binding>
+          <command>property-assign</command>
+          <property>/sim/model/equipments</property>
+          <value>3</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>sim/multiplay/generic/float[11]</property>
+          <value>3</value>
+        </binding>
+      </item>
+    </menu>
+  </default>
+
+</PropertyList>
+
