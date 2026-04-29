@@ -37,6 +37,8 @@
   at same location as your friends over Multiplayer. Info is included in 
   Scenario.xml.
 
+ You can use updated T-34 and Panzer with Weapons and Sounds for MP sessions now.  
+
  Remember that war is disaster for regular people and soldiers.
 
 
