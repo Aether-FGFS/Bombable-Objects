@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!--
+  T-34 Main Model XML (mesh.xml)
+  Added: turret rotation + barrel elevation animations
+  
+  NOTE: Object names 'turret-body' and 'barrel2.001' may need
+  to be adjusted to match your actual .ac file object names.
+  Current barrel object in mesh1.ac: 'barrel2.001'
+  For turret body, check which mesh object is the turret.
+-->
+
+<PropertyList>
+
+  <path>mesh1.ac</path>
+
+  <offsets>
+    <x-m> 0.0 </x-m>
+    <y-m> 0.0 </y-m>
+    <z-m> 0.0 </z-m>
+    <roll-deg>    0.000 </roll-deg>
+    <pitch-deg>   0.000 </pitch-deg>
+    <heading-deg> 0.000 </heading-deg>
+  </offsets>
+
+  <!-- Transparent objects -->
+  <animation>
+    <object-name>mesh-4</object-name>
+    <object-name>mesh-5</object-name>
+    <object-name>mesh-6</object-name>
+    <object-name>mesh-7</object-name>
+    <object-name>mesh-8</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>mesh-4</object-name>
+    <object-name>mesh-5</object-name>
+    <object-name>mesh-6</object-name>
+    <object-name>mesh-7</object-name>
+    <object-name>mesh-8</object-name>
+  </animation>
+
+  <!-- ================================================
+       TURRET ROTATION — rotates around vertical axis
+       Property: sim/model/t34/turret-heading (0-360°)
+       Object: adjust to your actual turret mesh name
+  ================================================ -->
+  <animation>
+    <type>rotate</type>
+    <object-name>barrel2.001</object-name>
+    <!-- Add other turret parts here if needed -->
+    <property>sim/model/t34/turret-heading</property>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>1.0</factor>
+  </animation>
+
+  <!-- ================================================
+       BARREL ELEVATION — rotates around lateral axis
+       Property: sim/model/t34/barrel-pitch (-5° to +25°)
+  ================================================ -->
+  <animation>
+    <type>rotate</type>
+    <object-name>barrel2.001</object-name>
+    <property>sim/model/t34/barrel-pitch</property>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>1.0</factor>
+  </animation>
+
+  <!-- ================================================
+       MP SYNC — for other players: read from float[8]/[9]
+  ================================================ -->
+  <animation>
+    <type>rotate</type>
+    <object-name>barrel2.001</object-name>
+    <property>sim/multiplay/generic/float[8]</property>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>1.0</factor>
+  </animation>
+
+</PropertyList>
