@@ -39,7 +39,7 @@
                 <type>rotate</type>
                 <property>sim/multiplay/generic/float[9]</property>
                 <factor>1</factor>
-                <offset-deg>-5</offset-deg>
+                <offset-deg>0</offset-deg>
                 <min>-3</min>
                 <max>35</max>
                 <center>
