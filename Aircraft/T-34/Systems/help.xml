@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>T 34/76</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>,</name>
+    <desc>Brakes</desc>
+  </key>
+  <key>
+    <name>.</name>
+    <desc>Accelerator</desc>
+  </key>
+  <key>
+    <name>m</name>
+    <desc>Forward/Reverse</desc>
+  </key>
+  <key>
+    <name>e</name>
+    <desc>Fire 76mm Cannon</desc>
+  </key>
+  <key>
+    <name>g</name>
+    <desc>Coaxial MG (hold)</desc>
+  </key>
+  <key>
+    <name>y</name>
+    <desc>AA MG fire (hold)</desc>
+  </key>
+  <key>
+    <name>u/o</name>
+    <desc>AA rotate left/right (hold)</desc>
+  </key>
+  <key>
+    <name>i/k</name>
+    <desc>AA barrel up/down (hold)</desc>
+  </key>
+  <key>
+    <name>j</name>
+    <desc>AA center</desc>
+  </key>
+  <key>
+    <name>q/w</name>
+    <desc>Turret left/right (hold)</desc>
+  </key>
+  <key>
+    <name>x</name>
+    <desc>Turret center</desc>
+  </key>
+  <key>
+    <name>r/f</name>
+    <desc>Barrel up/down (hold)</desc>
+  </key>
+  <key>
+    <name>c</name>
+    <desc>Barrel center</desc>
+  </key>
+  <key>
+    <name>Shift+N</name>
+    <desc>Front MG fire (hold)</desc>
+  </key>
+  <key>
+    <name>Shift+j (J)/shift+l (L)</name>
+    <desc>Front MG left/right (hold)</desc>
+  </key>
+  <key>
+    <name>Shift+i (I)/shift+k (K)</name>
+    <desc>Front MG up/down (hold)</desc>
+  </key>
+  <key>
+    <name>Shift+g (G)</name>
+    <desc>Front and Turret lights</desc>
+  </key>
+  <key>
+    <name>Shift+y (Y)</name>
+    <desc>Rear position light</desc>
+  </key>
+
+</PropertyList>

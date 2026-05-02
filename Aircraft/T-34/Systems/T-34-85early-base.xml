@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim                    include="views.xml">
+
+    <fuel-fraction>1</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/T-34/T-34-85-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/T-34/Sounds/T-34-sound.xml</path>
+    </sound>
+
+    <model>
+      <path               archive="y">Aircraft/T-34/Models/T-34-85early.xml</path>
+      <livery>
+        <file             type="string">default</file>
+        <specular>
+          <red            type="float"> 0.05 </red>
+          <green          type="float"> 0.05 </green>
+          <blue           type="float"> 0.05 </blue>
+        </specular>
+      </livery>
+    </model>
+
+    <virtual-cockpit      archive="y">true</virtual-cockpit>
+    <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+    <submodels>
+      <serviceable        type="bool">true</serviceable>
+      <path>Aircraft/T-34/Models/submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <!-- -->
+        <string n="9"  type="string"/>
+        <!-- -->
+        <bool   n="1"  alias="sim/multiplay/generic/bool[1]"/>
+        <bool   n="2"  alias="sim/multiplay/generic/bool[2]"/>
+        <!-- -->
+        <bool   n="11" alias="/controls/lighting/beacon"/>
+        <bool   n="12" alias="/sim/model/lights/beacon/state"/>
+        <bool   n="13" alias="/controls/lighting/strobe"/>
+        <bool   n="14" alias="/sim/model/lights/sbc1/state"/>
+        <bool   n="15" alias="/controls/lighting/nav-lights"/>
+        <bool   n="16" alias="/controls/lighting/landing-lights"/>
+        <!-- -->
+        <float  n="8"  alias="sim/multiplay/generic/float[8]"/>
+        <float  n="9"  alias="sim/multiplay/generic/float[9]"/>
+        <float  n="10" alias="sim/multiplay/generic/float[10]"/>
+        <float  n="11" alias="sim/multiplay/generic/float[11]"/>
+        <float  n="12" alias="sim/multiplay/generic/float[12]"/>
+        <float  n="13" alias="sim/multiplay/generic/float[13]"/>
+        <!-- -->
+        <int    n="10" alias="sim/multiplay/generic/int[10]"/>
+        <int    n="11" alias="sim/multiplay/generic/int[11]"/>
+        <int    n="12" alias="sim/multiplay/generic/int[12]"/>
+        <int    n="13" alias="sim/multiplay/generic/int[13]"/>
+        <!-- -->
+      </generic>
+    </multiplay>
+
+    <hud                  include="hub.xml"/>
+
+    <help                 include="help.xml"/>
+
+    <menubar              include="../Dialogs/T-34-85-menu.xml"/>
+
+    <ai                   include="ai.xml"/>
+
+  </sim>
+
+  <input                  include="T-34-keyboard.xml"/>
+
+  <controls               include="controls.xml"/>
+
+  <engines                include="engines.xml"/>
+
+  <nasal>
+    <liveries>
+      <file>Aircraft/T-34/Nasal/liveries.nas</file>
+    </liveries>
+    <t34_weapons>
+      <file>Aircraft/T-34/Nasal/T-34-weapons.nas</file>
+    </t34_weapons>
+  </nasal>
+
+</PropertyList>
