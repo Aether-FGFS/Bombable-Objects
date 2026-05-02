@@ -100,8 +100,8 @@
     </animation>
     <offsets>
       <x-m>0.0</x-m>    
-      <y-m>-0.55</y-m>
-      <z-m>2.2</z-m>   
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>   
       <heading-deg>sim/model/t34/sub-heading</heading-deg>
       <pitch-deg>sim/multiplay/generic/float[9]</pitch-deg>
     </offsets>
@@ -139,7 +139,7 @@
     <offsets>
       <x-m>0.0</x-m>
       <y-m>0.0</y-m>
-      <z-m>2.1</z-m>
+      <z-m>0.0</z-m>
       <heading-deg>sim/model/t34/sub-heading</heading-deg>
       <pitch-deg>sim/multiplay/generic/float[9]</pitch-deg>
     </offsets>
