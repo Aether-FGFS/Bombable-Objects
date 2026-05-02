@@ -435,9 +435,9 @@
       </binding>
     </key>
 
-        <!-- Lights: Shift+L (toggle) -->
-        <key n="76">
-          <name>L</name>
+        <!-- Lights: Shift+R (toggle) -->
+        <key n="82">
+          <name>R</name>
       <desc>Landing light ON/OFF</desc>
       <binding>
         <command>property-toggle</command>
