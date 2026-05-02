@@ -84,7 +84,7 @@
     <impact-report    alias="../../cannon/impact-report"/>
     <submodel-path    alias="../../cannon/submodel-path"/>
     <offsets>
-      <x-m>3.8</x-m>
+      <x-m>0.0</x-m>
       <y-m>0.0</y-m>
       <z-m>2.05</z-m>
       <heading-deg>sim/multiplay/generic/float[8]</heading-deg>
@@ -127,7 +127,7 @@
       </placer>
     </animation>
     <offsets>
-      <x-m>2.0</x-m>
+      <x-m>0.0</x-m>
       <y-m>0.5</y-m>
       <z-m>1.7</z-m>
       <heading-deg>sim/multiplay/generic/float[8]</heading-deg>
@@ -163,7 +163,7 @@
       </placer>
     </animation>
     <offsets>
-      <x-m>0.5</x-m>     <!-- mierne vzadu od stredu veze -->
+      <x-m>0.0</x-m>     <!-- mierne vzadu od stredu veze -->
       <y-m>-0.8</y-m>    <!-- vpravo - Fliegerabwehr pozicia -->
       <z-m>3.2</z-m>     <!-- nad vezou -->
       <heading-deg>sim/multiplay/generic/float[10]</heading-deg>

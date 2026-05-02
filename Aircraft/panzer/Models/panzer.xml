@@ -5,12 +5,13 @@
     <sound>
       <path>Aircraft/panzer/Sounds/mp-sound.xml</path>
     </sound>  
+
         
-<offsets>
-<heading-deg>90.0</heading-deg>
-<z-m>0.3</z-m>
-<x-m>2.45</x-m>
-</offsets>
+    <offsets>
+    <heading-deg>90.0</heading-deg>
+    <z-m>0.3</z-m>
+    <x-m>2.45</x-m>
+    </offsets>
 
         <!-- rotate turret -->
         <animation>
@@ -447,5 +448,37 @@
   </model>
 
 <!-- End Small Gears -->
+
+<!-- TURRET LIGHT - rotates with turret via float[8] -->
+  <model>
+    <name>turret-light</name>
+    <path>Aircraft/panzer/lights/all-lights2.xml</path>
+    <offsets>
+      <x-m>-0.1</x-m>
+      <y-m>-0.5</y-m>
+      <z-m>1.5</z-m>
+      <pitch-deg>-5</pitch-deg>
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>turret-light</object-name>
+    <property>sim/multiplay/generic/float[8]</property>
+    <factor>-1</factor>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0.1</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+
 
 </PropertyList>
