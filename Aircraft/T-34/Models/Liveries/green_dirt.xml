@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name    type="string">green_dirt</name>
+        <texture type="string">Liveries/1024x1024/newgreen_dirt.png</texture>
+        <specular>
+          <red   type="float"> 0.05 </red>
+          <green type="float"> 0.05 </green>
+          <blue  type="float"> 0.05 </blue>
+        </specular>
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>
