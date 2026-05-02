@@ -12,7 +12,10 @@
  Keys:
    e       = Cannon fire (30s reload)
    g       = Machine gun (hold)
-   y       = AA MG 34
+   y       = Fire   AA MG 34
+   j       = Center AA MG 34
+   i / k   = Up / Down AA MG 34
+   u / o   = Left / Right AA MG 34
    q / w   = Turret left / right (hold = continuous)
    x       = Turret center
    r / f   = Barrel up / down (hold = continuous)
@@ -22,6 +25,9 @@
    trottle = Acceleration
    M       = Reverse
    m       = Forward   
+ =============================================================
+   L       = Front and Turret lights
+   T       = Rear navigation light   
  =============================================================
  </text>
 </PropertyList>
