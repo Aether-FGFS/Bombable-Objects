@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <fx>
+
+    <!-- V-2 Diesel Engine -->
+    <engine>
+      <name>engine</name>
+      <path>t34engine.wav</path>
+      <mode>looped</mode>
+      <condition>
+        <property>engines/engine/running</property>
+      </condition>
+      <volume>
+        <factor>0.6</factor>
+      </volume>
+      <pitch>
+        <property>engines/engine/prop-thrust</property>
+        <factor>0.0005</factor>
+        <min>0.2</min>
+        <max>2.0</max>
+        <offset>0.15</offset>
+      </pitch>
+    </engine>
+
+    <!-- Track / drivetrain rumble -->
+    <rumble>
+      <name>rumble</name>
+      <path>t34accel.wav</path>
+      <mode>looped</mode>
+      <condition>
+        <or>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
+          <property>gear/gear[3]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>velocities/groundspeed-kt</property>
+        <type>log</type>
+        <factor>0.5</factor>
+      </volume>
+    </rumble>
+
+    <!-- Turret traverse motor -->
+    <turret>
+      <name>turret</name>
+      <path>t34turret.wav</path>
+      <mode>in-transit</mode>
+      <condition>
+        <property>sim/multiplay/generic/bool[1]</property>
+      </condition>
+      <volume>
+        <factor>0.5</factor>
+        <max>1.0</max>
+      </volume>
+    </turret>
+
+    <!-- Barrel move sound -->
+    <barrel>
+      <name>barrel</name>
+      <path>t34barrel.wav</path>
+      <mode>in-transit</mode>
+      <condition>
+        <property>sim/multiplay/generic/bool[2]</property>
+      </condition>
+      <volume>
+        <factor>0.5</factor>
+        <max>1.0</max>
+      </volume>
+    </barrel>
+
+    <!-- 76mm F-34 Cannon -->
+    <cannon>
+      <name>cannon</name>
+      <path>t34cannon.wav</path>
+      <mode>once</mode>
+      <condition>
+        <property>sim/multiplay/generic/int[10]</property>
+      </condition>
+      <volume>
+        <factor>2.2</factor>
+        <max>5.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </cannon>
+
+    <!-- Coaxial DT 7.62mm MG -->
+    <mg>
+      <name>gun</name>
+      <path>t34mg.wav</path>
+      <mode>looped</mode>
+      <condition>
+        <property>sim/multiplay/generic/int[11]</property>
+      </condition>
+      <volume>
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </mg>
+
+    <!-- AA DT 7.62mm MG -->
+    <mg-AA>
+      <name>AA-gun</name>
+      <path>t34mg.wav</path>
+      <mode>looped</mode>
+      <condition>
+        <property>sim/multiplay/generic/int[12]</property>
+      </condition>
+      <volume>
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </mg-AA>
+
+    <!-- Front hull DT 7.62mm MG (radista) -->
+    <mg-front>
+      <name>front-gun</name>
+      <path>t34mg.wav</path>
+      <mode>looped</mode>
+      <condition>
+        <property>sim/multiplay/generic/int[13]</property>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </mg-front>
+
+  </fx>
+
+</PropertyList>

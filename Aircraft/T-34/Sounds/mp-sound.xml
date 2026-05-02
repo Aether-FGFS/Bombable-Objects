@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+     T-34 Multiplayer Sound Configuration
+     Place in: Aircraft/T-34/Sounds/mp-sound.xml
+     Reference from model XML: <sound><path>../Sounds/mp-sound.xml</path></sound>
+
+     MP properties:
+       bool[1]   = turret rotating
+       int[10]   = cannon fire counter
+       int[11]   = coaxial fire counter
+       int[12]   = AA MG active
+       int[13]   = front MG active
+-->
+<PropertyList>
+
+  <fx>
+
+    <!-- V-2 Diesel Engine — always on for MP -->
+    <engine>
+      <name>engine</name>
+      <path>t34engine.wav</path>
+      <mode>looped</mode>
+      <condition>
+        <property>engines/engine/running</property>
+      </condition>
+      <volume>
+        <offset>0.7</offset>
+        <max>1.0</max>
+      </volume>
+      <pitch>
+        <offset>1.0</offset>
+      </pitch>
+      <reference-dist>30</reference-dist>
+      <max-dist>3000</max-dist>
+    </engine>
+
+    <!-- Track / drivetrain rumble — always on -->
+    <rumble>
+      <name>rumble</name>
+      <path>t34accel.wav</path>
+      <mode>looped</mode>
+      <condition>
+        <or>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
+          <property>gear/gear[3]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <offset>0.3</offset>
+        <max>0.6</max>
+      </volume>
+      <reference-dist>20</reference-dist>
+      <max-dist>500</max-dist>
+    </rumble>
+
+    <!-- Turret traverse — triggered by bool[1] -->
+    <turret>
+      <name>mp-turret</name>
+      <mode>looped</mode>
+      <path>Aircraft/T-34/Sounds/t34turret.wav</path>
+      <condition>
+        <property>sim/multiplay/generic/bool[1]</property>
+      </condition>
+      <volume>
+        <offset>0.5</offset>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>20</reference-dist>
+      <max-dist>200</max-dist>
+    </turret>
+
+    <!-- Barrel move sound -->
+    <barrel>
+      <name>barrel</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/T-34/Sounds/t34barrel.wav</path>
+      <condition>
+        <property>sim/multiplay/generic/bool[2]</property>
+      </condition>
+      <volume>
+        <factor>0.5</factor>
+        <max>1.0</max>
+      </volume>
+    </barrel>
+
+    <!-- 76mm F-34 Cannon — int[10] counter -->
+    <cannon>
+      <name>mp-cannon</name>
+      <mode>once</mode>
+      <path>Aircraft/T-34/Sounds/t34cannon.wav</path>
+      <condition>
+        <property>sim/multiplay/generic/int[10]</property>
+      </condition>
+      <volume>
+        <offset>1.0</offset>
+        <max>3.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>6000</max-dist>
+    </cannon>
+
+    <!-- Coaxial DT MG — int[11] -->
+    <mg>
+      <name>mp-mg-coaxial</name>
+      <mode>looped</mode>
+      <path>Aircraft/T-34/Sounds/t34mg.wav</path>
+      <condition>
+        <property>sim/multiplay/generic/int[11]</property>
+      </condition>
+      <volume>
+        <offset>0.8</offset>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>50</reference-dist>
+      <max-dist>3000</max-dist>
+    </mg>
+
+    <!-- AA DT MG — int[12] -->
+    <mg-aa>
+      <name>mp-mg-aa</name>
+      <mode>looped</mode>
+      <path>Aircraft/T-34/Sounds/t34mg.wav</path>
+      <condition>
+        <property>sim/multiplay/generic/int[12]</property>
+      </condition>
+      <volume>
+        <offset>0.8</offset>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>50</reference-dist>
+      <max-dist>3000</max-dist>
+    </mg-aa>
+
+    <!-- AA Front MG — int[13] -->
+    <mg-front>
+      <name>mp-mg-front</name>
+      <mode>looped</mode>
+      <path>Aircraft/T-34/Sounds/t34mg.wav</path>
+      <condition>
+        <property>sim/multiplay/generic/int[13]</property>
+      </condition>
+      <volume>
+        <offset>0.8</offset>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>50</reference-dist>
+      <max-dist>3000</max-dist>
+    </mg-front>
+
+  </fx>
+
+</PropertyList>
