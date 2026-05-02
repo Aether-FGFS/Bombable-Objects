@@ -16,6 +16,10 @@ Thanks
 
 Gijs de Rooy,　Detlef Faber　(Pushback Truck for Flightgear)
 
+Aether, (Weapons systems)
+
+Helijah, (3D revision, FDM)  
+
 
 
 Keys
