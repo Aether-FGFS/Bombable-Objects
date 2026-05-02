@@ -8,12 +8,19 @@
     <aero>T-34-76-yasim</aero>
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
     <sound>
       <path>Aircraft/T-34/Sounds/T-34-sound.xml</path>
     </sound>
+
     <model>
       <path>Aircraft/T-34/Models/T-34-76.xml</path>
     </model>
+
+    <model>
+    <path>lights/all-lights.xml</path>
+    </model>
+
     <ai>
       <submodels>
         <contrails type="bool">false</contrails>
@@ -64,6 +71,8 @@
       <key><name>Shift+N</name><desc>Front MG fire (hold)</desc></key>
       <key><name>Shift+J/L</name><desc>Front MG left/right (hold)</desc></key>
       <key><name>Shift+I/K</name><desc>Front MG up/down (hold)</desc></key>
+      <key><name>Shift+L</name><desc>Front and Turret lights</desc></key>
+      <key><name>Shift+T</name><desc>Rear position light</desc></key>
     </help>
     <menubar include="Dialogs/T-34-menu.xml"/>
     <multiplay>
@@ -71,6 +80,8 @@
         <string n="9" type="string"/>
         <bool  n="1"  alias="sim/multiplay/generic/bool[1]"/>
         <bool  n="2" alias="sim/multiplay/generic/bool[2]"/>
+        <bool   n="15" alias="/controls/lighting/nav-lights"/>
+        <bool   n="16" alias="/controls/lighting/landing-lights"/>
         <float n="8"  alias="sim/multiplay/generic/float[8]"/>
         <float n="9"  alias="sim/multiplay/generic/float[9]"/>
         <float n="10" alias="sim/multiplay/generic/float[10]"/>
@@ -410,6 +421,28 @@
           </binding>
         </mod-up>
       </key>
+
+        <!-- Lights: Shift+T (toggle) -->
+        <key n="84">
+          <name>T</name>
+      <desc>Navigation light ON/OFF</desc>
+      <binding>
+        <command>property-toggle</command>
+        <!-- <property>controls/lighting/nav-lights</property> -->
+        <property>sim/multiplay/generic/bool[15]</property>
+      </binding>
+    </key>
+
+        <!-- Lights: Shift+L (toggle) -->
+        <key n="76">
+          <name>L</name>
+      <desc>Landing light ON/OFF</desc>
+      <binding>
+        <command>property-toggle</command>
+        <!-- <property>controls/lighting/landing-lights</property> -->
+        <property>sim/multiplay/generic/bool[16]</property>
+      </binding>
+    </key>
 
     </keyboard>
   </input>
