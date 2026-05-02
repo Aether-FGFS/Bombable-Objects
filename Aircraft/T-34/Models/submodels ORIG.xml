@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!-- gun -->	
+	<submodel>
+		<name>gun</name>
+		<model>Aircraft/T-34/Models/Effects/fire.xml</model>
+		<trigger>controls/armament/station[2]/gun</trigger>
+		<speed>30</speed>
+		<repeat>true</repeat>
+		<delay>12</delay>
+		<count>-1</count>
+		<!-- <x-offset>15</x-offset>
+		<y-offset>0</y-offset>
+		<z-offset>11</z-offset> -->
+		<x-offset>16.5</x-offset>
+		<y-offset>0</y-offset>
+		<z-offset>7</z-offset>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset>5</pitch-offset>
+		<life>0.4</life>
+		<buoyancy>32</buoyancy>
+		<eda>1</eda>
+		<cd>0.2</cd>
+		<!--<random>true</random>
+		<no-roll>true</no-roll>-->
+	</submodel>
+	
+	<submodel>
+		<name>gun-smoke</name>
+		<model>Aircraft/T-34/Models/Effects/smoke.xml</model>
+		<trigger>controls/armament/station[2]/gun</trigger>
+		<speed>30</speed>
+		<repeat>true</repeat>
+		<delay>12</delay>
+		<count>-1</count>
+		<!-- <x-offset>13</x-offset>
+		<y-offset>0</y-offset>
+		<z-offset>11</z-offset> -->
+		<x-offset>15</x-offset>
+		<y-offset>0</y-offset>
+		<z-offset>7</z-offset>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset>5</pitch-offset>
+		<life>0.5</life>
+		<buoyancy>32</buoyancy>
+		<eda>1</eda>
+		<cd>0.2</cd>
+		<!--<random>true</random>
+		<no-roll>true</no-roll>-->
+	</submodel>
+
+</PropertyList>
+

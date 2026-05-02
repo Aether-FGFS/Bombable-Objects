@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>mesh.ac</path>
+
+  <!-- Transparent objects -->
+  <animation>
+    <object-name>mesh0</object-name>
+    <object-name>mesh1</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>mesh0</object-name>
+    <object-name>mesh1</object-name>
+  </animation>
+
+  <!-- TURRET ROTATION — driven by Nasal via sim/multiplay/generic/float[8] -->
+  <animation>
+    <type>rotate</type>
+    <object-name>mesh1</object-name>
+    <property>sim/multiplay/generic/float[8]</property>
+    <center>
+      <x-m> -0.501 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.799 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
