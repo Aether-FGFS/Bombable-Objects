@@ -23,6 +23,10 @@ var RELOAD_TIME   = 8.3;
 
 var TURRET_SPEED        = 15.0;
 var TURRET_DEG_PER_STEP = TURRET_SPEED * STEP_INTERVAL;
+var BARREL_SPEED        = 15.0;
+var BARREL_DEG_PER_STEP = BARREL_SPEED * STEP_INTERVAL;
+var AA_SPEED            = 15.0;
+var AA_DEG_PER_STEP     = AA_SPEED * STEP_INTERVAL;
 
 var _barrel_timer = nil;
 var _turret_timer = nil;
@@ -65,9 +69,23 @@ var turret_stop = func {
 
 var turret_center = func {
     turret_stop();
-    setprop("sim/multiplay/generic/float[8]", 0);
-    setprop("sim/model/turret[0]/heading",    0);
-    setprop("sim/model/t34/sub-heading",      0);
+    var current = getprop("sim/multiplay/generic/float[8]") or 0;
+    if (math.abs(current) < 0.01) return;
+    var dir = (current > 0) ? -1 : 1;
+    turret_start(dir);
+    _turret_timer.stop();
+    _turret_timer = maketimer(STEP_INTERVAL, func {
+        var v = getprop("sim/multiplay/generic/float[8]") or 0;
+        if ((dir < 0 and v <= 0) or (dir > 0 and v >= 0)) {
+            turret_stop();
+            setprop("sim/multiplay/generic/float[8]", 0);
+            setprop("sim/model/turret[0]/heading",    0);
+            setprop("sim/model/t34/sub-heading",      0);
+        } else {
+            turret_step(dir * TURRET_DEG_PER_STEP);
+        }
+    });
+    _turret_timer.start();
 };
 
 # --- Barrel ---
@@ -94,8 +112,20 @@ var barrel_stop = func {
 
 var barrel_center = func {
     barrel_stop();
-    setprop("sim/multiplay/generic/float[9]", 0);
-    setprop("sim/model/turret[0]/pitch",      0);
+    var current = getprop("sim/multiplay/generic/float[9]") or 0;
+    if (math.abs(current) < 0.01) return;
+    var dir = (current > 0) ? -1 : 1;
+    _barrel_timer = maketimer(STEP_INTERVAL, func {
+        var v = getprop("sim/multiplay/generic/float[9]") or 0;
+        if ((dir < 0 and v <= 0) or (dir > 0 and v >= 0)) {
+            barrel_stop();
+            setprop("sim/multiplay/generic/float[9]", 0);
+            setprop("sim/model/turret[0]/pitch",      0);
+        } else {
+            barrel_step(dir * BARREL_DEG_PER_STEP);
+        }
+    });
+    _barrel_timer.start();
 };
 
 # --- 76mm Cannon ---
@@ -154,11 +184,39 @@ var aa_elev_start = func(deg) {
 var aa_elev_stop = func {
     if (_aa_elev_timer != nil) { _aa_elev_timer.stop(); _aa_elev_timer = nil; }
 };
+
 var aa_center = func {
     aa_rotate_stop(); aa_elev_stop();
-    setprop("sim/multiplay/generic/float[10]", 0);
-    setprop("sim/multiplay/generic/float[11]", 0);
+    var cur_r = getprop("sim/multiplay/generic/float[10]") or 0;
+    var cur_e = getprop("sim/multiplay/generic/float[11]") or 0;
+    if (math.abs(cur_r) > 0.01) {
+        var dir_r = (cur_r > 0) ? -1 : 1;
+        _aa_rotate_timer = maketimer(STEP_INTERVAL, func {
+            var v = getprop("sim/multiplay/generic/float[10]") or 0;
+            if ((dir_r < 0 and v <= 0) or (dir_r > 0 and v >= 0)) {
+                aa_rotate_stop();
+                setprop("sim/multiplay/generic/float[10]", 0);
+            } else {
+                aa_rotate_step(dir_r * AA_DEG_PER_STEP);
+            }
+        });
+        _aa_rotate_timer.start();
+    }
+    if (math.abs(cur_e) > 0.01) {
+        var dir_e = (cur_e > 0) ? -1 : 1;
+        _aa_elev_timer = maketimer(STEP_INTERVAL, func {
+            var v = getprop("sim/multiplay/generic/float[11]") or 0;
+            if ((dir_e < 0 and v <= 0) or (dir_e > 0 and v >= 0)) {
+                aa_elev_stop();
+                setprop("sim/multiplay/generic/float[11]", 0);
+            } else {
+                aa_elev_step(dir_e * AA_DEG_PER_STEP);
+            }
+        });
+        _aa_elev_timer.start();
+    }
 };
+
 var fire_aa = func { setprop("sim/multiplay/generic/int[12]", 1); };
 var stop_aa = func { setprop("sim/multiplay/generic/int[12]", 0); };
 
@@ -208,10 +266,39 @@ var front_mg_v_stop = func {
 
 var front_mg_center = func {
     front_mg_h_stop(); front_mg_v_stop();
-    setprop("sim/multiplay/generic/float[12]", 0);
-    setprop("sim/multiplay/generic/float[13]", 0);
+    var cur_h = getprop("sim/multiplay/generic/float[13]") or 0;
+    var cur_v = getprop("sim/multiplay/generic/float[12]") or 0;
+    if (math.abs(cur_h) > 0.01) {
+        var dir_h = (cur_h > 0) ? -1 : 1;
+        _front_h_timer = maketimer(STEP_INTERVAL, func {
+            var v = getprop("sim/multiplay/generic/float[13]") or 0;
+            if ((dir_h < 0 and v <= 0) or (dir_h > 0 and v >= 0)) {
+                front_mg_h_stop();
+                setprop("sim/multiplay/generic/float[13]", 0);
+            } else {
+                front_mg_h_step(dir_h);
+            }
+        });
+        _front_h_timer.start();
+    }
+    if (math.abs(cur_v) > 0.01) {
+        var dir_v = (cur_v > 0) ? -1 : 1;
+        _front_v_timer = maketimer(STEP_INTERVAL, func {
+            var v = getprop("sim/multiplay/generic/float[12]") or 0;
+            if ((dir_v < 0 and v <= 0) or (dir_v > 0 and v >= 0)) {
+                front_mg_v_stop();
+                setprop("sim/multiplay/generic/float[12]", 0);
+            } else {
+                front_mg_v_step(dir_v);
+            }
+        });
+        _front_v_timer.start();
+    }
 };
+
 var fire_front_mg = func { setprop("sim/multiplay/generic/int[13]", 1); };
 var stop_front_mg = func { setprop("sim/multiplay/generic/int[13]", 0); };
+
+setprop("/bombable/player-faction", "A");
 
 print("T-34 Weapon System load OK.");
