@@ -9,6 +9,13 @@
     <path>Aircraft/T-34/Sounds/mp-sound.xml</path>
   </sound>
 
+  <model>
+    <path>Aircraft/T-34/Models/Effects/Weapons/cannon/all-cannon-fires.xml</path>
+  </model>
+
+  <model>
+    <path>Aircraft/T-34/Models/Effects/Weapons/guns/all-fires.xml</path>
+  </model>
 
   <animation>
     <object-name>band1</object-name>
@@ -126,7 +133,7 @@
   </animation>
 
   <model>
-    <path>lights/all-lights.xml</path>
+    <path>lights/all-lights_T-34-85early.xml</path>
   </model>
 
   <!-- Effects on soil -->

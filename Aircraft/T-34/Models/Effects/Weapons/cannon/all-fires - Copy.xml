@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Jet Blast -->
+  <model>
+    <name>explosion</name>
+    <path>gun.xml</path>
+    <condition>
+      <property>sim/multiplay/generic/int[10]</property>
+    </condition>
+    <offsets>
+      <x-m> -4.508 </x-m>
+      <y-m>  0.486 </y-m>
+      <z-m>  0.079 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>explosion</object-name>
+    <property>sim/multiplay/generic/float[8]</property>
+    <factor>1</factor>
+    <center>
+      <x-m> -0.501 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.799 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- Smoke -->
+  <model>
+    <name>smoke</name>
+    <path>fire.xml</path>
+    <condition>
+      <property>sim/multiplay/generic/int[10]</property>
+    </condition>
+    <offsets>
+      <x-m> -4.508 </x-m>
+      <y-m>  0.486 </y-m>
+      <z-m>  0.179 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>smoke</object-name>
+    <property>sim/multiplay/generic/float[8]</property>
+    <factor>1</factor>
+    <center>
+      <x-m> -0.501 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.799 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

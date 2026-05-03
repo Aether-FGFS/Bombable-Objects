@@ -9,6 +9,14 @@
     <path>Aircraft/T-34/Sounds/mp-sound.xml</path>
   </sound>
 
+  <model>
+    <path>Aircraft/T-34/Models/Effects/Weapons/cannon/all-cannon-fires.xml</path>
+  </model>
+
+  <model>
+    <path>Aircraft/T-34/Models/Effects/Weapons/guns/all-fires.xml</path>
+  </model>
+
   <animation>
     <object-name>body</object-name>
     <object-name>fender-l</object-name>
@@ -163,7 +171,7 @@
 
   <!-- Effects on soil -->
   <model>
-    <path>Effects/ground/ground1.xml</path>
+    <path>Aircraft/T-34/Models/Effects/Ground/ground1.xml</path>
     <offsets>
       <x-m>  4.624 </x-m>
       <y-m> -2.000 </y-m>
@@ -172,7 +180,7 @@
   </model>
 
   <model>
-    <path>Effects/ground/ground2.xml</path>
+    <path>Aircraft/T-34/Models/Effects/Ground/ground2.xml</path>
     <offsets>
       <x-m>  4.624 </x-m>
       <y-m>  2.000 </y-m>
