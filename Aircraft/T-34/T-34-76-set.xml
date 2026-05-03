@@ -2,6 +2,10 @@
 
 <PropertyList include="Systems/T-34-base.xml">
 
+  <bombable>
+    <player-faction type="string">A</player-faction>
+  </bombable>
+
   <sim>
 
     <description>T-34-76</description>
@@ -12,7 +16,7 @@
       <author n="1">
         <name type="string">Emmanuel BARANGER (3D/FDM)</name>
       </author>
-      <author n="1">
+      <author n="2">
         <name type="string">Aether (systems)</name>
       </author>
     </authors>

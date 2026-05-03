@@ -2,6 +2,10 @@
 
 <PropertyList include="Systems/T-34-85early-base.xml">
 
+  <bombable>
+    <player-faction type="string">A</player-faction>
+  </bombable>
+
   <sim>
 
     <description>T-34-85early</description>

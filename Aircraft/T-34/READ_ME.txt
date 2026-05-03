@@ -37,21 +37,22 @@ Keys
  T-34 - Weapon System
  =============================================================
  Keys (defined in T-34-76-set.xml):
-   e         = Cannon fire (8s reload)
-   g (hold)  = MG Coaxial fire DT 7.62mm
-   y (hold)  = AA MG fire DT 7.62mm
-   u/o       = AA rotate left/right (hold)
-   i/k       = barrel up/down (hold)
-   q / w     = Turret left / right (hold)
-   x         = Turret center
-   r / f     = Cannon up / down (hold)
-   c         = Cannon center
-   shift+n   = Front MG fire (hold)
-   shift j/l = Front MG left/right (hold)
-   shift+i/k = Front MG up/down (hold)
+   e             = Cannon fire (8s reload)
+   g (hold)      = MG Coaxial fire DT 7.62mm
+   y (hold)      = AA MG fire DT 7.62mm
+   u/o           = AA rotate left/right (hold)
+   i/k           = barrel up/down (hold)
+   q / w         = Turret left / right (hold)
+   x             = Turret center
+   r / f         = Cannon up / down (hold)
+   c             = Cannon center
+   shift + n     = Front MG fire (hold)
+   shift + j/l   = Front MG left/right (hold)
+   shift + i/k   = Front MG up/down (hold)
+   Shift + x     = Front MG center
  =============================================================
  Lights
  =============================================================
-   L         = Front and Turret lights
-   T         = Rear position light
+   shift + g             = Front and Turret lights
+   shift + w     = Rear position light
  =============================================================
