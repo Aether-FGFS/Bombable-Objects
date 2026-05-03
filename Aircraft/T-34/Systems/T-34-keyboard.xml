@@ -300,9 +300,9 @@
       </mod-up>
     </key>
 
-    <!-- Lights: Shift+Y (toggle) -->
-    <key n="89">
-      <name>Y</name>
+    <!-- Lights: Shift+W (toggle) -->
+    <key n="87">
+      <name>W</name>
       <desc>Navigation light ON/OFF</desc>
       <binding>
         <command>property-toggle</command>
@@ -311,7 +311,7 @@
       </binding>
     </key>
 
-    <!-- Lights: Shift+L (toggle) -->
+    <!-- Lights: Shift+G (toggle) -->
     <key n="71">
       <name>G</name>
       <desc>Landing light ON/OFF</desc>
@@ -319,6 +319,16 @@
         <command>property-toggle</command>
         <!-- <property>controls/lighting/landing-lights</property> -->
         <property>sim/multiplay/generic/bool[16]</property>
+      </binding>
+    </key>
+
+<!-- ===== FRONT MG Center (Shift+X) ===== -->
+    <key n="88">
+      <name>X</name>
+      <desc>Front MG center</desc>
+      <binding>
+        <command>nasal</command>
+        <script>t34_weapons.front_mg_center();</script>
       </binding>
     </key>
 
