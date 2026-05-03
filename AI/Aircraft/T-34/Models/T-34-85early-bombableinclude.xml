@@ -8,7 +8,7 @@
 
       var nodeName = cmdarg().getPath();
 
-      print("Loading T-34-76 ", nodeName);
+      print("Loading T-34-85early ", nodeName);
 
       if ( bombable.check_overall_initialized (nodeName) ) {
         return;
@@ -28,7 +28,7 @@
             wheelsOnGroundAGL_m : 0.10,
             minimumAGL_m        : 0,
             maximumAGL_m        : 0,
-            crashedAGL_m        : 0.6,
+            crashedAGL_m        : -0.6,
           },
           velocities : {
             maxSpeedReduce_percent                       : 0.5,
@@ -128,7 +128,7 @@
     </load>
     <unload>
       <![CDATA[
-        print("Unload T-34-76.");
+        print("Unload T-34-85early.");
         var nodeName= cmdarg().getPath();
         bombable.de_overall_initialize( nodeName );
         bombable.initialize_del( nodeName );

@@ -9,7 +9,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/T-34/Models/Liveries85early", 10);
+      var livery_update = aircraft.livery_update.new("AI/Aircraft/T-34/Models/Liveries85early", 10);
     </load>
     <unload>
       livery_update.stop();
@@ -140,7 +140,7 @@
 <!-- Effects on soil -->
 
   <model>
-    <path>Aircraft/T-34/Models/Effects/ground1.xml</path>
+    <path>AI/Aircraft/T-34/Models/Effects/ground1.xml</path>
     <offsets>
       <x-m>  4.624 </x-m>
       <y-m> -2.000 </y-m>
@@ -149,7 +149,7 @@
   </model>
 
   <model>
-    <path>Aircraft/T-34/Models/Effects/ground2.xml</path>
+    <path>AI/Aircraft/T-34/Models/Effects/ground2.xml</path>
     <offsets>
       <x-m>  4.624 </x-m>
       <y-m>  2.000 </y-m>

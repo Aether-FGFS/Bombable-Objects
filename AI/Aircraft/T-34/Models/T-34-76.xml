@@ -194,7 +194,7 @@
 <!-- Effects on soil -->
 
   <model>
-    <path>Aircraft/T-34/Models/Effects/ground1.xml</path>
+    <path>AI/Aircraft/T-34/Models/Effects/ground1.xml</path>
     <offsets>
       <x-m>  4.624 </x-m>
       <y-m> -2.000 </y-m>

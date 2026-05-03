@@ -6,4 +6,8 @@
     <path>AI/Aircraft/T-34/Models/T-34-76.xml</path>
   </model>
 
+  <bombable>
+    <player-faction type="string">A</player-faction>
+  </bombable>
+
 </PropertyList>

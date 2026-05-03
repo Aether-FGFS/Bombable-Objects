@@ -4,7 +4,7 @@
 <!-- gun -->	
 	<submodel>
 		<name>gun</name>
-		<model>Aircraft/T-34/Models/Effects/fire.xml</model>
+		<modelAI/>Aircraft/T-34/Models/Effects/fire.xml</model>
 		<trigger>controls/armament/station[2]/gun</trigger>
 		<speed>30</speed>
 		<repeat>true</repeat>
@@ -28,7 +28,7 @@
 	
 	<submodel>
 		<name>gun-smoke</name>
-		<model>Aircraft/T-34/Models/Effects/smoke.xml</model>
+		<model>AI/Aircraft/T-34/Models/Effects/smoke.xml</model>
 		<trigger>controls/armament/station[2]/gun</trigger>
 		<speed>30</speed>
 		<repeat>true</repeat>
@@ -51,7 +51,7 @@
 	</submodel>
 
   <cannon>
-    <model>Aircraft/T-34/Models/Weapons/guns/12mm/apibullet-tracer.xml</model>
+    <model>AI/Aircraft/T-34/Models/Weapons/guns/12mm/apibullet-tracer.xml</model>
     <!-- <trigger>controls/armament/trigger</trigger> -->
     <trigger>sim/multiplay/generic/int[10]</trigger>
     <speed>3363.0</speed>
@@ -69,7 +69,7 @@
     <collision-report>sim/ai/aircraft/collision/gun</collision-report>
     <impact>true</impact>
     <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/T-34/Models/Weapons/guns/12mm/submodel.xml</submodel-path>
+    <submodel-path>AI/Aircraft/T-34/Models/Weapons/guns/12mm/submodel.xml</submodel-path>
     <animation>
       <enable-hot type="bool">false</enable-hot>
       <attach>world</attach>
