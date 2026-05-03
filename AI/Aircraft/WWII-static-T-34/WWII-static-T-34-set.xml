@@ -6,4 +6,8 @@
     <path>AI/Aircraft/WWII-static-T-34/Models/WWII-static-T-34-76.xml</path>
   </model>
 
+  <bombable>
+    <player-faction type="string">A</player-faction>
+  </bombable>
+
 </PropertyList>

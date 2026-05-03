@@ -6,4 +6,8 @@
     <path>AI/Aircraft/WWII-static-panzer/Models/WWII-static-panzer.xml</path>
   </model>
 
+  <bombable>
+    <player-faction type="string">B</player-faction>
+  </bombable>
+
 </PropertyList>
