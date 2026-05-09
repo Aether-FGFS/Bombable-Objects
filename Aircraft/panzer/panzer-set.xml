@@ -15,6 +15,10 @@
   <virtual-cockpit archive="y">true</virtual-cockpit>
   <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
+  <bombable>
+    <player-faction type="string">B</player-faction>
+  </bombable>
+
   <sound>
    <path>Aircraft/panzer/Sounds/panzer-sound.xml</path>
   </sound>
