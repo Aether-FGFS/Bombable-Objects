@@ -177,3 +177,6 @@ print("  e=Cannon(30s reload)  g=MG(hold)  p=AA MG(hold)");
 print("  q/w=Turret L/R(hold)  x=center");
 print("  r/f=Barrel up/down(hold)  c=center");
 print("  u/o=AA rotate L/R(hold)  i/k=AA up/down(hold)  j=AA center");
+
+# Bombable faction
+setprop("/bombable/player-faction", "B");
