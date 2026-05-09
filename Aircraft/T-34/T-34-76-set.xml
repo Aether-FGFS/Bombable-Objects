@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Systems/T-34-76-base.xml">
+
+  <bombable>
+    <player-faction type="string">A</player-faction>
+  </bombable>
+
+  <sim>
+
+    <description>T-34-76</description>
+    <authors>
+      <author n="0">
+        <name type="string">virtfly (3D)</name>
+      </author>
+      <author n="1">
+        <name type="string">Emmanuel BARANGER (3D/FDM)</name>
+      </author>
+      <author n="2">
+        <name type="string">Aether (systems)</name>
+      </author>
+    </authors>
+
+    <status>0.4</status>
+    <minimum-fg-version>2018.2.0</minimum-fg-version>
+
+    <flight-model>yasim</flight-model>
+    <aero>Systems/T-34-76-yasim</aero>
+
+    <rating>
+      <FDM      type="int"> 3 </FDM>
+      <systems  type="int"> 2 </systems>
+      <cockpit  type="int"> 0 </cockpit>
+      <model    type="int"> 3 </model>
+    </rating>
+
+    <tags>
+      <tag>soviet-union</tag>
+      <tag>medium-tank</tag>
+      <tag>1940s</tag>
+      <tag>1950s</tag>
+    </tags>
+  </sim>
+
+</PropertyList>

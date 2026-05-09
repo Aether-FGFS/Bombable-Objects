@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- T 34  BARANGER Emmanuel 05/2026
+
+           Sources      : https://www.wikiwand.com/en/T-34
+
+           Lenght       : 6.94 m  ( 22,76 ft )
+           Width        : 3.00 m  (  9.84 ft )
+           Height       : 2.41 m  (  6.56 ft )
+           Weight       : 26 t    ( 57320 lb )
+           Engine       : V-2-34  (   500 hp )
+           Fuel         : 540 l   (  1190 lb ) internal
+           cruise speed : 53 km/h (    30 kt )
+-->
+<airplane mass="11000" version="YASIM_VERSION_CURRENT" mtow-lbs="12000">
+  <!--
+<airplane mass="50000" version="YASIM_VERSION_CURRENT" mtow-lbs="57320">
+  -->
+  <approach          speed="45" aoa="6"                          fuel="0.8">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.25"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.25"/>
+  </approach>
+
+  <cruise            speed="45" alt="25000"                       fuel="0.8">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/>
+  </cruise>
+
+  <cockpit x="1.145" y="0.473" z="0.289"/>
+
+  <!-- Left -->
+  <fuselage ax=" 2.165" ay=" 0.500" az=" 0.020" bx=" 1.562" by=" 0.500" bz=" 0.020" width="1.200" taper="0.50" midpoint="1"/>
+  <fuselage ax=" 1.562" ay=" 0.500" az=" 0.020" bx="-2.027" by=" 0.500" bz=" 0.020" width="1.200" taper="1.00" midpoint="1"/>
+
+  <fuselage ax=" 2.664" ay=" 1.181" az="-0.198" bx=" 1.816" by=" 1.181" bz="-0.678" width="0.600" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 2.812" ay=" 1.181" az="-0.160" bx="-2.948" by=" 1.181" bz="-0.160" width="0.600" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 1.965" ay=" 1.181" az="-0.644" bx="-2.026" by=" 1.181" bz="-0.644" width="0.600" taper="1.00" midpoint="1"/>
+  <fuselage ax="-1.880" ay=" 1.181" az="-0.678" bx="-2.797" by=" 1.181" bz="-0.193" width="0.600" taper="1.00" midpoint="1"/>
+
+  <fuselage ax=" 2.165" ay=" 0.000" az=" 0.020" bx=" 1.562" by=" 0.000" bz=" 0.020" width="1.200" taper="0.50" midpoint="1"/>
+
+  <!-- Right -->
+  <fuselage ax=" 2.165" ay="-0.500" az=" 0.020" bx=" 1.562" by="-0.500" bz=" 0.020" width="1.200" taper="0.50" midpoint="1"/>
+  <fuselage ax=" 1.562" ay="-0.500" az=" 0.020" bx="-2.027" by="-0.500" bz=" 0.020" width="1.200" taper="1.00" midpoint="1"/>
+
+  <fuselage ax=" 2.664" ay="-1.181" az="-0.198" bx=" 1.816" by="-1.181" bz="-0.678" width="0.600" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 2.812" ay="-1.181" az="-0.160" bx="-2.948" by="-1.181" bz="-0.160" width="0.600" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 1.965" ay="-1.181" az="-0.644" bx="-2.026" by="-1.181" bz="-0.644" width="0.600" taper="1.00" midpoint="1"/>
+  <fuselage ax="-1.880" ay="-1.181" az="-0.678" bx="-2.797" by="-1.181" bz="-0.193" width="0.600" taper="1.00" midpoint="1"/>
+
+  <fuselage ax=" 0.462" ay=" 0.000" az=" 0.583" bx=" 0.462" by=" 0.000" bz=" 1.258" width="1.744" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 2.992" ay=" 0.000" az=" 0.910" bx=" 1.295" by=" 0.000" bz=" 0.910" width="0.120" taper="1.00" midpoint="1"/>
+
+  <wing x="0.000" y="0.000" z="-0.080"
+        taper  = "1.0"
+        camber = "0"
+        length = "1.0"
+        chord  = "1.0" >
+        <stall aoa="16" width="4" peak="1.5"/>
+  </wing>
+
+  <mstab x="-2.100" y="0.200" z="-0.080"
+         length = "1.0"
+         chord  = "1.2" >
+  </mstab>
+
+ <!-- V-2-34 diesel — (track left, y=+1.180) -->
+  <!-- throttle z engine[1], starter/magnetos z engine[0] (one motor, two tracks) -->
+  <propeller x="0.300" y=" 1.180" z="-0.700"
+             mass= "3000"
+             radius= "1.80"
+             moment= "3.0"
+             cruise-alt="15000"
+             cruise-power="590"
+             cruise-speed="40"
+             cruise-rpm="2200"
+             contra="1">
+    <actionpt x="0.300" y=" 1.180" z="-0.700"/>
+    <control-input control="THROTTLE"  axis="/controls/engines/engine[1]/throttle"/>
+    <control-input control="STARTER"   axis="/controls/engines/engine[0]/starter"/>
+    <control-input control="MAGNETOS"  axis="/controls/engines/engine[0]/magnetos"/>
+    <control-input control="MIXTURE"   axis="/controls/engines/engine[0]/mixture"/>
+    <piston-engine eng-rpm     = "2200"
+            eng-power   = "250"
+            displacement= "1440"
+            compression = "14">
+    </piston-engine>
+  </propeller>
+
+  <!-- V-2-34 diesel — (track right, y=-1.180) -->
+  <!-- throttle z engine[0], starter/magnetos z engine[0] (shared motor) -->
+  <propeller x="0.300" y="-1.180" z="-0.700"
+             mass="3000"
+             radius="1.80"
+             moment="3.0"
+             cruise-alt="15000"
+             cruise-power="590"
+             cruise-speed="40"
+             cruise-rpm="1800"
+             contra="1">
+    <actionpt x="0.300" y=" -1.180" z="-0.700"/>
+    <control-input control="THROTTLE"  axis="/controls/engines/engine[0]/throttle"/>
+    <control-input control="STARTER"   axis="/controls/engines/engine[0]/starter"/>
+    <control-input control="MAGNETOS"  axis="/controls/engines/engine[0]/magnetos"/>
+    <control-input control="MIXTURE"   axis="/controls/engines/engine[0]/mixture"/>
+    <piston-engine eng-rpm     = "2200"
+            eng-power   = "250"
+            displacement= "1440"
+            compression = "14">
+    </piston-engine>
+  </propeller>
+
+
+
+  <tank x="-1.500" y="0.000" z="-0.680" capacity="1190"/>
+
+  <gear x=" 1.041" y=" 1.090" z="-1.040"
+        compression = "0.2"
+        spring      = "1.5"
+        damp        = "12.0"
+        dfric       = "3.0"
+        sfric       = "2.0"
+        stiction    = "3.0">
+        <control-input control="BRAKE" axis="/controls/gear/brake-left"/>
+        <control-input control="STEER" axis="/controls/flight/aileron" square="true" src0="-0.8" src1="0.8" dst0="-0.4" dst1="0.4"/>
+  </gear>
+
+  <gear x=" 1.041" y="-1.090" z="-1.040"
+        compression = "0.2"
+        spring      = "1.5"
+        damp        = "12.0"
+        dfric       = "3.0"
+        sfric       = "2.0"
+        stiction    = "3.0">
+        <control-input control="BRAKE" axis="/controls/gear/brake-right"/>
+        <control-input control="STEER" axis="/controls/flight/aileron" square="true" src0="-0.8" src1="0.8" dst0="-0.4" dst1="0.4"/>
+  </gear>
+
+  <gear x="-1.781" y=" 1.114" z="-1.040"
+        compression = "0.2"
+        spring      = "1.5"
+        damp        = "12.0"
+        dfric       = "3.0"
+        sfric       = "2.0"
+        stiction    = "3.0">
+        <control-input control="BRAKE" axis="/controls/gear/brake-parking"/>
+  </gear>
+
+  <gear x="-1.781" y="-1.114" z="-1.040"
+        compression = "0.2"
+        spring      = "1.5"
+        damp        = "12.0"
+        dfric       = "3.0"
+        sfric       = "2.0"
+        stiction    = "3.0">
+        <control-input control="BRAKE" axis="/controls/gear/brake-parking"/>
+  </gear>
+
+  <hitch name="aerotow"
+         x="1.777" y="0.000" z="0.420"
+         force-is-calculated-by-other = "0">
+         <tow length                  = "10"
+              weight-per-meter        = "0.035"
+              elastic-constant        = "1000"
+              break-force             = "1000000"
+              mp-auto-connect-period  = "0.0"/>
+         <winch max-tow-length        = "100"
+                min-tow-length        = "20"
+                initial-tow-length    = "20"/>
+         <control-input control="FINDAITOW" axis="/controls/aerotow/find-aircraft"/>
+  </hitch>
+
+</airplane>

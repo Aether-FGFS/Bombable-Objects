@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <engine n="0">
+    <running    type="bool">false</running>
+    <starter    type="bool">false</starter>
+    <magnetos   type="int">0</magnetos>
+    <mixture    type="int">0</mixture>
+    <rpm        type="double">0</rpm>
+  </engine>
+
+  <engine n="1">
+    <running    type="bool">false</running>
+    <starter    type="bool">false</starter>
+    <magnetos   type="int">0</magnetos>
+    <mixture    type="int">0</mixture>
+    <rpm        type="double">0</rpm>
+  </engine>
+
+</PropertyList>
